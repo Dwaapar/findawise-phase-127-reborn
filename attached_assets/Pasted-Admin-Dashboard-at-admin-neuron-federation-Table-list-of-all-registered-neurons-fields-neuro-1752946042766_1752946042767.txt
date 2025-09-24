@@ -1,0 +1,64 @@
+Admin Dashboard (at /admin/neuron-federation)
+
+Table/list of all registered neurons (fields: neuron name, status, last check-in, health, current config version, main page link, analytics summary)
+
+Buttons to deploy, update config, retire, or clone a neuron
+
+“Add neuron” wizard: guide for registering a new micro-app
+
+Real-time update indicator for each neuron
+
+Federation APIs
+
+/api/neuron/register — Neuron registers itself here (POST: {name, URL, type, supported features})
+
+/api/neuron/status — Neuron sends regular heartbeat here (POST: {neuronId, status, stats, uptime})
+
+/api/neuron/update-config — Core pushes config/experiment updates to neurons (POST: {neuronId, newConfig})
+
+/api/analytics/report — Neurons POST analytics/events here (POST: {neuronId, eventType, data})
+
+All endpoints must be documented in README with example requests
+
+Central Config, Orchestrator, Analytics
+
+Store global empire config (config.json or config table)
+
+All neuron configs are stored and versioned in /configs/neuron-configs/
+
+Orchestrator logic and analytics reporting (just placeholders/stubs in v1)
+
+Every config change and API call must be logged (for rollback/audit)
+
+Security & Session
+
+Session and API keys for neuron authentication (JWT/token)
+
+Only registered/verified neurons can call APIs or be managed in dashboard
+
+README.md
+
+Must fully document setup, federation API, how to register a neuron, how to monitor/control, and how to add new features
+
+Step-by-step guide with example neuron registration and config update flow
+
+Explain file/folder structure for configs, logs, and federation logic
+
+Optional (if possible):
+WebSocket/event-based push for real-time config propagation (in addition to REST)
+
+CLI script to bootstrap/register new neurons
+
+Sample “mock” neuron for quick local testing
+
+Rules:
+All logic must be modular, exportable, and ready for future scale (100+ neurons)
+
+Never hardcode; use config and enums everywhere
+
+Code must be clean, commented, and ready for team handoff
+
+No skipped steps or half-baked logic—this is a production control tower for an empire
+Build the findawise-core federation brain as described above.
+Output full code and an English README.md.
+This will be the root for the next Neuron modules.

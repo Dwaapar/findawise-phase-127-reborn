@@ -1,0 +1,133 @@
+AI Plugin Marketplace & Self-Debug Codex (Empire-Grade, Migration-Proof, Modular, AI-Native)
+
+1. Objective
+Build a fully modular, migration-proof AI Plugin Marketplace and Self-Debugging Codex system that enables:
+
+Plug-and-play deployment of 3rd-party and in-house AI plugins (tools, micro-apps, data sources, visual blocks)
+
+On-demand, self-healing code analysis, auto-debug, and empire-wide upgrade logic
+
+Deep admin controls for security, sandboxing, and live versioning
+
+Full migration/data-backup proofing for any database, any cloud
+
+2. Plugin Marketplace Core
+Backend (Next.js/Node/Python/Go):
+
+/api/plugins/list — Get all available plugins (official, 3rd-party, recommended, trending)
+
+/api/plugins/install — Atomic install (checks dependencies, validates, snapshots schema, auto-backup)
+
+/api/plugins/upgrade — Smart upgrade (no downtime, auto-migrate, rollback, diff logs)
+
+/api/plugins/remove — Remove and auto-clean, logs everything, triggers dependency analysis
+
+Schema: Plugins table with all metadata, version, dependencies, config, health, status, rollback logs
+
+Frontend (Admin + User):
+
+Marketplace UI: Search, filter, install, upgrade, rollback plugins
+
+Plugin details: Permissions, features, dependencies, user reviews, code preview, “install and test” sandbox
+
+Permission-based: Only super-admins/devs can approve core plugins; users can propose/request plugins
+
+Federation Support:
+
+Plugins are federation-ready; can be shared, cloned, or linked to any neuron/sub-app in empire
+
+Webhook/event bus for plugin install/upgrade/remove events
+
+Security:
+
+All plugins sandboxed (Docker/V8, etc.), cannot touch core system unless explicitly whitelisted
+
+JWT/RBAC enforced at every step
+
+3. Self-Debug Codex Engine
+Auto-Diagnosis:
+
+Runs on any new push, install, migration, or error
+
+Scans: Lint, TS/JS errors, dependency mismatches, security holes, perf bottlenecks, AI “dead zones”
+
+Can auto-fix trivial errors (missing semicolons, unused vars, etc.)
+
+Suggests/flags non-trivial fixes: version upgrades, refactors, DB schema drifts
+
+Live Debug Dashboard:
+
+Full error logs, debug output, last 10 run snapshots
+
+“Suggest fix” powered by LLM (local or API), includes code snippet diff, reason, rollback, retry
+
+Plugin-Specific Debugging:
+
+Any plugin can request debug session via /api/debug/start?pluginId
+
+Isolated sandbox so debug never crashes empire
+
+Auto-migrates any schema changes
+
+Self-Healing Rules:
+
+If a plugin breaks, empire auto-reverts to last working version, sends admin alert, logs everything
+
+Codex learns from each debug/fix, optimizes future suggestions
+
+Migration-Proofing:
+
+Every plugin, config, and debug/fix event is versioned, logged, and backed up (DB+local)
+
+On migration/restore: auto-replays install/upgrade/downgrade/rollback history
+
+4. Documentation, README, and Testing
+Auto-generate /docs/PLUGIN_MARKETPLACE_README.md and /docs/SELF_DEBUG_CODEX_README.md
+
+Full API usage: install, upgrade, rollback, debug, logs, federation hooks
+
+Sample plugins (with code, docs, and “safe to test” tags)
+
+Integration/unit tests: plugin install, upgrade, error recovery, rollback, federation sharing, debug engine
+
+5. Output Rules
+Never duplicate existing plugins—only upgrade/extend/replace as needed
+
+If any logic is already at empire-grade, do NOT touch; only fill gaps/harden
+
+Make every DB schema/data file migration-proof: auto-backups, checks, auto-replay
+
+Everything must be modular, testable, federated, and export-ready
+
+No shortcuts. Full hardening, all security, admin control, RBAC, backup, auto-docs, and test coverage
+
+Make all database schemas robust , tables, and logic fully self-healing, migration-immune, and bootstrappable.hardened for a working of billion dollar empire even if database migrates or any thing make the project so strong that nothing affects its intelligence , its functioning , its billion dollar empire grade.
+If DB is missing, empty, or new: auto-create schema, indexes, constraints, default config.
+Pull all credentials (Supabase, etc.) only from .env — no hardcode ever.
+No direct SQL in UI — all logic flows through hardened service/API layer.
+Add init checks: validate schema health, retry on fail, show admin alerts if broken.
+System must behave as if nothing broke — even if DB was replaced 1 minute ago.
+Run self-test and validation to confirm schema is operational
+Resilience must match billion-dollar SaaS. No placeholders. No assumptions.
+Ensure this module includes a fully provisioned, elite-grade, resilient database schema.
+All tables, indexes, constraints, relationships, and API endpoints must be:
+Migration-proof (works seamlessly across Replit accounts or environments)
+Supabase-compatible (or any Postgres DB)
+Auto-restoring (self-healing on project reboots or migrations)
+Exportable & Documented (with schema diagrams + queries)
+
+
+
+
+
+
+
+DO THIS NOW.
+Output full backend, frontend, federation code, admin UI, plugin system, debug engine, docs, and tests
+
+Harden everything, migration/test ready, fully empire-grade
+
+Log all changes, reasons, and snapshot in README(s)
+
+If any part is partial, upgrade to empire grade. If missing, then build it
+

@@ -1,0 +1,84 @@
+Phase 3B: Orchestrator Stress Test, Failure Mode, and Scale Hardening
+
+Objective:
+Prove the entire federation and dashboard system is bulletproof under load, edge cases, and unexpected failures.
+
+MANDATORY TASKS:
+Simulate Scale & Load
+
+Spawn 10–50 mock neurons (use scripts, test data, or containers if needed).
+
+Register all with the core; verify dashboard lists all, with correct health/stats/config.
+
+Trigger bulk config/experiment/AI updates (single neuron, all neurons, random subset).
+
+Track latency and success/failure rates.
+
+Test Failure Modes
+
+Simulate:
+
+Neuron goes offline/unreachable (network down, process kill)
+
+Bad config push (malformed data, unsupported version, security error)
+
+Analytics push fails (API/network broken)
+
+Race conditions: 2 admins push config at once
+
+Core must:
+
+Detect failures within 1 minute (auto-status update)
+
+Retry, alert, and log errors
+
+Rollback config if neuron does not confirm update
+
+NEVER leave the system in partial or corrupted state
+
+Verify Real-Time Data Integrity
+
+All analytics/events must flow from neurons to core and display live in dashboard
+
+No data loss/duplication during network blips, reconnects, or neuron churn
+
+All rollbacks/audit logs update instantly in UI and DB
+
+Harden Security and RBAC
+
+Test all admin roles/permissions (no unauthorized config push or access)
+
+Audit logs record every change/action (admin ID, timestamp, IP, diff)
+
+README.md Update
+
+Document all hardening steps, edge cases, and failure handling.
+
+Add a section: “How to test and scale for 100+ neurons (live or mock)”
+
+Include known issues, mitigation steps, and contact points for ops escalation.
+
+Rules:
+
+No “test only” code in prod—mock logic must be swappable/isolated.
+
+Don’t skip manual edge-case testing (use CLI, network kills, etc).
+
+All failures must be visible and recoverable in the UI.
+
+This is NOT a “nice to have”—it’s required for raising, scaling, and going global.
+
+DELIVERABLES:
+
+Empire dashboard and backend proven at scale (10–50 neurons live/test)
+
+Audit log of all tests, failures, and rollbacks
+
+Final README.md update with full hardening guide and next steps
+
+What you must add:
+
+10–50 mock/test neurons (not just live ones), either spun up as containers, local scripts, or API-mocked.
+
+Test pushes, failures, analytics, and recovery.
+

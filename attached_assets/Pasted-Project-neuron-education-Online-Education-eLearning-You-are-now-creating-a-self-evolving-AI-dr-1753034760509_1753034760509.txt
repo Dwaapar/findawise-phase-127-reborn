@@ -1,0 +1,144 @@
+Project: neuron-education – Online Education & eLearning
+You are now creating a self-evolving, AI-driven, modular micro-app called neuron-education.
+This neuron is part of the Neuron Federation Bridge inside the Findawise Global Web Empire and will act as an autonomous, AI-powered learning engine — capable of adapting, evolving, and monetizing 1000s of education topics.
+
+🧠 WHAT THIS IS BUILDING:
+A fully pluggable, clonable, Empire-integrated neuron for the Online Learning / eLearning niche
+
+Able to be cloned and extended to future niches (like neuron-language, neuron-testprep, neuron-skillshare)
+
+All federation, analytics, orchestrator, and UI modules must be exposed, secure, and dynamically configurable
+
+Strictly update existing README.md and replit.md — no new files
+
+✅ MANDATORY FEDERATION FEATURES
+POST /api/neuron/register → Register neuron with name, slug, category, type, token
+
+POST /api/neuron/status every 60s → Send uptime, health, heartbeat, usage snapshot
+
+GET /api/neuron/update-config → Hot-pull orchestrator config, AI experiments, scaling logic
+
+POST /api/analytics/report → Log all user actions (quiz, click, session, tool usage, revenue)
+
+All Federation APIs must be secured with API key/token from .env
+
+🧩 MODULE FILES TO BE IMPLEMENTED
+QuizEngine.tsx – Dynamic quiz logic with scoring, offer redirection, and session tracking
+
+ConfigSync.ts – Auto-pull config from /api/neuron/update-config with hot-reload
+
+AnalyticsClient.ts – Sync all frontend and backend events to Empire analytics endpoint
+
+ContentFetcher.ts – Auto-scrape/crawl 3rd party edu/blog sources for new content
+
+OfferLoader.ts – Pulls dynamic affiliate deals via API or local config
+
+ArchetypeEngine.ts – Detects user type (student, career switcher, hobbyist) and adapts
+
+AIAssistant.tsx – Embedded AI chatbot for real-time learning, FAQs, navigation
+
+🧠 SELF-EVOLVING AI FEATURES
+A/B Testing Engine: Auto-switch CTA layouts, hero content, offer order, and track ROI
+
+Orchestrator Agent: Pull experiment logic from Empire Core and apply real-time changes
+
+Underperformance Monitor: Track bounce rate, CTR, time-on-page → trigger rollbackConfig()
+
+LLM Tutor: GPT agent answers questions and nudges users toward next steps
+
+Auto Content Generator: Daily generate new blog/tutorials with AI (format: .md or content.json)
+
+🧱 PLUGGABLE CONTENT STRUCTURE
+All offers stored in offers.json or dynamic API pull → fields: { title, tag, price, cta, trackingUrl }
+
+Articles: Markdown/MDX format, hot-loadable from local dir (/content/articles/) or CMS/API
+
+Tools: Each tool (BMI calc, course finder) in its own component: tools/ToolName.tsx
+
+Quizzes: Defined in quizzes/config.json + logic in QuizEngine.tsx
+
+🔐 AFFILIATE SYSTEM
+All affiliate links must be cloaked via redirect engine (/redirect?offer=xyz)
+
+Links tracked for click-through + conversion via analytics /report
+
+Offers can be auto-rotated based on CTR or payout score from orchestrator
+
+🌍 NICHE CONTENT + MONETIZATION
+100+ SEO-rich blog/tutorials (e.g., Learn Python, Master SAT, Study Hacks, Language Learning)
+
+Product stack: Coursera, Udemy, Skillshare, apps, AI tools, certifications
+
+Lead magnets: Study calendars, goal planners, eBooks, checklists, quiz funnels
+
+Personal learning maps with XP, streaks, badges, goal setting
+
+Quizzes: “What’s Your Study Style?” → routes to personalized page
+
+AI tutor embedded on key pages with subject-specific modules
+
+💡 EMOTION-THEMED UI MODES
+Empower: Goal-driven, focused UX for career-switchers
+
+Curious: Playful, discovery-driven flow for hobby learners
+
+Disciplined: Minimal, clean, structured path for exam-takers
+
+Inclusive: Multi-language, ADA-accessible, multi-device adaptive
+
+🎮 GAMIFICATION
+XP, skill tree tracker, lesson unlock system
+
+Leaderboards (local, global, friend-based)
+
+Daily “brain quests” → e.g., Read 2 articles + complete a quiz
+
+Streak logic + motivational nudges
+
+Rewards engine to unlock discounts, PDFs, secret guides
+
+🧾 EXPORT / IMPORT SUPPORT
+All config must be exportable in .neuron.json
+
+Content in content/articles/*.md, offers.json, quizzes/*.json
+
+Ability to re-import config via /api/neuron/load-config or local load
+
+📈 ANALYTICS + LOGGING
+Every route logs scroll, clicks, conversions, time spent
+
+Self-healing engine triggers rollback if:
+
+40% drop in CTR within 3 hours
+
+5 API failures in 10 mins
+
+LCP > 4s for 10% of users
+
+Orchestrator sets thresholds via /api/neuron/update-config
+
+📚 README & REPLIT.MD INSTRUCTIONS (MANDATORY)
+Update existing README.md and replit.md, do not create new files
+
+Must include:
+
+Setup, endpoints, federation usage
+
+How to scale/clone to neuron-language, neuron-testprep, etc.
+
+Full file/module map + how to extend
+
+AI logic map (quizzes, tutor, optimizer)
+
+Federation heartbeat flow
+
+How to update config, content, offers
+
+📎 FINAL RULES
+Use .env, config.json, offers.json, and .neuron.json for all settings
+
+No hardcoded URLs, tokens, or copy-pasted values
+
+All features must be modular, tracked, and federation-compliant
+
+Every event or user interaction must be trackable by Empire Brain

@@ -1,0 +1,163 @@
+Build a self-evolving, plug-in based offer engine that pulls live affiliate offers, products, pricing, coupons, and API data from all major networks, and updates pages, neurons, quizzes, recommendations, CTAs, and dashboards in real time — across all regions, verticals, and emotions.
+
+🔩 1. Multi-Source Integration Layer (Zero Lock-In)
+✅ Support at least 3 ingestion modes:
+
+REST/GraphQL APIs: Amazon, CJ, Impact, ShareASale, SaaS APIs (plugin format)
+
+Web-scraping (fallback for non-API sites) via Playwright/Cheerio
+
+Manual uploads: CSV/JSON uploader for niche networks or private deals
+
+🔌 Plugin Architecture:
+
+Every affiliate integration = its own modular adapter
+
+Config/credentials stored securely (JWT-encrypted + federated token-based access)
+
+📦 2. Smart Offer Feed Engine (Modular, Clean, Upgradable)
+Schema per offer:
+
+id, title, slug, merchant, price, old_price, currency, coupon_code, discount_type, valid_till, region, emotion, category, tags, source_type, is_expired, click_tracking_url, api_source, commission_estimate, meta, LLM_summary, intent_embedding
+
+🔁 Auto-updates:
+
+Cron/worker runs hourly or event-triggered
+
+Remove stale/dead offers
+
+Cache recent changes (incremental sync)
+
+⚡️ 3. Real-Time Update Pipeline (Global Broadcast)
+Trigger system:
+
+New/updated offers trigger re-render of:
+
+Product carousels
+
+Smart CTAs
+
+Quiz outcomes
+
+Top-deals sidebar
+
+Offer comparison tables
+
+Price trackers, affiliate widgets
+
+/go/[slug] tracker
+
+Federation Events:
+
+Notify all neurons via /api/offer-feed/broadcast
+
+Auto-push to federated verticals by niche, emotion, and region
+
+🔍 4. AI-Powered Filtering & Personalization
+/api/offers/search endpoint:
+
+Filters by merchant, geo, device, intent, price band, LTV, historical CTR
+
+✅ Integrate with:
+
+Semantic Graph: fetch intent-matched deals per page/session
+
+Personalization Engine: match user profile vector → top deals
+
+Emotion Map: CTA visuals, discounts styled to user’s emotion state
+
+🧠 5. Analytics, Compliance & Intelligence Loop
+Track everything:
+
+Clicks, conversions, revenue per slug/merchant
+
+Geo/device/session context → pushed to analytics layer
+
+Compliance Logic:
+
+Auto-hide banned/expired/deceptive offers (Amazon, Google TOS-safe)
+
+“Disclosures” module for legal banner injection
+
+AI Optimization:
+
+Detect stale offers (low CTR, no click in 7 days)
+
+Feed to Codex or AI auditor for rewriting, reorder, or replacement
+
+🖥 6. Admin Panel — /admin/offer-feed
+Live feed view
+
+Search/edit/add/flag/retry/offline offers
+
+Performance leaderboard
+
+Deal expiration alerts
+
+Auto-suggested new offers from LLMs
+
+API import wizard (add new source in 3 steps)
+
+🤖 7. Automation + AI Layer (Self-Improving)
+Codex Integration:
+
+Auto-pause underperforming offers
+
+Auto-create new “combo offers” or price-match banners
+
+Run experiments (A/B test price, title, image, CTA phrasing)
+
+Future Add-ons:
+
+RL algorithm to reorder top offers dynamically
+
+Affiliate arbitrage optimizer (maximize payout via multiple links)
+
+🔐 8. Federation + API Layer (Empire-Wide Access)
+Expose secure routes:
+
+GET /api/offer-feed/search
+
+POST /api/offer-feed/sync
+
+GET /api/offer-feed/by-niche/:niche
+
+POST /api/offer-feed/trigger
+
+Federation Token System:
+
+Every neuron/module can register to receive:
+
+Live deal updates
+
+Pushed segment-specific feeds
+
+AI-prioritized best offers
+
+📘 9. README & Docs
+Must auto-generate:
+
+README_offer_feed.md
+
+Plugin format: how to add new affiliate API
+
+Offer structure, click tracking, config, backup/export, troubleshooting
+
+Real example payloads + cURL testing commands
+
+💥 Output Requirements
+Requirement	Status
+✅ No demo/stub logic	Must be real sync, real feed
+✅ Modular codebase	Plugins per API source, adapters per neuron
+✅ Federation-ready	Neurons can receive + inject offers dynamically
+✅ Admin dashboard	Required. Must be live-updating, flagging, searchable
+✅ Analytics loop	Clicks/conversions/stats stored + fed to Codex
+✅ Emotion-aware offer logic	Offers styled/adapted based on user emotion
+✅ AI Slot-Ready	Can be controlled/orchestrated via LLM prompt chaining
+
+🧬 Empire Law:
+Every new neuron, quiz, or page must get intent-mapped, emotion-matched, live feed-ready offers auto-assigned — no manual duplication or static offers allowed.
+
+🚀 Prompt Summary:
+This engine is the beating heart of empire monetization. No dead offers. No lag. No manual config.
+Every offer = dynamic, AI-curated, real-time personalized, and globally federated.

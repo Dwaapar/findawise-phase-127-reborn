@@ -1,0 +1,65 @@
+bjective: Ensure the full implementation of neuron-personal-finance as specified in the prompt. Verify if all the requirements and features from the original base prompt have been completed.
+
+Tasks:
+
+Federation OS:
+
+Have you implemented the POST /api/neuron/register with the correct metadata (name, slug, URL, features, API token)?
+
+Are the heartbeat and status POST requests being sent every 60 seconds with the required data?
+
+Have you implemented the config pull from /api/neuron/update-config and analytics reporting?
+
+UI/UX:
+
+Is the UI modular and responsive, covering the main zones (Homepage, Blog, Quizzes, Tools, Offers, etc.)?
+
+Are the emotional designs and color mappings (calm, urgency, optimism, etc.) applied to the UI components?
+
+Have you added microinteractions and A/B testing elements?
+
+Content Stack:
+
+Have you crawled 100+ authoritative financial sources and ingested top-performing funnel patterns, content, and CTAs?
+
+Are the required articles (100+), calculators (Budget Planner, Compound Interest, etc.), and quizzes (e.g., "What's Your Money Persona?") implemented?
+
+Are dynamic offers (credit cards, robo-advisors, etc.) configured for auto-rotation and tracking?
+
+AI/Personalization:
+
+Is the personalization pipeline in place to detect user archetypes (e.g., “Student on a Budget”, “Growth Investor”) based on quiz or session behavior?
+
+Are AI-driven experiments and content updates working correctly with Empire Core integration?
+
+Have you integrated the LLM-powered Financial Advisor chatbot and all its logic?
+
+Gamification:
+
+Are streak-based challenges like "Money Quest" and the "Level Up Your Wallet" funnel implemented?
+
+Are there user progress badges and leaderboards functioning correctly?
+
+Analytics, Security & Compliance:
+
+Are all user actions tracked (scrolls, clicks, quiz answers, CTA clicks, etc.) and synced with Empire Core?
+
+Have you implemented GDPR/CCPA compliance with cookie banners, privacy policies, and "erase-me" endpoints?
+
+Are affiliate compliance (proper disclosures, cloaked redirects) and error handling features in place?
+
+Self-Evolving Intelligence:
+
+Are AI-driven tasks (auto-scraping, content audits, AI-generated blog posts) working as expected?
+
+Is the cron job functionality for flagging low CTR content and pushing new experiments running smoothly?
+
+Documentation & Federation Integration:
+
+Have you updated README.md and replit.md with the correct configuration for cloning and scaling the neuron?
+
+Is the documentation clear on Federation API connections and how to specialize this neuron for new niches?
+
+Cloning, Expansion & Futureproofing:
+
+Have you ensured the neuron is scalable into future niches like neuron-credit-cards, neuron-investing-for-women with all content and logic modular?

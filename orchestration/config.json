@@ -1,0 +1,36 @@
+{
+  "isEnabled": true,
+  "confidenceThreshold": {
+    "minImpressions": 100,
+    "minCTR": 0.03,
+    "minEngagement": 0.25,
+    "minConfidence": 0.7
+  },
+  "archetype": {
+    "enabled": true,
+    "segments": [
+      "power_user",
+      "casual_browser",
+      "high_intent",
+      "price_sensitive"
+    ],
+    "confidenceThreshold": 0.65
+  },
+  "safety": {
+    "backupEnabled": true,
+    "maxChangesPerRun": 20,
+    "requireManualApproval": false,
+    "lockedConfigs": []
+  },
+  "optimization": {
+    "enableEmotionOptimization": true,
+    "enableCTAOptimization": true,
+    "enableOfferOptimization": true,
+    "enableContentOptimization": true,
+    "enableArchetypeOptimization": true
+  },
+  "scheduling": {
+    "frequency": "manual",
+    "enabled": false
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "name": "Findawise Empire - AI-Powered Intelligence Platform",
+  "short_name": "Findawise Empire",
+  "description": "Your personal AI-powered intelligence hub for finance, health, travel, security, and more. Featuring advanced quizzes, personalized recommendations, and smart notifications.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#667eea",
+  "background_color": "#ffffff",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["business", "finance", "health", "travel", "productivity", "education"],
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop-dashboard.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Findawise Empire Dashboard - Comprehensive AI intelligence hub"
+    },
+    {
+      "src": "/screenshots/mobile-quiz.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Interactive AI-powered quizzes for personalized insights"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Finance Quiz",
+      "short_name": "Finance Quiz",
+      "description": "Take the AI-powered finance personality quiz",
+      "url": "/finance/quiz",
+      "icons": [
+        {
+          "src": "/icons/shortcut-finance.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "AI Tools",
+      "short_name": "AI Tools",
+      "description": "Access powerful AI tools and calculators",
+      "url": "/ai-tools",
+      "icons": [
+        {
+          "src": "/icons/shortcut-tools.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Travel Planner",
+      "short_name": "Travel",
+      "description": "Plan your next adventure with AI assistance",
+      "url": "/travel",
+      "icons": [
+        {
+          "src": "/icons/shortcut-travel.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Health Hub",
+      "short_name": "Health",
+      "description": "Your personalized health and wellness center",
+      "url": "/health",
+      "icons": [
+        {
+          "src": "/icons/shortcut-health.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "files",
+          "accept": ["image/*", "text/*", ".pdf"]
+        }
+      ]
+    }
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+findawise",
+      "url": "/handle?url=%s"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/handle-file",
+      "accept": {
+        "text/csv": [".csv"],
+        "application/json": [".json"],
+        "text/plain": [".txt"]
+      }
+    }
+  ],
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "prefer_related_applications": false,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.findawise.empire",
+      "id": "com.findawise.empire"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/findawise-empire/id123456789"
+    }
+  ]
+}

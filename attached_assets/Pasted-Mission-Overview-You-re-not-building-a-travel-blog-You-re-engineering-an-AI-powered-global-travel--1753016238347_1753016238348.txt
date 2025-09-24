@@ -1,0 +1,145 @@
+Mission Overview:
+You’re not building a travel blog.
+You’re engineering an AI-powered global travel brain — capable of ingesting 1,000+ travel sources, surfacing ultra-premium offers, personalizing trip paths by user archetype, and evolving itself based on real-time behavior, location, season, and market demand.
+
+This neuron-travel app must combine the best of:
+
+Tripadvisor’s discovery
+
+Skyscanner’s deal intelligence
+
+Reddit’s hidden gems
+
+YouTube’s visual inspiration
+
+AI concierge logic like ChatGPT + Hopper + NomadList
+
+🧬 Federation OS (Empire Integration)
+On boot, POST to /api/neuron/register with:
+
+name, url, type, features, slug, API key
+
+Send POST /api/neuron/status every 60s with:
+
+Uptime, analytics, heartbeat, meta
+
+GET /api/neuron/update-config:
+
+Fetch latest experiment flags, dynamic offers, config
+
+POST all user/analytics events to /api/analytics/report:
+
+Pageviews, filters, bookings, scroll, quiz steps, intent signals
+
+Secure all routes via .env API key/token
+
+🎨 Ultra-Premium Travel UI/UX
+Webpack Module Federation (React) OR REST endpoint (non-React)
+
+Responsive, fast SPA with:
+
+Home, Destinations, Itinerary Builder, Budget Tools, Offer Feed, Affiliate Explorer, Quizzes, CTA Pages
+
+Emotion-mapped themes:
+
+Wanderlust, Luxury, Family, Adventure, Escape, Digital Nomad
+
+Scroll animations, microinteractions, urgency CTAs, weather-based visuals
+
+🌍 Niche Specialization: Travel
+Dynamic Content:
+Pull data from: Lonely Planet, NomadList, Expedia, Reddit r/travel, Instagram Reels, travel blogs, Skyscanner, Hopper, Airbnb, Google Flights, Pinterest
+
+Scrape top 100 sites for trends, deal formats, emotional CTAs, layouts
+
+Localize content (geo-IP + language) for traveler intent
+
+Must Include:
+📌 Destinations Stack:
+
+Trending cities, hidden gems, AI-curated collections (e.g., “Solo Europe 2025”, “Remote Islands for Writers”)
+
+📚 Articles & Guides:
+
+50+ SEO-rich articles: “Best Digital Nomad Cities,” “Visa-Free Destinations for Indians,” “Travel Hacks in 2025”
+
+🧠 Quizzes/Tools:
+
+“Where Should You Go Next?”, “Budget Itinerary Planner”, “Risk vs Comfort Persona”, “Packing List Generator”
+
+🧳 Affiliate Integration:
+
+Dynamic offer stacks from Skyscanner, Booking, Airbnb, GetYourGuide, Agoda, etc.
+
+Cloaked URLs, tracking-enabled, geo-targeted
+
+Grouped by archetype (Luxury, Budget, Adventure)
+
+🎯 Lead Capture/Gamification:
+
+Wishlist signup, email forms, surprise destination wheel, map quizzes
+
+Save trip plans, earn points/streaks, travel reward challenges
+
+🧠 Personalization, AI & Evolution
+Segment users into:
+
+Digital Nomads, Honeymooners, Budget Travelers, Adventure Seekers, Luxury Explorers, Solo Escapees
+
+Use session + quiz data + LLM inference for:
+
+Personalized offer feed
+
+Theme color + UX mood (e.g., luxury gold vs chill teal)
+
+Smart callouts (“Nearby beach retreats” / “Deals for your dates”)
+
+AI Assistants:
+Add embedded Travel AI Chatbot
+
+Plan trips, recommend places, decode visa rules, fetch real-time deals
+
+Integrate via LLM + cached travel data + orchestrator APIs
+
+Self-Evolving System:
+Auto-scrape new affiliate offers, itinerary formats
+
+Run A/B/N tests: homepage layout, CTA copy, quiz placement
+
+Cron/Orchestrator: detect outdated offers, broken links, weak engagement → flag or regenerate
+
+🔒 Compliance, Security & Export
+GDPR/CCPA compliance
+
+Affiliate disclaimer banners
+
+Dynamic cookie & data consent
+
+Error handling, downtime self-heal, fallback content
+
+📊 README + Docs (Track in Existing Files)
+Update README.md and replit.md only
+
+Project overview
+
+Setup & federation details
+
+Feature/offer logic
+
+Analytics endpoints
+
+Personalization logic
+
+What’s implemented vs pending
+
+🧪 Final Reminders:
+No hardcoded offers or destinations
+
+Everything config/modular/dynamic
+
+Every click tracked and sent to Empire Core
+
+Fully production-grade and clonable
+
+This is a micro-business in the AI web empire, not a simple site
+

@@ -1,0 +1,47 @@
+You are upgrading the Affiliate Redirect Engine to full empire-grade compliance.
+
+All outbound affiliate links must go through a /go/[affiliate_id_or_slug] server route that:
+
+Logs every click event (page, offer, timestamp, user/session/cookie/IP)
+
+Sets/refreshes all required affiliate cookies (Amazon, ShareASale, etc)
+
+Redirects via secure HTTP, never exposing real affiliate URLs in HTML or JS
+
+Adds rel="nofollow noreferrer noopener" to all rendered links
+
+Backend logging: Write every event to DB (with fallback to file/local)
+
+Admin Dashboard: /admin/affiliate-dashboard with offer stats, click logs, CSV export, visual charts
+
+GDPR/CCPA compliant consent/cookie handling
+
+Offers must be config-driven (offers.json/pages.json), dynamically rendered, and styled by emotion map
+
+All logic modular, federated, and able to send click/lead/revenue data to the empire core
+
+Add a README section for affiliate config, compliance, tracking, and analytics
+
+You MUST test for:
+
+All tracking and cookies working for every network
+
+No real URLs/IDs exposed in HTML/JS
+
+Full GDPR/CCPA compliance and SEO safety
+
+Dashboard analytics operational and exportable
+
+Do NOT summarize, stub, or skip logic. All code must be production-grade, modular, export-ready, and easily extendable.”
+
+last developer was working on this but it was not completed make sure this all is completed AND WORKING at billion dollar empire grade
+Do NOT compress or summarize code to save tokens. Output maximum quality and completeness.
+This must be robust, scalable, secure, and ready for full analytics & compliance.
+You MUST use and connect the existing codebase. This is a handoff from one Replit instance to another. Work as if you are a senior developer in a billion-dollar empire—no shortcuts, no duplications, only modular, clean execution, keep updating readme.nd file and replit.md file and everything should be tracked.
+This is a multi-module final production upgrade prompt.
+- Do NOT stop until the entire prompt is executed.
+- Do NOT leave any TODOs, placeholders, or partial logic.
+- Every module must be production-grade, fully typed, secure, and working.
+- Fix all TypeScript errors, missing types, and harden APIs.
+- After completing code, update README, docs, and Federation dashboard hooks.
+- You are not done until everything in the prompt is complete.

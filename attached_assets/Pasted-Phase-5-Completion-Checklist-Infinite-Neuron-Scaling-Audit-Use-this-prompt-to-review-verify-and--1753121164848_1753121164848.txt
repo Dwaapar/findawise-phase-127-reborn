@@ -1,0 +1,174 @@
+Phase 5 Completion Checklist — Infinite Neuron Scaling Audit
+Use this prompt to review, verify, and finalize the Scaling & Automation phase for your Neuron Federation Empire. The checklist will confirm that CLI tools, automation workflows, dashboard controls, and deployment systems are fully operational, secure, and compliant with the Phase 5 specs.
+
+🔍 Core CLI Tool Audit — findawise-cli
+✅ neuron create --niche=[vertical]
+
+ Spins up neuron from a template/config
+
+ Auto-registers neuron via /api/neuron/register
+
+ Sets up default content, offers, layout, and env config
+
+ Logs the action with timestamp and user ID
+
+✅ neuron clone --source=[existing] --niche=[new]
+
+ Duplicates content, tools, layout
+
+ Renames and re-registers new instance
+
+ Updates Federation dashboard with new ID/status
+
+✅ neuron onboard --file=neurons.csv
+
+ Onboards 10–100 neurons from config/CSV
+
+ Each is registered, booted, configured, and listed live
+
+ Supports CLI log/summary report
+
+✅ neuron retire --id=[neuronID]
+
+ Updates neuron status in core DB/API
+
+ Triggers shutdown/cleanup (config & analytics)
+
+ Logs the action with rollback timestamp
+
+✅ neuron status
+
+ Returns list of all registered neurons
+
+ Displays health, uptime, heartbeat, analytics summary
+
+ Refreshable or streamable (websocket or polling)
+
+✅ CLI must:
+
+ Be installable on Mac, Linux, Windows
+
+ Use secure API token from .env
+
+ Log all actions with RBAC/auth metadata
+
+ Provide --help or neuron --help documentation
+
+ Fail gracefully with error logs
+
+🧭 Dashboard UI — /admin/empire-launchpad
+✅ Displays:
+
+ List of all active/retired neurons
+
+ Real-time status (green = healthy, red = offline, yellow = syncing)
+
+ Federation info: last config sync, heartbeat time, traffic metrics
+
+✅ Controls:
+
+ Deploy new neuron via GUI (same as CLI)
+
+ Clone neuron visually
+
+ Push config or experiment to one or all neurons
+
+ Retire neuron from UI
+
+✅ Extras:
+
+ Neuron visual map (by niche/category)
+
+ Log viewer or export (JSON/CSV)
+
+ Live console or status updates every 5–10s
+
+📊 Monitoring & Analytics
+✅ Real-time metrics for:
+
+ Visitors per neuron
+
+ CTR/conversions per tool/offer
+
+ Error rates, uptime, config version
+
+ Config change history
+
+✅ Alert logic:
+
+ Failed config push → alert via UI/log
+
+ Neuron offline > 3 min → status change + alert
+
+ Sync/version mismatch → flagged visually
+
+✅ Export/Download:
+
+ CSV or JSON export of analytics and logs
+
+ API endpoint to fetch analytics per neuron
+
+🔐 Security, Logs, and Auditing
+✅ CLI and dashboard both:
+
+ Require secure token or JWT-based login
+
+ Log all actions to /logs/cli.log or DB
+
+ Support RBAC (admin, ops, viewer roles)
+
+ Can export logs for audit or compliance
+
+✅ Rollback:
+
+ Each neuron’s last 10 config states saved
+
+ Can roll back to previous config via CLI or dashboard
+
+📁 Documentation (MANDATORY)
+✅ README.md (Phase 5 — Empire Launchpad)
+
+ Overview of CLI and dashboard usage
+
+ Installation/setup for findawise-cli
+
+ Scaling logic (how to reach 100–1000 neurons)
+
+ Troubleshooting tips
+
+ CLI command reference + examples
+
+✅ CLI Help System
+
+ neuron --help or neuron [cmd] --help provides detailed usage
+
+ Inline descriptions for all flags/options
+
+ Failure examples and exit codes
+
+🧪 Deliverable Audit (Final Outputs)
+✅ Do you have:
+
+ Working CLI with tested create, clone, retire, status, onboard commands
+
+ Scalable /admin/empire-launchpad dashboard with full controls
+
+ Real-time monitoring and push sync to all neurons
+
+ Logs and error tracking + rollback
+
+ README and CLI docs
+
+ Deployment proof (test run with 10+ neurons in logs/screenshots)
+
+⚠️ Run This Final Check Prompt:
+diff
+Copy
+Edit
+Run Phase 5 completion audit:
+- Simulate a bulk deployment of 10+ neurons via CLI
+- Retire 2 neurons and observe status changes in dashboard
+- Push an orchestrator update to all neurons
+- Trigger a rollback for one config
+- Export logs and download analytics for 1 neuron
+- Confirm CLI logs all actions + dashboard reflects changes in <10s

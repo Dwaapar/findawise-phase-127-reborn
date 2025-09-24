@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "environment": "development",
+  "modules": [
+    "core",
+    "neurons",
+    "federation",
+    "ai-ml",
+    "security",
+    "analytics",
+    "deployment",
+    "health-monitoring",
+    "backup-recovery"
+  ],
+  "databases": {
+    "postgresql": {
+      "url": "ENV:DATABASE_URL"
+    }
+  },
+  "cloud": {
+    "providers": ["replit"],
+    "regions": ["us-east-1"]
+  },
+  "security": {
+    "encryption": true,
+    "backup": true,
+    "audit": true
+  },
+  "deployment": {
+    "strategy": "blue-green",
+    "healthChecks": [
+      "/api/health",
+      "/api/db-health",
+      "/api/deployment/health",
+      "/api/empire-hardening/health"
+    ],
+    "rollbackOnFailure": true,
+    "maxRetries": 3,
+    "timeout": 300000
+  },
+  "monitoring": {
+    "enabled": true,
+    "interval": 30000,
+    "alerting": true,
+    "healthCheckTimeout": 10000
+  },
+  "backup": {
+    "enabled": true,
+    "retentionDays": 90,
+    "autoBackup": true,
+    "schedule": "0 2 * * *"
+  }
+}

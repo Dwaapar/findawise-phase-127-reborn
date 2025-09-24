@@ -1,0 +1,74 @@
+SMART FUNNEL GENERATOR — PHASE EXECUTION PROMPT
+🏆 Objective
+Build a universal, auto-evolving funnel engine that can generate, A/B test, and optimize personalized user journeys—quiz → product/offer stack → lead capture → email/notification followup → upsell/retention—across every page, vertical, and user type in the empire.
+
+MANDATORY FEATURES
+1. Configurable Funnel Blueprints
+Allow definition of multiple funnel types per vertical/page (JSON/TS config)
+
+Example: Lead magnet quiz, content-upgrade funnel, product review → CTA, loss aversion exit flow
+
+2. Funnel Flow Engine
+Dynamically assembles funnel blocks in real time based on:
+
+User persona, quiz result, session stage, intent, or device type
+
+Offer stack, product availability, seasonal/event triggers
+
+Supports branching: Different next steps for different quiz answers, LTV segments, etc.
+
+3. Smart CTA + Offer Stack Placement
+Context-aware CTA and offer stacking logic
+
+Real-time adjustment based on page scroll, time, quiz depth, emotion map, etc.
+
+Auto-mutate funnel position/order for max conversion (hooks into Orchestrator and RLHF if present)
+
+4. Trigger & Event Logic
+Handles entry points (landing page, popup, exit intent, embedded widget, returning user, notification click)
+
+Tracks funnel journey, abandonment, and completion for every user/session
+
+5. Funnel Analytics & A/B/N Testing
+Visual funnel analytics: Drop-off, conversion, LTV, time-in-funnel, per-step stats
+
+A/B/N testing engine: Runs multiple funnel variations per audience, auto-promotes winners
+
+6. Omnichannel Lifecycle Integration
+Connects to email/push/lifecycle notification engine
+
+Auto-enrolls users into next-stage retargeting, upsell, or nurture campaigns based on funnel position
+
+7. Federation + Personalization Hooks
+Each neuron/module can define its own funnels
+
+Core can inject new funnel templates and test strategies across the entire empire
+
+8. Admin UI
+Funnel editor/visualizer at /admin/funnels
+
+Build/test/publish new funnels, view analytics, edit configs, run simulations
+
+9. Docs & Compliance
+README.md: Setup, config, best-practices, A/B testing guide, sample configs, federation usage
+
+Consent tracking: All funnel triggers/logs must respect GDPR/CCPA/email opt-out
+
+HARD RULES
+DO NOT use static, hardcoded funnel flows—must be dynamic, config-driven, and A/B/N testable
+
+All analytics, A/B data, and user journeys must log to the analytics engine and backend
+
+Funnel logic must be exportable and reusable across neurons/modules
+
+Must play nice with all other personalization, AI, and notification engines
+
+OUTPUT REQUIREMENTS
+✅ Universal funnel config schema
+✅ Modular funnel block components
+✅ Real-time dynamic funnel engine
+✅ Visual analytics + A/B/N test dashboard
+✅ Federation support
+✅ Full admin UI
+✅ Complete, step-by-step README.md with funnel templates
+

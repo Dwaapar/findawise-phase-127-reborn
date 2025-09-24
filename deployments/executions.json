@@ -1,0 +1,42 @@
+[
+  {
+    "planId": "1812951a8dab",
+    "executionId": "e1ee02b596b0",
+    "status": "failed",
+    "startTime": "2025-07-27T22:10:21.592Z",
+    "progress": 0,
+    "logs": [
+      {
+        "timestamp": "2025-07-27T22:10:21.592Z",
+        "level": "info",
+        "phase": "deployment",
+        "step": "start",
+        "message": "Starting deployment: Empire Production Deployment"
+      },
+      {
+        "timestamp": "2025-07-27T22:10:21.592Z",
+        "level": "info",
+        "phase": "validation",
+        "step": "pre-deployment",
+        "message": "Starting pre-deployment validation"
+      },
+      {
+        "timestamp": "2025-07-27T22:10:21.595Z",
+        "level": "error",
+        "phase": "deployment",
+        "step": "failed",
+        "message": "Deployment failed: Error: Pre-deployment validation failed: Error: Health check failed: http://localhost:5000/api/health"
+      }
+    ],
+    "metrics": {
+      "duration": 3,
+      "stepsFailed": 0,
+      "stepsSucceeded": 0,
+      "rollbacksExecuted": 0,
+      "downtimeMs": 0,
+      "performanceImpact": 0
+    },
+    "rollbackExecuted": false,
+    "endTime": "2025-07-27T22:10:21.595Z"
+  }
+]

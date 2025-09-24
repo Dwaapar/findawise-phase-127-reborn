@@ -1,0 +1,133 @@
+Session + Personalization Engine
+(Billion Dollar Empire Grade, NO Duplication, Hardened, Fully Integrated)
+
+🔥 MANDATORY OBJECTIVE
+You are to audit, harden, and complete the Session + Personalization Engine for the Findawise Empire.
+NO code or logic duplication allowed. Only extend, refactor, or merge what’s already present and build whatever is missing and this all should be billion dollar empire grade.`
+
+I. AUDIT & INVENTORY
+Begin by scanning all existing session/profile/user personalization code (front and backend).
+
+List:
+
+What logic exists (session, profile, journey, user data collection, personalization, segmentation, dashboard).
+
+Where partial/incomplete flows exist.
+
+What files will be updated/extended.
+
+II. SESSION ENGINE (Persistent, Cross-Device, Privacy-First)
+Persistent Session Tracking:
+
+Implement universal, privacy-compliant user IDs (cookie/JWT/localStorage/account).
+
+Persist all session/user profile data to secure backend (cloud DB, NOT local-only).
+
+On session start, always hydrate from backend (cross-device, cross-browser compatible).
+
+Data Captured:
+
+Page visits, time, clickstreams, quizzes taken, blog/article reads, offers clicked, forms filled, conversions, device info, session length, entry/exit points.
+
+“Intent fingerprint”/archetype tags (e.g., “bargain-hunter”, “DIY”, “passive-income-seeker”).
+
+Last activity timestamp, first seen, repeat visit flags.
+
+Survival Across:
+
+Browser clears, logout/login, new device, tab close/reopen.
+
+III. PERSONALIZATION ENGINE (Real-Time, Deep, AI-Ready)
+Real-Time Personalization:
+
+Dynamically adjust:
+
+Homepage hero, blog/offer modules, CTA copy, product stack, color schemes.
+
+Quiz/lead magnet placement based on user journey/archetype.
+
+Support segment-based rendering (e.g., “show exclusive offer for returning renters”).
+
+Segmentation:
+
+Auto-classify users: New, returning, high-intent, low-engagement, archetypes (use quizzes + behavior).
+
+“Personalized for You” banners, recommendations, and smart notifications.
+
+Personalization Admin Panel:
+
+/admin/session-dashboard:
+
+View, filter, search, and edit anonymized user profiles/journeys.
+
+Visualize common journeys, top archetypes, drop-off points.
+
+Export anonymized data as CSV/JSON.
+
+Edit/test personalization logic live.
+
+AI/ML Ready:
+
+Stub in hooks for future integration of AI-powered segmentation, offer ranking, user journey prediction (future).
+
+IV. PRIVACY, SECURITY, & COMPLIANCE
+GDPR/CCPA/Privacy-by-Design:
+
+Explicit opt-in/opt-out for all personalization.
+
+“Erase me” button/endpoint: wipes all user/session/profile data.
+
+Consent status saved per user and enforced everywhere.
+
+Security:
+
+RBAC for all admin/session dashboard endpoints.
+
+All session/profile API calls must check JWT + user role.
+
+Log every profile/session mutation with timestamp, module, and summary.
+
+V. FEDERATION & SYNCHRONIZATION
+API Endpoints:
+
+All neurons can call core API to:
+
+Read/write user session/profile
+
+Erase profile (with consent)
+
+Push new journey/behavior events
+
+No duplication—extend only.
+
+All modules to register session events with the Engine (quiz taken, offer clicked, article read, etc).
+
+VI. README (MANDATORY, UPDATED)
+Complete new section: “Session + Personalization Engine”
+
+What the engine does (plain English)
+
+Full API docs: session/profile endpoints, data schema
+
+Personalization/segmentation logic and samples
+
+Privacy/compliance details
+
+Federation integration guide
+
+How to extend for AI/ML
+
+Export/import instructions
+
+VII. FINAL HARDENING & VERIFICATION
+Harden all code:
+
+Edge-case handling, error logging, rate limits, input validation, security checks.
+
+DO NOT duplicate or overwrite existing working modules,upgrade them to empire grade level and add what is missing.
+
+Only add what’s missing or incomplete.
+
+If legacy/partial, merge, upgrade, and document.
+
+Go for “billion dollar, global SaaS” robustness. No unfinished flows, no shortcuts, no token-saving. Output must be modular, ready for scale, and ready for AI/ML extension.

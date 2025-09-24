@@ -1,0 +1,172 @@
+checklist
+ NEURON-HOME-SECURITY: ULTRA-DEEP AUDIT CHECKLIST
+1. 🧠 Federation OS & Core Integration
+✅ POST /api/neuron/register on boot
+Includes: name, url, type, slug, supportedFeatures, .env API token
+
+✅ POST /api/neuron/status every 60s
+Includes: uptime, heartbeat, health, analyticsSummary, errorFlags
+
+✅ GET /api/neuron/update-config
+Pulls: dynamic config, experiment flags, orchestrator commands
+
+✅ POST /api/analytics/report for all events
+Tracks: pageview, scroll, click, quiz, conversion, session, affiliate, formSubmit
+
+✅ All Federation routes secured with token from .env
+
+2. 🎨 UI/UX & Emotion Design
+✅ Modular layout system (no hardcoded pages)
+Components: Home, Quiz, Blog, Offers, Tools, Articles, Comparison
+
+✅ Mobile-first, fully responsive with QA across devices
+
+✅ Emotion mapping implemented for target archetypes
+→ Safety (blue/green), Urgency (orange/red), Trust (calm tones)
+
+✅ Microinteractions
+Hover states, scroll-triggered CTAs, trust badges, sticky offer bars
+
+✅ Multi-language support (toggle + geoIP detection)
+
+✅ A/B Test slots setup
+Hero, Quiz CTA, Offer Stack Order, Footer, Exit Popup CTA
+
+✅ Theme and font system swappable per vertical config
+
+3. 📦 Content, Offers & Product Stack
+✅ 50+ SEO-ready articles and evergreen guides
+Titles: “Best DIY Systems,” “Top 10 Camera Placements,” “Security Tips for Renters”
+
+✅ Product stack loaded via config
+Includes: Smart locks, video doorbells, sensors, monitoring bundles, apps
+
+✅ Dynamic Offer Engine
+Auto-rotate, config-driven, cloaked URLs, tracking IDs
+
+✅ Localized offers per region (US, CA, UK optional)
+
+✅ Comparison Tables for: top brands, price tiers, features
+
+✅ Offer badges: “Top Pick,” “Best Value,” “Editor’s Choice”
+
+✅ All product/offer data modular and importable from Empire Brain or CSV
+
+4. 🧪 Quiz, Tools & Funnel Logic
+✅ Setup Quiz (5–8 questions)
+Questions: Home Type, Budget, Family Size, Tech Comfort, DIY/Pro Preference
+
+✅ Persona-based Results
+Result = Archetype + Recommended Stack + CTA
+
+✅ Tools:
+
+Home Security Score
+
+Setup Cost Estimator
+
+Feature Comparison Generator
+
+Local Crime Data Checker
+
+✅ Funnel Logic
+Quiz → Results → Lead Magnet → Email → Offer → Retarget
+
+✅ Exit-intent popups + Mobile CTA capture
+
+✅ Email integration (e.g., Revue, Mailchimp, ConvertKit)
+
+5. 🤖 Personalization, AI, and Experiments
+✅ Detect archetype via quiz or session (Renter, Elderly, Parent, DIYer)
+
+✅ Swap: Color, CTA tone, Offer order, Quiz logic
+
+✅ Pull live config/experiments from Empire Brain
+
+✅ AI advisor (optional): “Help me choose” product chatbot
+
+✅ LLM used for:
+
+Content scoring
+
+CTA tone rewrites
+
+Offer recommendations
+
+✅ A/B/N Testing setup with Empire config
+Hero layout, quiz version, CTA variant, lead magnet format
+
+✅ Analytics log: interaction depth, funnel dropoff, heat points
+
+6. 🔐 Compliance, Logging & Security
+✅ GDPR/CCPA popup and consent logic
+
+✅ Affiliate disclaimers on every relevant outbound click
+
+✅ Logs for all:
+
+API failures
+
+Federation sync errors
+
+UI errors
+
+✅ Secure config/secret rotation from .env
+
+✅ All outbound affiliate clicks tracked and cloaked
+
+✅ "Erase Me" endpoint (optional) for full compliance
+
+7. 🧾 README.md & Onboarding
+✅ Auto-generated README.md with:
+
+Project overview
+
+API setup
+
+Quiz logic
+
+Offer injection
+
+Scaling/Customization
+
+✅ replit.md documents:
+
+Progress log
+
+Missing components
+
+Fix history
+
+✅ Clear guide:
+“How to clone and specialize this neuron for any vertical”
+
+8. 🔁 Auto-Evolution & Self-Healing
+✅ Auto-scraper for new content offers (weekly cron or AI agent)
+
+✅ Flag outdated content (low traffic, clickthrough, scroll depth)
+
+✅ Auto-generate new content with LLM:
+
+Articles
+
+CTA copy
+
+Quiz logic
+
+✅ Score every page/module for conversion potential
+
+✅ Auto-update modules from Empire Brain without manual push
+
+✅ All changes logged and reviewable
+
+✅ Optional: Slack/email alerts for weak offers
+
+9. 🧩 Empire Integration Ready
+✅ All features, content, modules modular + replaceable
+
+✅ Zero hardcoded URLs/data — everything uses env/config
+
+✅ Analytics and event schema matches Empire Core
+
+✅ Can be cloned into other verticals:

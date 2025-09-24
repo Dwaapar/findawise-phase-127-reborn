@@ -1,0 +1,170 @@
+PROMPT ENGINE (Billion-Dollar Empire Grade, Self-Evolving, Fully Modular)
+Objective
+Build a universal Prompt Engine that powers:
+
+Automated page/blog/quiz/article creation
+
+LLM agent task chaining and auto-scaling
+
+Dynamic prompt templating, injection, QA, and storage
+
+Full prompt lifecycle: design → test → deploy → track → optimize
+
+This engine must handle 100s–1000s of simultaneous prompt generations and updates, with AI-optimized logic and self-healing flows.
+
+1. Prompt Engine Core
+Prompt Templates:
+
+YAML/JSON/Markdown/TS support for reusable prompt blocks
+
+Prebuilt templates for pages, offers, quizzes, blog posts, tools, API requests, code snippets, agent instructions, emails, CTA, localization, SEO, etc.
+
+Placeholders for dynamic variables: {niche}, {emotion}, {persona}, {user_query}, etc.
+
+LLM Adapters:
+
+OpenAI, LocalAI, Ollama, Claude, GPT4All, custom LLMs
+
+Adapter pattern so new LLMs can be plugged in at any time
+
+Per-model prompt tuning/optimization
+
+Auto-Routing:
+
+Routes each prompt/task to best LLM/agent (fast, cheap, best quality, fallback, etc.)
+
+Batch and parallel generation, with queue and throttling
+
+2. Prompt Lifecycle Management
+Prompt Registry:
+
+Central store of all prompts/templates, with versioning and usage history
+
+CLI and Admin UI for search, update, rollback, branch, review, test
+
+Chained Prompts:
+
+Supports multi-step pipelines (e.g., summary → quiz → blog → email → CTA → SEO)
+
+Conditional logic (if/else, retries, fallback, “tree-of-thoughts” and ReAct support)
+
+Prompt QA & Review:
+
+Automated testing: runs prompts with test data, scores output quality, flags hallucinations, bias, safety issues
+
+Manual review panel (approve/reject/feedback)
+
+LLM self-improvement suggestions
+
+3. Mass Generation & Orchestration
+Page & Blog Auto-Generation:
+
+Feed topics, keywords, product lists, or entire sitemaps—auto-generate 100s of fully structured pages/blogs at once
+
+Includes interlinking, SEO, affiliate logic, emotion mapping, and content pointers
+
+Quiz/Tool/Offer Generation:
+
+Generate dynamic quizzes, calculators, comparison tables, reviews, lead magnets, etc. by just supplying product/niche config
+
+LLM Agent Task Chaining:
+
+Allows LLMs/agents to generate follow-up prompts/tasks based on user input, site analytics, or system events
+
+4. Real-Time Optimization & Analytics
+Prompt Analytics:
+
+Track which prompts/blocks drive best CTR, conversions, engagement
+
+A/B/N test different prompt variants automatically
+
+Score/grade each prompt for conversion, LLM token cost, output quality
+
+Self-Improvement:
+
+Uses empire’s analytics and feedback loops to auto-optimize prompt templates over time
+
+Flag low-performing prompts for review, auto-regenerate if needed
+
+Auto-Localization:
+
+Auto-translates prompt blocks for multi-language output
+
+Uses locale and cultural emotion maps
+
+5. Federation & Security
+API + Federation Hooks:
+
+/api/prompt/generate
+
+/api/prompt/register
+
+/api/prompt/optimize
+
+/api/prompt/review
+
+/api/prompt/batch
+
+Every neuron/module can register and query prompt templates via API, always with RBAC/JWT
+
+Secure Storage:
+
+Prompts/templates, chain graphs, and version logs encrypted and backed up
+
+6. Docs, Hardening & Export
+README:
+
+Full guide for adding/editing/testing prompts
+
+API, CLI, and UI usage
+
+Best practices for prompt design, error handling, and scalability
+
+Testing:
+
+Unit tests for all key flows: generate, optimize, rollback, chain, review, analytics
+
+E2E tests for mass content gen, chain execution, and export
+
+Export/Import:
+
+All prompts, templates, chain graphs, and QA logs are exportable/importable for backup, migration, or sharing
+
+DO THIS NOW (AI Instructions):
+Build and output the complete Prompt Engine: code, core registry, adapters, CLI/UI, all APIs, analytics, docs, test cases, and export logic
+
+If any logic already exists and is at empire grade, do NOT duplicate—upgrade only as needed
+
+If any module is missing, implement in full
+
+All prompt logic must be “self-healing,” modular, and future-proof
+
+Log every change and output a full README/usage doc
+
+No shortcuts. Every aspect must be deploy-ready, hardenable, and empire-grade
+
+If anything is already working, leave as is—otherwise, upgrade to this level
+Make all database schemas robust , tables, and logic fully self-healing, migration-immune, and bootstrappable.hardened for a working of billion dollar empire even if database migrates or any thing make the project so strong that nothing affects its intelligence , its functioning , its billion dollar empire grade.
+If DB is missing, empty, or new: auto-create schema, indexes, constraints, default config.
+Pull all credentials (Supabase, etc.) only from .env — no hardcode ever.
+No direct SQL in UI — all logic flows through hardened service/API layer.
+Add init checks: validate schema health, retry on fail, show admin alerts if broken.
+System must behave as if nothing broke — even if DB was replaced 1 minute ago.
+Run self-test and validation to confirm schema is operational
+Resilience must match billion-dollar SaaS. No placeholders. No assumptions.
+Ensure this module includes a fully provisioned, elite-grade, resilient database schema.
+All tables, indexes, constraints, relationships, and API endpoints must be:
+Migration-proof (works seamlessly across Replit accounts or environments)
+Supabase-compatible (or any Postgres DB)
+Auto-restoring (self-healing on project reboots or migrations)
+Exportable & Documented (with schema diagrams + queries)
+Ensure this module's schema, config, and logic are:
+- Auto-created if missing (ORM/init scripts required)
+- Supabase/Postgres-compatible
+- Fully decoupled from direct SQL (always use service/API layer)
+- .env-driven (no hardcoded secrets or URIs)
+- Auto-checks for healthy DB on launch, logs/alerts if issues
+- Restores cleanly on Replit account migration or DB change
+- Self-verifies all tables/indexes/relations on boot
+- Keeps 100% of module logic functioning — even if DB was just wiped and replaced
+- Must survive environment resets, forks, and project duplication

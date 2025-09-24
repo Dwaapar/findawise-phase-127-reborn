@@ -1,0 +1,122 @@
+📲 PWA / Mobile App Wrapper (Empire-Grade, Offline-First, App-Store-Ready)
+
+🎯 Objective
+Make the entire Findawise Empire installable on any device as a Progressive Web App (PWA)—with native-like UX, offline support, push notifications, background sync, and bulletproof hardening. Ready for conversion/export to App Store/Play Store if needed.
+
+1️⃣ Manifest, Service Worker, & App Shell
+- **Auto-generate web app manifest.json:**
+  - `name`, `short_name`, `description`
+  - Optimized icons (all sizes, maskable, dark/light mode)
+  - `theme_color`, `background_color`, `display: standalone`
+  - Start URL: `/`
+  - Screenshots for App Store listing
+- **Service worker:**
+  - Precaching for all core assets and pages (App Shell)
+  - Runtime caching for dynamic content (articles, offers, quizzes)
+  - Intelligent stale-while-revalidate logic for fast loads + live updates
+  - Versioned SW updates with user prompt (“New version available, update?”)
+  - Full offline fallback—renders branded offline page if network drops
+  - Background sync for form submissions, quiz results, lead data
+
+2️⃣ Mobile UX & Native Features
+- **Mobile-optimized responsive design**
+  - Fluid grid, touch targets, swipes, scroll, bottom nav
+- **Add-to-Home-Screen triggers:**
+  - Smart in-app banners, device-aware (iOS, Android, desktop)
+  - Support for iOS/Safari quirks (manual instructions if needed)
+- **Splash screen, startup animation, deep link support**
+  - Custom splash for brand consistency
+  - Handle `/app` and deep links into specific empire pages/offers
+- **Mobile permissions:**
+  - Securely request and store notification/email opt-ins
+  - Explain to user why/what is used (“We use notifications for security alerts and new offers”)
+
+3️⃣ Offline & Sync Intelligence
+- **Offline-first engine:**
+  - All articles, quizzes, offers, and config cached in IndexedDB/localStorage
+  - Changes/data sync automatically when connection returns
+- **Background sync:**
+  - Lead forms, quiz responses, feedback, purchase attempts stored offline and synced up on reconnect (with user alerts/logs)
+- **“Offline mode” badge + toast alerts**
+  - Show user when they go offline/online
+- **Automatic failover:**
+  - If primary region/network fails, try alternate endpoints for offers, blogs
+
+4️⃣ Push Notifications & Updates
+- **Native push notification integration (Web Push API):**
+  - User opt-in flow
+  - Personalized notifications (offers, security, updates, reminders)
+  - Segmentation by user archetype/quiz, favorites, region
+- **Silent push for SW/app updates**
+- **Fallback to email if push is denied/unsupported**
+
+5️⃣ Security, Compliance, & SEO
+- **SSL required for all PWA features**
+- **JWT-auth for any sensitive background fetches**
+- **Only cache public, non-PII content for offline**
+- **Full privacy/consent modal for notifications, offline data, PWA installs**
+- **SEO:**
+  - Pre-render key pages
+  - Add `<meta name="theme-color">`, app manifests, schema.org for installable status
+
+6️⃣ Hardening & Edge Cases
+- **App health checker:**
+  - Detect broken cache, corrupted storage, failed background sync, outdated SW
+  - Prompt user to refresh/fix if needed (auto-repair flows)
+- **Migration-safe data storage:**
+  - Store versioned user activity, quizzes, leads locally for cross-migration
+  - Export/import all PWA storage on user request
+- **Multiple device handling:**
+  - Smart sync of last state/session/profile between mobile and web
+
+7️⃣ Admin/Test Mode
+- **Admin can simulate:**
+  - Offline mode, cache updates, SW push
+  - New version rollouts (force SW update for test)
+  - Notification delivery to user segments
+
+8️⃣ README & Docs
+- **README must include:**
+  - Manifest structure, SW logic, caching strategies, update flows
+  - Offline-first design, data sync
+  - Push setup, mobile UX guidelines
+  - App store listing/export instructions (for Play Store/PWA2APK etc.)
+  - Full test plan for edge cases (offline, corrupt cache, install, multi-device)
+
+Database schema is provisioned automatically if missing, using init scripts or ORM logic
+
+Supabase credentials are always pulled from environment variables (SUPABASE_URL, SUPABASE_KEY, etc.)
+
+If the database is empty, the system must auto-bootstrap:
+
+Create all required tables (offers, offer_logs, adapter_states, etc.)
+
+Seed initial configuration, indexes, and constraints
+
+Run self-test and validation to confirm schema is operational
+
+No business logic should assume pre-existing data — must check and create if missing
+
+All reads/writes must pass through the API/service layer — never direct SQL calls in UI logic
+
+On Replit migration, system should detect missing DB/env config and show a one-click setup assistant or fallback warning
+
+On launch, engine should verify:
+
+Supabase credentials are live
+
+Tables exist and are healthy
+
+Offer imports, cron jobs, and cache logic are functioning
+
+All failures must be logged, retried, and alerted via admin UI or logs
+
+---
+
+**DO THIS NOW:**  
+- Never duplicate existing PWA logic; upgrade if exists, create if missing.
+- Harden all logic and edge cases for “never-break” behavior.
+- Integrate everything with empire config, offers, quizzes, and analytics.
+- Output all code, manifest, SW, push logic, UX, and the full README.
+
+---

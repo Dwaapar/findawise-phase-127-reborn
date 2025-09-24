@@ -1,0 +1,158 @@
+{
+  "name": "Findawise Empire - Neuron Federation",
+  "short_name": "Findawise Empire",
+  "description": "Billion-dollar enterprise intelligence platform with AI-powered personalization, affiliate management, and multi-vertical content optimization.",
+  "start_url": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "theme_color": "#1e40af",
+  "background_color": "#ffffff",
+  "categories": ["business", "productivity", "finance", "health"],
+  "lang": "en-US",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "dir": "ltr",
+  "protocol_handlers": [
+    {
+      "protocol": "web+findawise",
+      "url": "/app?url=%s"
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "shortcuts": [
+    {
+      "name": "Finance Tools",
+      "short_name": "Finance",
+      "description": "Personal finance calculators and tools",
+      "url": "/finance",
+      "icons": [
+        {
+          "src": "/icons/finance-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Health & Wellness",
+      "short_name": "Health",
+      "description": "Health tracking and wellness tools",
+      "url": "/health",
+      "icons": [
+        {
+          "src": "/icons/health-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "SaaS Tools",
+      "short_name": "SaaS",
+      "description": "Software recommendations and comparisons",
+      "url": "/saas",
+      "icons": [
+        {
+          "src": "/icons/saas-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Admin Dashboard",
+      "short_name": "Admin",
+      "description": "Empire administration and analytics",
+      "url": "/admin",
+      "icons": [
+        {
+          "src": "/icons/admin-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop-screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Findawise Empire Dashboard - Full view of the enterprise intelligence platform"
+    },
+    {
+      "src": "/screenshots/mobile-screenshot1.png",
+      "sizes": "414x896",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile finance tools - Easy access to calculators and insights"
+    },
+    {
+      "src": "/screenshots/mobile-screenshot2.png",
+      "sizes": "414x896",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Health tracking interface - Comprehensive wellness monitoring"
+    }
+  ]
+}

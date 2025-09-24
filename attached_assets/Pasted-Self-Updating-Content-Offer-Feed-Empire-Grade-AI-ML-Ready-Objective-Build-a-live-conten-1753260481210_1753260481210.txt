@@ -1,0 +1,75 @@
+Self-Updating Content & Offer Feed (Empire-Grade, AI/ML-Ready)
+
+🎯 Objective:
+Build a live content/offer ingestion and update engine that:
+- Pulls offers, deals, blog content, reviews, and product data from 3rd-party APIs (Amazon PA, CJ, Awin, SaaS, partner feeds)
+- Auto-updates the empire’s site/app with latest prices, availability, coupons, ratings, etc.
+- Cleans, deduplicates, and ranks data for each niche/neuron
+- Supports manual override and LLM-powered enrichment
+
+---
+
+🔩 1. Affiliate/API Ingestion Layer
+- Modular “connector” system for:
+    - Amazon Product Advertising API (official)
+    - CJ Affiliate, Rakuten, Awin, Partnerize, Impact, SaaS feeds (REST, GraphQL, XML, CSV, Scraping)
+    - News/blog/article feeds (RSS, API, web scraper)
+- Each connector handles:
+    - Auth, rate limiting, error/retry, logging
+    - Normalizes all data to master Offer/Content schema
+- Pluggable for new networks/APIs at any time
+
+---
+
+⚡️ 2. Auto-Refresh & Change Detection
+- Scheduled polling (cron, on-demand, webhook) — fetches latest data per vertical/niche
+- Detects new, updated, or expired offers/content
+- Removes/flags expired or out-of-stock items instantly
+- Auto-notifies admin + triggers in-app/push/email alerts for major changes
+
+---
+
+🧠 3. Content/Offer Enrichment & Ranking
+- Auto-enriches data:
+    - LLM auto-generates descriptions, review blurbs, FAQ, comparison bullets, SEO meta
+    - Scrapes/reviews ratings, price drops, trending tags
+    - Flags “low quality” or duplicate offers/content
+- Ranks/filters by performance (CTR, conversion, AI/ML score), freshness, compliance
+
+---
+
+📈 4. Live Rendering & Federation
+- Dynamically injects latest offers/content into relevant pages/neurons via federation API/config sync
+- Real-time update hooks for blog, offer, comparison, and product pages
+- Supports per-user personalization (offer stack adapts to user intent/quiz/segment/archetype)
+
+---
+
+🔗 5. Admin Dashboard & Manual Control
+- /admin/offer-feed-dashboard:
+    - View/import/override all offers/content per vertical/niche
+    - Manual curation/priority/banlist
+    - Trigger refresh, roll back, see update logs, API status, change diffs
+    - Export feed data for analytics, compliance, partners
+
+---
+
+🔐 6. Compliance, Security & Error Handling
+- All API keys/tokens stored in env vars/secrets, never hardcoded
+- GDPR/CCPA: remove on request, purge data, consent for personalized offers
+- Rate limiting, exponential backoff, and monitoring of all external API calls
+
+---
+
+📘 7. README (MANDATORY)
+- Full docs: connecting APIs, scheduling refresh, manual overrides, analytics, export/import, error handling, scaling
+- Sample connector code, data schema, logs
+
+---
+
+💥 Output Requirements:
+- Live, testable API connectors, update logic, admin UI, federation hooks, logs, README
+- No stubs, no “example-only”—real working ingestion and refresh for at least 1 affiliate API and 1 content feed
+- Modular, scalable, auto-export/import for new verticals
+
+DO THIS NOW.

@@ -1,0 +1,155 @@
+You are creating a living, breathing, AI-powered digital organism — a Neuron in the Findawise Empire Brain — codenamed:
+
+🧠 neuron-software-saas
+
+This is not a basic website. It is an autonomous SaaS recommendation engine, interactive advisor, and affiliate revenue bot — engineered to dominate the Software & SaaS market globally.
+
+🎯 Your Greater Mission:
+You are executing Phase 2 of the Neuron Federation Bridge — where modular AI-powered apps (neurons) independently evolve, optimize, monetize, and sync to the Empire Brain.
+
+This Neuron will:
+
+Crawl 100+ SaaS/productivity websites (ProductHunt, Capterra, SaaSworthy, Reddit, G2, Hacker News)
+
+Analyze UI, pricing logic, CTA styles, quiz flows, and affiliate stack patterns
+
+Create ultra-premium, emotion-mapped, mobile-first, billionaire-grade experiences
+
+Integrate 50+ components: quizzes, calculators, reviews, comparisons, CTAs, lead magnets, gamification, dynamic offer carousels
+
+Sync with the Empire Core for config, analytics, AI decisions, and global scaling
+
+🛠️ Build Instructions (Replit AI Agent)
+DO NOT summarize or simplify — output complete modules
+
+As you work, log tasks in README.md and replit.md
+
+Crawl, ingest, and replicate best practices from top SaaS sites
+
+Pull UI patterns, emotion mapping, gamification logic, and funnel structures
+
+Output only modular, production-ready components
+
+🔗 MANDATORY Federation OS Features:
+POST /api/neuron/register on boot: includes name, url, type, features, slug, .env token
+
+POST /api/neuron/status every 60s: uptime, health, analytics heartbeat
+
+GET /api/neuron/update-config: experiment updates, AI config, orchestrator commands
+
+POST /api/analytics/report: all events (pageviews, clicks, quizzes, offers, session meta)
+
+Secure ALL endpoints using .env API key/token
+
+Logs & errors sent to /logs, with retry/fallback logic
+
+🔮 Emotion-Based UI/UX Engine
+Webpack Module Federation (React) or REST/gRPC endpoints
+
+Fully modular, mobile-first, and responsive layout
+
+Themes based on emotion/intent:
+
+“Urgent Buyer” → FOMO timers, sharp CTAs
+
+“Freelancer” → calm, customizable tool bundles
+
+“Startup CTO” → comparison tables, enterprise features
+
+Pixel-perfect UI: Home, Blog, Offers, Tool Pages, Comparison, Quizzes, Pricing, Landing, Thank You, 404
+
+💼 Content Stack: Software + SaaS
+50–100+ articles: “Best CRM for Startups,” “Top AI Tools,” “ClickUp vs Notion,” “Affordable SaaS for Solopreneurs”
+
+Dynamic Product Tables: Pricing, Rating, Tags, Feature Badges, Filters
+
+Offer types:
+
+CRM, Time Tracking, AI Tools, SEO, Team Chat, Billing, Analytics
+
+Affiliate metadata (auto-rotate, UTM sync, cloaked URLs)
+
+🎮 Feature Modules & Gamification
+Quiz: “What’s Your Perfect SaaS Stack?” → result: Airtable + Zapier + Notion
+
+ROI Calculator, Churn Calculator, Cost Estimator
+
+SaaS Stack Builder (drag & drop → downloadable plan)
+
+Product Carousel (Top tools by intent)
+
+Battle Cards: “ClickUp vs Trello” → votes, AI summary, winner badge
+
+Live Deal Zone: countdowns, best offers this week
+
+Offer of the Day: dynamic, Empire-driven
+
+Scoreboard & badges for top-performing tools
+
+🧠 AI Personalization + Orchestration
+Detect archetypes:
+
+“Startup CTO,” “Solo Freelancer,” “Bootstrapped Marketer,” “Agency Ops”
+
+Dynamically change:
+
+Offer order, themes, copy tone, funnel CTA
+
+AI-driven experiments:
+
+Reorder tools by conversion
+
+Auto-generate new articles
+
+Flag outdated blogs, dead offers
+
+Self-healing logic if config/API fails
+
+📊 Analytics, Export, & Compliance
+Track all events → /api/analytics/report
+
+Backup/export: analytics, content, logs, offer config
+
+GDPR/CCPA banners, privacy policy, consent buttons
+
+Cookie handling, affiliate disclaimers
+
+“Erase Me” API
+
+📚 README + Replit Logs
+Auto-generate README.md with:
+
+Overview, Setup, Federation, Features, Analytics, Experiments, Scaling
+
+How to replicate for other SaaS categories (e.g., neuron-crm, neuron-ai-tools)
+
+replit.md must track all major changes, missing modules, TODOs, errors
+
+🧬 Self-Evolution Logic (Empire-Synced)
+Auto-scraper for SaaS launches (e.g., ProductHunt API)
+
+LLM content generator:
+
+New blog posts
+
+Updated quiz logic
+
+Variant CTA copy
+
+Self-audit cron:
+
+Remove tools with low conversion
+
+Flag old blogs without updates
+
+Orchestrator pulls: A/B tests, new config, copy suggestions
+
+🧠 FINAL DIRECTIVE
+Treat this as a modular revenue-producing startup in a box — not just a frontend page.
+This Neuron must self-improve, self-analyze, and self-optimize — every user, every session, every click.
+
+No filler.
+No shortcuts.
+No generic templates.
+
+You are building a Billion-Dollar-Grade AI SaaS Advisor Engine — a flagship Neuron in the Findawise Empire Federation.

@@ -1,0 +1,123 @@
+You are performing a full compliance audit of the neuron-education micro-app to confirm that it meets all federation, AI, modularity, analytics, and monetization requirements specified in the neuron prompt.
+
+Check and confirm that each of the following is fully implemented and functional:
+
+🔁 Federation Protocols
+ /api/neuron/register fires on boot with proper metadata
+
+ /api/neuron/status sends heartbeat every 60s with uptime, health, and usage
+
+ /api/neuron/update-config hot-loads config, experiments, themes, scaling rules
+
+ /api/analytics/report logs every quiz, click, scroll, session, offer interaction
+
+ All routes secured with API token via .env
+
+🧩 Core Modules
+ QuizEngine.tsx — quiz flow, result logic, scoring, redirect to personalized offers
+
+ ConfigSync.ts — pulls latest config from orchestrator and hot-applies it
+
+ AnalyticsClient.ts — emits frontend + backend analytics events to Empire Core
+
+ ContentFetcher.ts — scrapes or pulls blog/tutorial content dynamically
+
+ OfferLoader.ts — loads dynamic or config-based affiliate offers
+
+ ArchetypeEngine.ts — segments users into types and adapts UI/UX
+
+ AIAssistant.tsx — functional AI tutor embedded on key pages
+
+🧠 AI Personalization & Evolution
+ A/B testing engine for layout, offer order, CTA logic
+
+ LLM-powered tutor is working and routes questions by category
+
+ Auto content generation is active and storing .md or .json content
+
+ Underperformance rollback logic works (detects high bounce/low CTR and reverts)
+
+ Config is updated via orchestrator dynamically (not hardcoded)
+
+🧱 Content Structure
+ Offers stored in offers.json or loaded via config/API
+
+ Articles in content/articles/*.md or MDX (not hardcoded)
+
+ Tools live in tools/ and are modular (e.g., course finder, timers)
+
+ Quizzes defined in quizzes/config.json and handled by QuizEngine.tsx
+
+🔐 Affiliate Logic
+ All affiliate URLs are cloaked via /redirect?offer=xyz
+
+ Clicks tracked via /api/analytics/report
+
+ Auto-rotation logic based on CTR or payout works correctly
+
+🎓 Niche Content Implementation
+ 100+ SEO articles/blogs added or available via auto-import
+
+ Product stack includes at least: Coursera, Udemy, Skillshare, Language tools
+
+ Lead magnets (eBooks, planners, checklists) are downloadable or gated
+
+ Quizzes like “What’s Your Study Style?” are functional and personalized
+
+🎨 Emotion-Mapped UI Modes
+ Empower (career-focused theme)
+
+ Curious (discovery-driven layout)
+
+ Disciplined (minimal exam-style UX)
+
+ Theme switches based on archetype or session data
+
+🎮 Gamification Systems
+ XP and streak tracker implemented
+
+ Leaderboards (even if basic/local)
+
+ Brain quests system works (multi-task daily goals)
+
+ Rewards engine functions for unlocking discounts/guides
+
+🧾 Export / Import
+ Config is exportable to .neuron.json
+
+ Content, offers, quizzes can be re-imported via /api/neuron/load-config or local load
+
+📈 Analytics & Auto-Healing
+ Scrolls, clicks, time-on-page, quiz results are tracked
+
+ Self-healing logic works:
+
+ CTR drop triggers rollback
+
+ API failure detection
+
+ Slow LCP detection and flag
+
+ Thresholds configurable via update-config
+
+📚 README.md & REPLIT.md
+ README and REPLIT.md were updated (not duplicated)
+
+ Docs include:
+
+ Setup instructions
+
+ Federation logic
+
+ Scaling guide (e.g., neuron-testprep)
+
+ AI architecture map
+
+ Config/offer/article import logic
+
+🧪 Final Verifications
+ No hardcoded URLs, tokens, content, or offers
+
+ All logic controlled via .env, config.json, offers.json, quizzes/*.json
+
+ All modules are pluggable, trackable, and compliant with Empire standard

@@ -1,0 +1,136 @@
+AUDIT PROMPT: Federation Compliance & Feature Completion for neuron-ai-tools
+You are now reviewing the neuron-ai-tools micro-app for full compliance with the Findawise Federation Architecture and feature requirements. Verify the following checkboxes are fully implemented, secure, and operational. For each item, return ✅ if complete, ❌ if missing, and 🟡 if partial or needs review.
+
+⚙️ Federation Core Protocols
+✅ POST /api/neuron/register fires on boot with correct metadata and token
+
+✅ POST /api/neuron/status fires every 60s with health, uptime, analytics snapshot
+
+✅ GET /api/neuron/update-config correctly pulls orchestrator config and applies updates
+
+✅ POST /api/analytics/report logs all key events (clicks, sessions, quiz, offer, scroll, conversions)
+
+✅ All federation routes secured via .env API token (no hardcoded tokens)
+
+📦 Modular File System & Features
+✅ QuizEngine.tsx handles AI tool recommendation quiz with redirect + scoring
+
+✅ OfferManager.ts renders dynamic, cloaked affiliate offers (rotating via config/CTR)
+
+✅ AnalyticsClient.ts captures and reports frontend events
+
+✅ ConfigSync.ts hot-loads config from orchestrator endpoint
+
+✅ ToolDirectory.tsx dynamically filters and displays AI tools
+
+✅ SelfEvolveAgent.ts handles A/B testing, rollback logic, and experiment injection
+
+✅ LeadMagnetFlow.tsx captures leads via gated content (PDFs, toolkits, templates)
+
+✅ ExportManager.ts allows export of config + content into .neuron.json
+
+🧠 AI + Personalization
+✅ User archetypes are detected and stored (e.g., Creator, Explorer, Researcher)
+
+✅ Quiz results + past sessions feed into tool recommendations
+
+✅ Emotion-mapped UI adjusts per archetype (layout, theme, CTA tone)
+
+✅ AI generates or curates new blog/tutorial content (OpenAI or internal agent)
+
+✅ Offers are personalized or reordered via orchestrator experiment rules
+
+🔄 Self-Evolving Logic
+✅ A/B testing engine adjusts hero layouts, offer order, CTAs based on data
+
+✅ Underperforming content (CTR < threshold) triggers auto-removal or demotion
+
+✅ Fallback triggers fire if:
+
+API failure > 2x in 1 min
+
+CTR drops > 40% in 3 hrs
+
+Offer click rate < 0.5%
+
+✅ SelfEvolveAgent logs recovery events and syncs to orchestrator
+
+💰 Affiliate Offer System
+✅ Offers are pulled from offers.json or API
+
+✅ All links are cloaked via /redirect?offer=xyz
+
+✅ Clicks/conversions tracked via /api/analytics/report
+
+✅ Offers are auto-rotated based on performance (CTR or payout)
+
+📚 Content Stack
+✅ 100+ tools listed with fields: name, platform, category, price, features, rating
+
+✅ 50+ SEO-focused blog posts/articles on AI tools, use cases, guides
+
+✅ Tool comparison tables, carousels, and filter modules implemented
+
+✅ Content is served from Markdown, CMS, or .json directory structure
+
+🧱 Scalability & Modularity
+✅ Fully cloneable into related niches (neuron-prompts, neuron-ai-design, etc.)
+
+✅ No hardcoded values (all config/env driven)
+
+✅ Config and offers are modular, replaceable without code changes
+
+✅ README.md documents how to extend and scale the app
+
+📈 Analytics + Logs
+✅ All pages, scrolls, clicks, form fills are logged
+
+✅ Logs are synced and exportable
+
+✅ Self-healing logic activates on anomaly detection
+
+✅ Performance metrics (LCP, bounce, time on page) are tracked
+
+📜 README & Documentation
+✅ README.md is updated with project purpose, module map, federation logic
+
+✅ replit.md includes local setup, endpoints, federation sync logic
+
+✅ No new README files created — existing ones updated only
+
+✅ Includes guide for cloning and customizing for other verticals
+
+🔐 Compliance & Security
+✅ API keys and tokens stored securely in .env
+
+✅ GDPR/CCPA banners and cookie tracking (where applicable)
+
+✅ All outbound links include affiliate disclaimers
+
+✅ Option for user to opt-out of AI personalization (if required by region)
+
+📤 Export / Import Support
+✅ Offers, config, and analytics exportable in .neuron.json
+
+✅ Ability to reload config locally or via /api/neuron/load-config
+
+✅ Auto-backup logic available for offers, content, and user session states
+
+Return a JSON-like result like this:
+
+json
+Copy
+Edit
+{
+  "Federation_Protocols": "✅",
+  "Modular_Features": "✅",
+  "AI_Personalization": "✅",
+  "Self_Evolving": "✅",
+  "Affiliate_System": "✅",
+  "Content_Stack": "✅",
+  "Scalability": "✅",
+  "Analytics": "✅",
+  "Documentation": "✅",
+  "Compliance": "🟡 (GDPR handling needs confirmation)",
+  "Export_Import": "✅"
+}

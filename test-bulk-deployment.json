@@ -1,0 +1,62 @@
+{
+  "deployment": {
+    "name": "Phase 5 Audit Test Deployment",
+    "description": "Testing bulk deployment for Phase 5 completion audit",
+    "concurrent": 3,
+    "timeout": 300,
+    "retry_attempts": 2,
+    "failure_threshold": 20
+  },
+  "neurons": [
+    {
+      "template": "finance-calculator",
+      "name": "Test Finance Hub 1",
+      "niche": "finance",
+      "subdomain": "test-finance-1",
+      "customization": {
+        "primaryColor": "#2563eb",
+        "features": ["calculator", "quiz", "recommendations"]
+      }
+    },
+    {
+      "template": "health-wellness",
+      "name": "Test Health Tracker 1", 
+      "niche": "health",
+      "subdomain": "test-health-1",
+      "customization": {
+        "primaryColor": "#059669",
+        "features": ["assessment", "tracking", "tips"]
+      }
+    },
+    {
+      "template": "saas-directory",
+      "name": "Test SaaS Hub 1",
+      "niche": "saas", 
+      "subdomain": "test-saas-1",
+      "customization": {
+        "primaryColor": "#7c3aed",
+        "features": ["directory", "comparisons", "reviews"]
+      }
+    },
+    {
+      "template": "education-platform",
+      "name": "Test Education Platform 1",
+      "niche": "education",
+      "subdomain": "test-edu-1",
+      "customization": {
+        "primaryColor": "#dc2626",
+        "features": ["courses", "quizzes", "progress"]
+      }
+    },
+    {
+      "template": "api-data-processor",
+      "name": "Test Data Processor 1",
+      "niche": "data",
+      "subdomain": "test-data-1",
+      "customization": {
+        "primaryColor": "#0891b2",
+        "features": ["etl", "api", "analytics"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+1. Project Context:
+This is part of the Neuron Federation Bridge, a strategic rollout of 100s of modular, living digital micro-apps across niches.
+
+You’re building:
+neuron-health-and-wellness
+A self-evolving, emotion-mapped, ultra-modern micro-application designed to dominate the global health & wellness niche.
+
+This neuron will:
+
+Auto-scale across content verticals (diet, sleep, mental health, fitness, etc.)
+
+Update in real-time based on AI-powered insights
+
+Sync with the Findawise Empire Brain for personalization, experimentation, and revenue optimization.
+
+🔁 2. Federation OS (Empire Core Sync)
+Boot Phase:
+
+POST /api/neuron/register with:
+
+name, slug, type, url, supported_features, token (from .env)
+
+Schedule POST /api/neuron/status every 60s with:
+
+heartbeat, uptime, CPU/mem usage, user sessions, error logs
+
+Live Config Sync:
+
+GET /api/neuron/update-config pulls:
+
+Orchestration commands
+
+Feature toggles
+
+Experiment definitions
+
+LLM prompt injection rules
+
+Analytics:
+
+POST /api/analytics/report on:
+
+Page load, scroll depth, tool usage, quiz input/output
+
+CTA clicks, form submits, affiliate conversions
+
+Session archetype detection + confidence score
+
+Security:
+
+All routes protected by API token + rate limit rules
+
+🎨 3. Mastercrafted UI/UX
+Built as Webpack Module Federation remote or REST/gRPC (non-React)
+
+Design logic:
+
+Emotion → Theme
+
+Calm → Sleep/Meditation
+
+Energetic → Fitness
+
+Trustworthy → Mental Health
+
+Playful → Quizzes, gamified tools
+
+Microinteractions:
+
+Scroll parallax, animated metrics, “urgency banners,” fluid transitions
+
+Color modes + archetype overlays (dark/light/calm/safety)
+
+📚 4. Content & Offer Engine
+Crawl + ingest 100+ sources:
+
+Primary: Healthline, WebMD, Mayo Clinic, MyFitnessPal, PubMed
+
+Secondary: YouTube influencers (e.g., Dr. Berg, Huberman), Reddit, WHO
+
+Curate: Do not copy. Use as reference for:
+
+CTA patterns, tool ideas, affiliate funnels
+
+Include:
+
+100+ articles (LLM generated or edited, not scraped)
+
+20+ lead magnets: trackers, ebooks, diet plans, wellness checklists
+
+Dynamic offer stack: supplements, wearables, apps
+
+Auto-rotate via config
+
+Geo/intent-based routing
+
+Cloaked tracking URLs
+
+🧠 5. Personalization & AI Logic
+User Archetypes:
+
+“The Sleepless Pro”
+
+“The Diet Starter”
+
+“The Overwhelmed Parent”
+
+“The Biohacker”
+
+Personalization Pipeline:
+
+Archetype detected from quiz OR session behavior
+
+All CTAs, colors, tools, offers, language adapt instantly
+
+Content block selection = based on past behavior + segment + AI Orchestrator input
+
+LLM Functions:
+
+Generate articles (triggered weekly if content count < config threshold)
+
+Suggest new quizzes, re-order funnel if conversion score < threshold
+
+Validate quiz complexity based on user exit rate
+
+Auto-scraper tasks (cron):
+
+Weekly ingestion of:
+
+Top 20 trending health search terms (via Google Trends/YT/Reddit)
+
+New affiliate offers
+
+Tool feature requests from Reddit threads
+
+Self-healing:
+
+Content with bounce rate > X triggers:
+
+Alert + AI-enhanced rewrite (auto-pull in references)
+
+🛠️ 6. Tools, Quizzes, & Gamification
+Quizzes:
+
+“Which Wellness Persona Are You?”
+
+“Best Diet for You”
+
+“Your Personalized Sleep Plan”
+
+Results = Archetype + Score + Offers + Suggested Trackers
+
+Calculators/Tools:
+
+BMI, BMR, Sleep Debt, Daily Calorie Target, Water Intake, Supplement Stack Recommender
+
+Each stores session + emits analytics
+
+Tools are emotion-mapped:
+
+BMI = trust
+
+Sleep = calm
+
+Fitness = action
+
+Gamification:
+
+Daily quest cards (hydration, journaling, sleep goal)
+
+XP + streaks + virtual wellness points
+
+Optional: share streak to get bonus ebook/discount
+
+Leaderboard (opt-in)
+
+📊 7. Analytics, Experiments, A/B
+POST /api/analytics/report:
+
+Tool opened → Output generated → CTA clicked
+
+Quiz started → Answer path → Funnel exit point
+
+Scroll depth on blog → Exit intent detection
+
+Empire Core runs:
+
+A/B/N:
+
+Hero CTA text
+
+Quiz start phrasing
+
+Offer stacks
+
+Form layouts
+
+Tracks:
+
+Conversion per archetype
+
+Abandoned quiz rate
+
+Time-on-tool vs engagement
+
+🛡️ 8. Security, Compliance, Logs
+Consent banner (multi-language)
+
+Cookie + affiliate disclaimers
+
+API tokens = dynamic via .env
+
+GDPR opt-out (“Erase Me” support)
+
+All errors logged to /logs + exported to Core
+
+Uptime monitor with automatic fallback config
+
+📦 9. README.md & replit.md (Documentation Sync)
+Must update, not overwrite or create new files
+
+Add:
+
+Project name, slug, type
+
+Federation endpoints status
+
+Analytics tracking map
+
+Tool behavior and inputs/outputs
+
+Customization instructions (colors, tools, offers)
+
+What’s done ✅, what’s pending 🛠️
+
+🧠 10. Scaling Strategy
+Use archetypes to create 50–200 emotion-adaptive pages:
+
+Pages auto-generated per persona (calm, energetic, sleep-focused, etc.)
+
+Each quiz output → new page (funnel pages)
+
+Cloning logic:
+
+This base neuron → neuron-diet-plans, neuron-fitness-beginners, neuron-sleep-optimizer
+
+All sub-pages use central federation sync
+
+Every tool, blog, quiz = its own versioned module
+
+✅ FINAL CHECKLIST (for prompt execution)
+Area	Task
+Federation	Register neuron, status sync, config pull, analytics push
+Content Engine	100+ guides, 3+ lead magnets, LLM content generation & scraper setup
+UI/UX	Mastercrafted layout, emotion-mapped UI, responsive + fast
+Tools & Quizzes	5+ tools, 3+ quizzes, all integrated with session tracking + AI output
+Gamification	Daily quests, streak tracking, reward logic, share-to-unlock
+AI Personalization	Detect archetype, change layout/offer stack/CTA, AI rewrites
+Analytics	Track everything: quiz path, tool use, exit intent, session flow
+Experiments	A/B test Hero, CTAs, offers, funnel flows
+Compliance	GDPR/CCPA, cookie + affiliate disclaimers, erase-me endpoint
+README/REPLIT	Update both files with all new features, config logic, pending TODOs
+Scaling Logic	Auto-cloning structure per persona/niche + Federation Core control

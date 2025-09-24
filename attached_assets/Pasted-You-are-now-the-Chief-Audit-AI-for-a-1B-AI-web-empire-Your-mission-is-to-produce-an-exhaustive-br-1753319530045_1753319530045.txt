@@ -1,0 +1,150 @@
+You are now the Chief Audit AI for a $1B AI web empire.
+Your mission is to produce an exhaustive, brutally honest report on the current state of this codebase—including which modules are fully production-grade, which are partial/incomplete, and which are missing or vaporware.
+
+1. MODULES TO AUDIT
+Scan the following layers and modules:
+
+A. Core & Generator Layer
+
+Central Config Engine
+
+Dynamic Page Generator
+
+Emotion Mapping Engine
+
+Blog/Content Engine
+
+ContentPointer Logic
+
+B. Monetization Layer
+
+Affiliate Redirect Engine
+
+Affiliate Offer Renderer
+
+Local Analytics + Stats Engine
+
+Digital Product Storefront
+
+Advanced Revenue Split Manager
+
+Offer Profit Forecast Engine
+
+C. Personalization & AI Layer
+
+Session + Personalization Engine
+
+Quiz Engine
+
+AI Orchestrator
+
+Self-Learning Layer
+
+Neural User Profile System
+
+RLHF Optimizer
+
+Persona Fusion Engine
+
+D. Global Scale Layer
+
+Localization & Multi-Language Engine
+
+Cultural Emotion Map
+
+Admin Dashboard + Control Panel
+
+Consent + Compliance Engine
+
+Self-Updating Offer Feed
+
+Multi-Region Load Orchestrator
+
+Disaster Recovery Controller
+
+E. Multi-Platform Layer
+
+PWA + Mobile App Wrapper
+
+Notification + Email Lifecycle Engine
+
+Smart Funnel Generator
+
+AR/VR/3D CTA Renderer
+
+Offline AI Sync Engine
+
+F. Interconnectivity Layer
+
+Neuron Federation Bridge
+
+Semantic Intent Graph
+
+Vector Search + Embeddings
+
+Realtime Layout Mutation Engine
+
+Codex Auto-Audit/Assistant
+
+AI Plugin Marketplace
+
+Self-Debugging Codex
+
+G. Export & Ops Layer
+
+Export/Import Booster
+
+Master Deployment Script/CLI
+
+Prompt Engine
+
+Self-Updating README Generator
+
+Live API Diff Tracker
+
+LLM Unit Test Generator
+
+H. Security & Infra Layer
+
+JWT Auth + API Key Vault
+
+Federated CDN Cache
+
+Failover LLM Fallback
+
+RBAC & Audit Log System
+
+2. FOR EACH MODULE, OUTPUT:
+Status: [“DONE” / “PARTIAL” / “MISSING”]
+
+Grade: [A+ (empire/IPO-ready), A (prod-ready), B (demo/POC), C (partial/stub), D (missing/vaporware)]
+
+Evidence: (Key files, README sections, API endpoints, sample UI, export demo. If only docs/plan, flag as “paperware”)
+
+Missing Features: List any critical items not implemented.
+
+README Proof: For “DONE” status, show README snippet or code export proving the module is truly built, not just listed.
+
+Upgrade Steps: (If not A/A+, suggest what’s required to make it empire-grade.)
+
+3. FINAL OUTPUT:
+Print a full table/list of all modules and their status/grades.
+
+For each “PARTIAL” or “MISSING” module, list what needs to be built to reach A+ level.
+
+At end, output a summary audit score (A+ = IPO/empire-ready, A = prod, B = MVP/demo, C = mostly incomplete, D = vaporware).
+
+4. RULES:
+DO NOT assume a module is complete if only mentioned in README—check for code, API, UI, and export artifacts.
+
+DO NOT compress or “pad” the results to look good. Be as brutal, honest, and precise as an external audit firm.
+
+If code is split in subfolders or micro-modules, aggregate results but list any modules that are siloed/missing integration.
+
+If a module exists in multiple versions, audit and flag the most complete, note others as obsolete.
+
+If a module claims AI/ML/LLM but only uses basic algorithms or stubs, flag “FAKE AI” and suggest real-world LLM/vector/ML upgrade steps.
+
+Your output must be so clear, honest, and actionable that an external CTO or investor can immediately see what’s truly “done,” what’s a “demo,” and what’s still just a roadmap wish.
+
+“Start the audit. Output the full report as EMPIRE_MODULE_AUDIT_REPORT.md in project root.”

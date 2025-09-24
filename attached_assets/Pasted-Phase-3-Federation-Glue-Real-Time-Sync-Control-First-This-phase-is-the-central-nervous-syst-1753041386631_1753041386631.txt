@@ -1,0 +1,85 @@
+Phase 3: Federation Glue (Real-Time Sync & Control).
+
+First:
+This phase is the “central nervous system” — it’s not as repetitive as neuron deployment, but it IS complex.
+I’ll break it into two tactical phases (so you don’t get overwhelmed or blocked):
+
+Phase 3A: Core Federation Dashboard & Real-Time Sync
+GOAL:
+Build the /admin/neuron-federation dashboard and the core event/config pipeline so you can see, control, and update ALL neurons from one place in real time.
+
+YOUR PROMPT (Ready for Replit, copy-paste):
+Phase 3A: Federation Glue — Central Dashboard & Real-Time Sync
+
+Objective:
+Build the core admin dashboard at /admin/neuron-federation in the findawise-core repo.
+Integrate real-time neuron monitoring, config push, status, and analytics.
+
+Requirements:
+Dashboard UI
+
+List all registered neurons (from DB/API), with status (heartbeat/last seen/health/vertical).
+
+Show key stats: online/offline, config version, analytics summary (traffic, conversions, errors, MRR/revenue if available).
+
+“Live view” table with status refresh every 5s.
+
+Neuron Controls
+
+For each neuron:
+
+Hot-push new config, experiment, or orchestrator command (manual, file upload, or GUI editor).
+
+Deploy/retire/clone neuron (sets DB/API status, triggers webhook/CLI for auto-provisioning in later phase).
+
+View neuron logs/errors inline.
+
+“Global” controls: Push experiment/config/AI updates to ALL neurons.
+
+Real-Time Sync/Push
+
+Support real-time config/experiment push (websockets preferred, fallback to REST if needed).
+
+Neurons must instantly apply changes, respond with success/error, and update status in core.
+
+Analytics/Event Feed
+
+Pull analytics/events from all neurons, show per-neuron and empire-wide charts (visitors, CTR, leads, revenue, experiment stats, errors, etc).
+
+Drill-down to neuron details or export CSV for any metric/event.
+
+Audit/History
+
+Log all config pushes, experiment changes, and status transitions.
+
+Rollback/undo last config for any neuron (keep at least last 10 states).
+
+Security
+
+Protect dashboard and APIs with role-based access (JWT, API key, or admin login).
+
+Audit log for all admin actions.
+
+Docs
+
+Auto-generate README.md (“Federation Glue Phase”), with full usage, architecture, API, error handling, and scaling guide.
+
+Rules:
+
+Must be production-grade, no demo logic.
+
+All APIs/UI must be modular, tested, and exportable for the next phase.
+
+No hardcoded neurons—100% dynamic, real DB/API integration.
+
+If CLI/auto-provision is not possible in this phase, stub it (build in Phase 5).
+
+DELIVERABLES:
+
+/admin/neuron-federation dashboard (React/Next.js preferred, but any scalable UI stack)
+
+Updated core backend (DB/models/events/config/api)
+
+All code, UI, and logic in exportable modules
+
+README.md with full dashboard usage, API, and scaling instructions

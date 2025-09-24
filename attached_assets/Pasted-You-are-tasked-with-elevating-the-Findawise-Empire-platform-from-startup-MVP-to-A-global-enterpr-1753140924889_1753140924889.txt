@@ -1,0 +1,117 @@
+You are tasked with elevating the Findawise Empire platform from “startup MVP” to “A+ global enterprise, investor, and AI/ML production standards.”
+You must eliminate every technical, architectural, security, intelligence, and compliance flaw — and transform this system into a bulletproof, IPO-ready, and truly intelligent platform.
+
+MANDATORY UPGRADE CATEGORIES
+Storage & Data Layer (Critical)
+
+Implement all missing storage methods (15+), including:
+
+getNeurons(), getNeuronStatus(), getNeuronAnalytics(), getAnalyticsEventsByDateRange(), etc.
+
+Use robust ORM (e.g., Drizzle, Prisma) and ensure all tables, types, and relations match business logic.
+
+Add data validation, schema versioning, and migration scripts.
+
+Type System (Critical)
+
+Fix 100% of TypeScript errors, implicit any types, and property mismatches across all services and modules.
+
+Ensure strict type safety and end-to-end type inference.
+
+Add type-guarding for all API responses and database operations.
+
+AI/ML Intelligence (Next-Gen)
+
+Replace AI/ML “stubs” with real, production ML/AI integration:
+
+Integrate actual scikit-learn, TensorFlow, or PyTorch models for all orchestration, scoring, and prediction pipelines.
+
+Build and connect Python microservices if needed (for real ML cycles).
+
+Add live model training, evaluation, and result logging.
+
+Integrate LLM APIs (OpenAI, Claude, Gemini, etc.) for real-time content generation, personalization, and A/B/N test content rotation.
+
+Ensure all AI/ML code is modular, documented, and testable.
+
+Security (Enterprise)
+
+Harden WebSocket security:
+
+Implement JWT validation, IP whitelisting, and rate limiting for all real-time connections.
+
+Remove all User-Agent or localhost bypasses.
+
+Add role-based access controls (RBAC) for admin, neuron, and user layers.
+
+Perform security scans and patch all vulnerabilities (injections, XSS, secrets in code).
+
+Error Handling & Reliability
+
+Replace all silent try/catch with structured error handling:
+
+Add error categorization (operational, programmer, network, etc.)
+
+Implement retry logic, circuit breakers, and fallback strategies.
+
+Integrate error monitoring/alerting (e.g., Sentry, Datadog, email/SMS alerts).
+
+Document and escalate critical failures with context.
+
+Federation & Scaling
+
+Implement dynamic neuron discovery, health checks, versioning, and dependency resolution.
+
+Add “retire”, “clone”, and “upgrade” features for neuron management.
+
+Ensure real-time monitoring works across 100+ neurons without degradation.
+
+Content Intelligence
+
+Replace static/fake templates with LLM-powered content generation and optimization.
+
+Add content quality scoring, personalization, and A/B testing framework.
+
+Integrate dynamic content review/approval workflow for admins.
+
+Monitoring, Audit, and Compliance
+
+Add full monitoring/alerting for all core services (system health, downtime, scaling).
+
+Build audit trails for all admin and AI/ML actions (who, what, when).
+
+Ensure GDPR/CCPA/PCI compliance with consent, erase-me, and export APIs.
+
+Documentation
+
+Update all README.md, architecture, and scaling docs.
+
+Add “Tech Debt War Room” doc listing historical fixes and future watchpoints.
+
+Generate onboarding guides for new developers and future AI agents.
+
+EXECUTION RULES
+No “stubs” or “facades”: All features must be genuinely functional, tested, and production-ready.
+
+No “fix later” TODOs: All upgrades and refactors must be completed before final “A+” sign-off.
+
+All code must pass strict linting, testing, and CI/CD review.
+
+Every API, ML workflow, and federation event must be logged and testable.
+
+All breaking changes must be versioned and migration-documented.
+
+Deliverables:
+
+Fully upgraded, secure, robust, and intelligent Findawise Empire codebase.
+
+Final audit report with before/after status for every category.
+
+All documentation updated and exportable.
+
+100% A+ system grade: Ready for $1B+ scale, compliance, and investor scrutiny.
+
+Your goal:
+Deliver the world’s smartest, safest, most scalable web empire.
+Anything less than “A+ everywhere” is unacceptable.
+

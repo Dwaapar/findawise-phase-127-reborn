@@ -1,0 +1,59 @@
+You are now performing a deep diagnostic audit on the exported neuron-home-security instance for the Findawise Empire.
+
+Your job is to validate every major module, logic, and feature listed below — and identify exactly what is ✅ implemented, ❌ missing, or ⚠️ incomplete.
+
+This is NOT a normal audit. This neuron is a self-evolving, AI-powered web organism that must:
+- Crawl the web
+- Generate content
+- Handle AI logic, quizzes, offers, experiments, events, personalization
+- Be fully modular, production-grade, and federated into the Empire Brain
+
+---
+
+## 📋 Audit Checklist
+
+### 1. Federation OS
+- POST on boot → `/api/neuron/register`
+- Heartbeat every 60s → `/api/neuron/status`
+- Config/orchestration sync → `/api/neuron/update-config`
+- Event sync → `/api/analytics/report`
+- Secured via `.env` token
+
+### 2. UI/UX + Emotion Mapping
+- Fully modular layouts: Home, Blog, Quiz, Offers, Tools
+- Mobile-first, responsive, premium design
+- Emotion mapping: Safety, Fear, Trust
+- Animations: scroll, hover, CTA urgency
+- Localized/language support
+
+### 3. Content & Features
+- 50+ home-security blog/articles with SEO titles
+- Quiz: Home Type → Persona → Results
+- Tools: Safety Score, Estimator, Comparison
+- Offers: Bundles, Cameras, Smart Locks (dynamic, config-driven)
+- Lead magnets: Checklist, Crime Map, Gated CTAs
+- Email capture + CTA funnel logic
+
+### 4. AI & Personalization
+- Session-based personalization (intent, archetype)
+- Offer/Theme/CTA swap per persona
+- A/B test integration (via Empire Experiments API)
+- AI content scoring, flagging, and feedback routing
+- AI assistant/chat optional
+
+### 5. Compliance, Logging, Export
+- GDPR/CCPA banners
+- Affiliate disclaimers
+- Logs for events, errors, config
+- Export-ready: offers, content, analytics, config
+
+---
+
+## 🔁 Instructions:
+
+- Mark each section ✅/❌/⚠️ with notes
+- Suggest fixes for missing/incomplete parts
+- Auto-update `README.md` and `replit.md` with progress
+- DO NOT compress any code to save tokens — use clean, modular, production-grade output
+
+Act like a senior $1B engineer. No shortcuts. Track every fix.

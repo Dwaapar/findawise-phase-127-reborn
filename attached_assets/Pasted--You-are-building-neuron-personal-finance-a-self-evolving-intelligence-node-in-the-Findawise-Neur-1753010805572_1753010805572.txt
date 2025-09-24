@@ -1,0 +1,251 @@
+
+You are building neuron-personal-finance — a self-evolving intelligence node in the Findawise Neuron Federation Bridge, part of a greater cause: to architect the world’s first AI-powered, modular, trillion-dollar web empire that democratizes decision-making, automates wealth creation, and scales infinitely across niches.
+
+Neuron: Personal Finance and Investment
+Part of the Findawise Neuron Federation Bridge (Modular Empire Rollout)
+
+Mission Directive
+You are now building neuron-personal-finance, an AI-powered, self-evolving micro-app federated with the Findawise Empire Brain.
+
+This is not just a finance blog.
+It is a living machine that will:
+
+Dominate the personal finance niche (budgeting, investing, saving, credit, retirement)
+
+Autonomously evolve, crawl 100+ high-authority financial sources (e.g. NerdWallet, Investopedia, Forbes, r/personalfinance, FinTwit)
+
+Mastercraft a fully modular, AI-personalized, revenue-optimized digital product
+
+Sync continuously with the Empire Core for analytics, orchestration, experiments, security, and personalization
+
+Serve every archetype: broke students, young investors, retirees, business owners, FIRE aspirants
+
+Run AI-driven chat advisors, compliance logic, affiliate tracking, gamified money journeys, and emotion-calibrated flows
+
+Your output must be billionaire-grade: ultra-trustworthy, premium in design, and production-grade scalable to 1,000+ dynamic content pages.
+
+Federation OS (Mandatory)
+On boot, POST to /api/neuron/register with:
+
+name, url, slug, features, supportedTypes, and API token from .env
+
+Every 60s, POST to /api/neuron/status (heartbeat, health, analytics, uptime)
+
+Continuously pull config from /api/neuron/update-config
+
+All events POST to /api/analytics/report (pageviews, forms, quiz, CTA, revenue)
+
+Secure all routes using tokenized headers from .env
+
+Ultra-Modern UI/UX
+Responsive, mobile-first, accessible UI
+
+Modular zones: Homepage, Blog, Calculators, Offers, Quizzes, Guides, Product Reviews
+
+Emotion-driven design variants:
+
+Calm → Budgeting tools
+
+Urgency → Debt payoff + credit repair
+
+Optimistic → Investment advice
+
+Serious/Professional → Retirement, taxes, insurance
+
+Microinteractions: scrolling counters, trust badges, live financial stats, user scorecards
+
+A/B tested layouts for hero, quiz CTA, savings offers, testimonials, etc.
+
+Niche Content Stack
+Crawl 100+ leading finance sites for inspiration:
+
+Blogs, forums, affiliate pages, comparison tools, calculators
+
+Ingest top performing funnel patterns, UX structures, CTA tone, and offer positioning
+
+Include:
+
+100+ SEO-rich articles: "Best Credit Cards", "Beginner Investing", "Retirement Hacks", etc.
+
+Calculators:
+
+Budget planner
+
+Compound interest
+
+FIRE retirement age
+
+Credit utilization
+
+Emergency fund goal
+
+Quizzes:
+
+What’s Your Money Persona?
+
+Ideal Investment Strategy
+
+Are You Ready to Retire?
+
+Are You Spending Too Much?
+
+AI Financial Advisor Chatbot (LLM-powered):
+
+Personal finance Q&A
+
+Product match suggestions
+
+Goal-based recommendations (buying a house, clearing debt, etc.)
+
+Product Offers:
+
+Credit cards, robo-advisors, savings accounts, loans, budgeting tools
+
+Auto-rotate, cloaked, A/B tested, conversion tracked
+
+Lead Magnets:
+
+Budgeting templates, eBooks, investor cheat sheets, retirement planners
+
+Gamification & Interactive Systems
+"Money Quest": Streak-based budgeting, savings milestones, investment challenges
+
+Streak and Badge System for financial literacy progress
+
+Leaderboard with anonymized score (calculated by budget + debt + savings behaviors)
+
+"Level Up Your Wallet" onboarding funnel with gamified education steps
+
+Quizzes → Persona Type → Budget/Invest Plan → Offer → Capture Flow
+
+Personalization & Empire AI Orchestration
+Detect archetype via quiz/session history:
+
+“Student on a budget”
+
+“Anxious Debtor”
+
+“FIRE Seeker”
+
+“Growth Investor”
+
+“High-income Undisciplined”
+
+Adjust color theme, CTA tone, layout emphasis, product matching logic per archetype
+
+Pull config/experiments from /api/neuron/update-config and apply dynamically
+
+Auto-score sessions:
+
+Interest level
+
+Conversion readiness
+
+Behavior quality
+
+Trigger: AI block reorder, offer priority changes, CTA replacements, alert banners
+
+Analytics, Security & Compliance
+Track:
+
+Scroll, hovers, CTA, quiz, form, offer clicks, AI usage
+
+GDPR/CCPA Consent logic, cookie banner, erase-me endpoint
+
+Affiliate compliance logic:
+
+Proper disclosures
+
+Auto cloaked redirects
+
+Geo-targeting logic
+
+Error handling with fallback content
+
+Backup config, analytics, offers to /logs and core
+
+Self-Evolving Intelligence
+AI auto-auditor:
+
+Detects weak content, underperforming offers, dead links, spammy CTAs
+
+Auto-scraper:
+
+Weekly crawl for latest rates, tools, blog topics
+
+AI Writer:
+
+Auto-generate/rewrite blog content, offer CTAs, product summaries
+
+Cron job:
+
+Auto flag low CTR content
+
+Auto-push experiment variations
+
+LLM Chat:
+
+Dynamic financial Q&A assistant for all user queries
+
+Trained on public financial data, disclaimers included
+
+Documentation, Tracking & Federation Integration
+Updates to README.md and replit.md MUST reflect:
+
+What was added
+
+What’s pending
+
+Where to connect Federation APIs
+
+How to scale/clone/specialize this neuron
+
+Do not create new docs — update existing ones only.
+
+Cloning, Expansion, & Futureproofing
+Built to scale into:
+
+neuron-credit-cards
+
+neuron-retirement-planning
+
+neuron-investing-for-women
+
+Empire Core can clone and auto-personalize future instances
+
+All offers/content/logic modular & replaceable
+
+Rules:
+No hardcoded data
+
+All content and offers config-driven
+
+Everything modular, exportable, swappable
+
+Production-grade and secure
+
+Compliant with global data + finance affiliate standards
+
+Final Reminder for Replit/Agent:
+This is part of the Neuron Federation Bridge for the Findawise Global Empire.
+Treat it like a trillion-dollar product.
+
+No shortcuts
+
+No hardcoded data
+
+Every module, offer, CTA, quiz, chatbot, and article must be:
+
+Emotionally intelligent
+
+UX-optimized
+
+Federated
+
+Monitored by AI
+
+Scalable to 1000+ pages
+
+Update README.md and replit.md accordingly.
+
+Now execute.

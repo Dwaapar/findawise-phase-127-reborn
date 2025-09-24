@@ -1,0 +1,79 @@
+Verify that all components of neuron-health-and-wellness have been implemented correctly, in alignment with the Federation Bridge rollout.
+
+Federation OS (Empire Core Sync)
+
+Has /api/neuron/register been correctly POSTed with the required metadata: name, slug, URL, type, supported features, token?
+
+Is /api/neuron/status sending the correct heartbeat every 60 seconds (CPU/memory usage, user sessions, error logs)?
+
+Is /api/neuron/update-config syncing correctly with the latest orchestration, feature toggles, experiments, and LLM prompt injection rules?
+
+Are all analytics being sent to /api/analytics/report as specified (page views, CTA clicks, form submits, etc.)?
+
+Are all endpoints secured with an API token and rate-limiting rules?
+
+UI/UX Design
+
+Has the UI been built as Webpack Module Federation remote or REST/gRPC APIs?
+
+Is the UI emotion-mapped (calm, energetic, trustworthy, playful) with appropriate color modes and archetype overlays?
+
+Are all micro-interactions (scroll parallax, fluid transitions, animated metrics) implemented?
+
+Content & Offer Engine
+
+Has the content been curated correctly (100+ articles, 20+ lead magnets, dynamic affiliate offers)?
+
+Are the content sources properly crawled and ingested from primary and secondary sources?
+
+Is the content auto-rotating via configuration (affiliate offers, tool features, etc.) with geo/intent-based routing?
+
+Personalization & AI Logic
+
+Are user archetypes (e.g., “The Sleepless Pro”) detected from quizzes or session behavior?
+
+Are CTAs, colors, tools, and offers dynamically adapting based on archetypes and behavior?
+
+Are LLM functions operating as expected (article generation, quiz suggestions, content validation)?
+
+Is the self-healing feature working for underperforming content (AI-enhanced rewrite)?
+
+Tools, Quizzes, & Gamification
+
+Are quizzes ("Which Wellness Persona Are You?", "Best Diet for You", etc.) functioning and returning correct results, offers, and suggested trackers?
+
+Are the calculators (BMI, BMR, Sleep Debt, etc.) capturing sessions and emitting analytics?
+
+Are gamification features like daily quests, XP, streaks, and leaderboards working correctly?
+
+Analytics, Experiments, A/B
+
+Are analytics events being sent correctly (tool opens, quiz answers, scroll depth)?
+
+Are A/B/N experiments running for CTA text, quiz phrasing, offer stacks, and form layouts?
+
+Are conversion rates being tracked per archetype and abandoned quiz rates being logged?
+
+Security, Compliance, Logs
+
+Is the consent banner functioning across multiple languages, and GDPR opt-out ("Erase Me") implemented?
+
+Are cookies, affiliate disclaimers, and API tokens properly handled?
+
+Are all errors logged to /logs and exported to the Core, with uptime monitoring and fallback config?
+
+Documentation Sync
+
+Has README.md and replit.md been updated correctly with the required details (project name, slug, endpoints, analytics map, tool behavior, and customization instructions)?
+
+Is the list of completed tasks and pending tasks clearly outlined?
+
+Scaling Strategy
+
+Are 50–200 emotion-adaptive pages generated based on user archetypes?
+
+Is the cloning logic functioning to create new neurons (e.g., neuron-diet-plans, neuron-fitness-beginners)?
+
+Are all sub-pages syncing correctly with the central federation?
+
+Ensure that each feature is properly implemented and all necessary synchronization with the Empire Core is occurring. Flag any missing or incomplete elements and recommend specific fixes or enhancements.

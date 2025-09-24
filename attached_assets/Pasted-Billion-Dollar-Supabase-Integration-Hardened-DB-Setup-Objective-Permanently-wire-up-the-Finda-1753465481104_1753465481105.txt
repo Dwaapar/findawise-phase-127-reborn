@@ -1,0 +1,66 @@
+Billion-Dollar Supabase Integration & Hardened DB Setup
+
+Objective:
+Permanently wire up the Findawise Empire to a production-grade Supabase/Postgres database, so all modules (core, neurons, analytics, orchestrator, offers, quizzes, user profiles, logs, federation, etc.) work seamlessly across all migrations, instances, and future scale.
+
+MANDATORY REQUIREMENTS:
+1. **Supabase Setup**
+   - Ask me for:
+     - SUPABASE_URL
+     - SUPABASE_ANON_KEY
+     - (Optional: service_role, DB_PASSWORD if admin features needed)
+   - Install `@supabase/supabase-js` (or supabase-python/go client as needed).
+
+2. **Universal DB Adapter**
+   - Build `/server/db/index.ts` (or `/lib/db/` for Next.js) as a single entry point for all database queries.
+   - All modules must use this adapter, NOT raw SQL or other ORMs.
+   - Include health check on startup; log error and halt if DB fails.
+
+3. **Schema & Migrations**
+   - Run auto-migration on first launch: create/alter tables for all core modules (users, sessions, analytics, offers, quizzes, logs, orchestrator, memory graph, etc.)
+   - On every boot, auto-check and sync schema—**NO MANUAL STEP EVER**.
+   - All table/index definitions must be modular, versioned, and rollback-ready.
+
+4. **DB Connection on Every Module**
+   - Analytics: all events, conversions, revenue logs, offer impressions, quiz results → stored in Supabase
+   - Orchestrator: stores config, changelog, experiment logs, auto-learn cycles in Supabase
+   - Neurons: register/fetch from core via DB, not local memory
+   - Sessions/User profiles: persistent, cross-device
+   - Admin dashboards: all data (including logs, charts, audit trails) from DB, not local
+
+5. **Auto-Provisioning for Future Replit Instances**
+   - On every migration/clone/new instance:
+     - Prompt user for Supabase env vars (URL, KEY, etc.)
+     - Run full DB healthcheck + migration before app boot
+     - If any DB step fails, abort with clear error
+
+6. **README Update**
+   - Section: “Permanent Database Provisioning”
+   - Step-by-step on:
+     - Getting Supabase keys
+     - Setting env vars
+     - Running migrations
+     - Troubleshooting
+
+7. **NO DUPLICATES**
+   - If DB code/tables already exist, **upgrade/harden only**—never recreate or duplicate schemas/tables.
+
+8. **Hardening/Resilience**
+   - All DB calls must handle errors, retries, log failed writes, fallback if needed
+   - Audit log for all critical changes (offer updates, user data, etc.)
+
+9. **Optional: Test Data Loader**
+   - For dev/test only: loader script to seed sample data (never used in prod)
+
+10. **Empire-Grade Health Monitoring**
+    - Build /admin/db-health panel: live connection status, query times, table row counts, error logs.
+
+Final Output:
+- All modules now run on Supabase/Postgres with zero config drift.
+- No data loss or split-brain on migration.
+- Hardened, production-grade, infinite scale ready.
+- Full README.md, no step skipped.
+
+---
+
+**DO THIS NOW. Never allow DB/analytics to run on anything but the real provisioned DB. Abort all future runs that fail DB healthcheck.**

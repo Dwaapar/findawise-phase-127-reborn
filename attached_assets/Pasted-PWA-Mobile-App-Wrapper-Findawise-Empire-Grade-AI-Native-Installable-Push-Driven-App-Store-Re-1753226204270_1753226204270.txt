@@ -1,0 +1,133 @@
+PWA + Mobile App Wrapper (Findawise Empire Grade — AI-Native, Installable, Push-Driven, App-Store Ready)
+🎯 Mission:
+Transform the entire Findawise Empire into a self-contained, installable, offline-capable Progressive Web App and cross-platform mobile app that behaves like a native app — with full AI trigger compatibility, smart install logic, and real-time sync.
+
+🔩 1. PWA Core Intelligence Layer
+Implement advanced service-worker.js with:
+
+Static + dynamic route caching (home, category, quiz, offers, tools, blog, search)
+
+Stale-while-revalidate, intelligent cache expiration, versioned cache naming
+
+Background sync for queued form submits, quizzes, or CTA interactions while offline
+
+Add full manifest.json:
+
+App name, theme color, background color, app icons (96px–512px), splash screen images
+
+Shortcuts: e.g. offers, latest blog, run quiz, track order
+
+Display mode: standalone + fullscreen fallback
+
+Responsive, mobile-first UI:
+
+Fixed nav/tab bar for PWA (Android-style bottom nav)
+
+Long-press, swipe-back, scroll-hold interactions
+
+Offline banner with reconnect logic
+
+🔔 2. Push Notification & Trigger Engine
+Use OneSignal, FCM, or open-source alternatives with VAPID
+
+Real-time triggers from:
+
+Price drop
+
+New article
+
+AI-identified high-converting offer
+
+LLM-upgraded content suggestion
+
+User permission logic:
+
+Silent opt-in on repeat visit + prompt-on-engagement
+
+Custom topic segmentation (blog, AI tools, finance offers, eBooks, new neuron)
+
+🗂 3. Mobile App Wrapper (App Store Ready)
+Use Capacitor.js or Expo WebView for native export
+
+Features:
+
+Deep linking to /quiz, /offer, /blog
+
+Push support via mobile channel (not just web)
+
+Secure user storage (session.json, bookmarks, AI responses)
+
+Biometric login fallback (future-proofed)
+
+Custom splash, loading animation, device vibration API
+
+🔗 4. Smart Install & Usage Nudges
+Custom install logic:
+
+Show install banners only after 2nd visit, quiz finish, or AI engagement spike
+
+Smart timing: avoid install prompt spam, remind post-conversion
+
+Track install → open → uninstall funnel with events in localStorage + Plausible/Umami
+
+Show usage perks: “Install to unlock offline reading, instant tools, smart deals, AI chat"
+
+⚙️ 5. Admin + User Control Panel
+/admin/pwa-engine dashboard:
+
+Cache status, file/version logs, test update swipes
+
+Upload/update manifest, icons, splash screens
+
+Configure push topics, smart install rules, install CTA logic
+
+User panel (/settings/notifications):
+
+Enable/disable push by topic
+
+Clear cache/offline data
+
+Manage install shortcuts (custom per user if needed)
+
+🧠 6. AI & Federation Compatibility
+All push, install, content prompts must integrate with:
+
+Semantic Graph intent
+
+Session vector profile
+
+Federation triggers from other neurons
+
+“AI-powered app wrapper” — each vertical neuron has its own tab/app section
+
+Export modules:
+
+push-trigger.js, pwa-bootstrap.js, service-worker.js, mobile-wrapper-config.json
+
+📘 7. README (MANDATORY)
+How to:
+
+Turn site into PWA + install
+
+Export wrapper to Android/iOS
+
+Test push triggers (CLI/API/scripts)
+
+Add new push topics / service worker modules
+
+Include:
+
+Sample manifests, CLI build scripts, device test matrix, Lighthouse benchmark
+
+💥 OUTPUT RULES:
+No demo. No stub. Deliver a real installable/testable PWA with push, offline, and admin dashboard.
+
+Must pass:
+
+Lighthouse PWA > 95
+
+Mobile usability > 95
+
+Push and install test on Android/Chrome, iOS/Safari
+
+All code modular, federation-enabled, AI-integrated, future-scalable.

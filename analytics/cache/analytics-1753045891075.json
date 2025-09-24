@@ -1,0 +1,500 @@
+{
+  "pages": [
+    {
+      "slug": "fitness-transformation-quiz",
+      "title": "Transform Your Body in 90 Days",
+      "niche": "fitness",
+      "emotion": "excitement",
+      "config": {
+        "slug": "fitness-transformation-quiz",
+        "title": "Transform Your Body in 90 Days",
+        "description": "Discover your personalized fitness journey with our science-backed quiz",
+        "niche": "fitness",
+        "emotion": "excitement",
+        "interactiveModule": "quiz",
+        "contentPointer": "content/fitness-transformation.md",
+        "cta": {
+          "text": "Start Your Transformation",
+          "link": "/signup"
+        },
+        "meta": {
+          "keywords": "fitness, transformation, workout, exercise, health",
+          "ogImage": "/images/fitness-transformation.jpg"
+        },
+        "affiliateOffers": [
+          {
+            "slug": "premium-fitness-tracker",
+            "position": "header",
+            "priority": 1
+          },
+          {
+            "slug": "transformation-program",
+            "position": "sidebar",
+            "priority": 1
+          }
+        ]
+      },
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "engagement": 0,
+        "conversion": 0,
+        "bounceRate": 0,
+        "averageTimeOnPage": 0,
+        "scrollDepth": 0
+      },
+      "trend": "up",
+      "lastUpdated": "2025-07-20T21:11:30.670Z"
+    },
+    {
+      "slug": "investment-calculator",
+      "title": "Smart Investment Returns Calculator",
+      "niche": "finance",
+      "emotion": "trust",
+      "config": {
+        "slug": "investment-calculator",
+        "title": "Smart Investment Returns Calculator",
+        "description": "Calculate your potential returns with our advanced investment calculator",
+        "niche": "finance",
+        "emotion": "trust",
+        "interactiveModule": "calculator",
+        "contentPointer": "content/investment-guide.md",
+        "cta": {
+          "text": "Get Started with Investing",
+          "link": "/invest"
+        },
+        "meta": {
+          "keywords": "investment, calculator, returns, finance, money",
+          "ogImage": "/images/investment-calculator.jpg"
+        },
+        "affiliateOffers": [
+          {
+            "slug": "investment-books-bundle",
+            "position": "header",
+            "priority": 1
+          },
+          {
+            "slug": "trading-platform-pro",
+            "position": "sidebar",
+            "priority": 1
+          }
+        ]
+      },
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "engagement": 0,
+        "conversion": 0,
+        "bounceRate": 0,
+        "averageTimeOnPage": 0,
+        "scrollDepth": 0
+      },
+      "trend": "down",
+      "lastUpdated": "2025-07-20T21:11:30.712Z"
+    },
+    {
+      "slug": "anxiety-relief-toolkit",
+      "title": "Instant Anxiety Relief Techniques",
+      "niche": "mental-health",
+      "emotion": "relief",
+      "config": {
+        "slug": "anxiety-relief-toolkit",
+        "title": "Instant Anxiety Relief Techniques",
+        "description": "Find peace with proven anxiety management strategies",
+        "niche": "mental-health",
+        "emotion": "relief",
+        "interactiveModule": "comparison",
+        "contentPointer": "content/anxiety-relief.md",
+        "cta": {
+          "text": "Access Relief Tools",
+          "link": "/tools"
+        },
+        "meta": {
+          "keywords": "anxiety, relief, mental health, stress, techniques",
+          "ogImage": "/images/anxiety-relief.jpg"
+        },
+        "affiliateOffers": [
+          {
+            "slug": "anxiety-relief-supplements",
+            "position": "header",
+            "priority": 1
+          },
+          {
+            "slug": "stress-management-course",
+            "position": "sidebar",
+            "priority": 1
+          }
+        ]
+      },
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "engagement": 0,
+        "conversion": 0,
+        "bounceRate": 0,
+        "averageTimeOnPage": 0,
+        "scrollDepth": 0
+      },
+      "trend": "down",
+      "lastUpdated": "2025-07-20T21:11:30.753Z"
+    },
+    {
+      "slug": "meditation-timer",
+      "title": "Meditation Guide & Timer",
+      "niche": "wellness",
+      "emotion": "calm",
+      "config": {
+        "slug": "meditation-timer",
+        "title": "Meditation Guide & Timer",
+        "description": "Develop mindfulness with guided meditation sessions",
+        "niche": "wellness",
+        "emotion": "calm",
+        "interactiveModule": "timer",
+        "contentPointer": "content/meditation-guide.md",
+        "cta": {
+          "text": "Start Meditation Journey",
+          "link": "/meditate"
+        },
+        "meta": {
+          "keywords": "meditation, mindfulness, timer, wellness, peace",
+          "ogImage": "/images/meditation-timer.jpg"
+        }
+      },
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "engagement": 0,
+        "conversion": 0,
+        "bounceRate": 0,
+        "averageTimeOnPage": 0,
+        "scrollDepth": 0
+      },
+      "trend": "down",
+      "lastUpdated": "2025-07-20T21:11:30.794Z"
+    },
+    {
+      "slug": "business-success-strategies",
+      "title": "Proven Business Growth Strategies",
+      "niche": "business",
+      "emotion": "confidence",
+      "config": {
+        "slug": "business-success-strategies",
+        "title": "Proven Business Growth Strategies",
+        "description": "Scale your business with data-driven strategies that work",
+        "niche": "business",
+        "emotion": "confidence",
+        "interactiveModule": "comparison",
+        "contentPointer": "content/business-success.md",
+        "cta": {
+          "text": "Transform Your Business",
+          "link": "/business"
+        },
+        "meta": {
+          "keywords": "business, growth, strategies, success, entrepreneurship",
+          "ogImage": "/images/business-success.jpg"
+        }
+      },
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "engagement": 0,
+        "conversion": 0,
+        "bounceRate": 0,
+        "averageTimeOnPage": 0,
+        "scrollDepth": 0
+      },
+      "trend": "up",
+      "lastUpdated": "2025-07-20T21:11:30.836Z"
+    }
+  ],
+  "offers": [],
+  "emotions": [
+    {
+      "name": "trust",
+      "theme": {
+        "name": "Trust",
+        "primary": "hsl(147, 70%, 52%)",
+        "secondary": "hsl(147, 70%, 42%)",
+        "accent": "hsl(147, 70%, 35%)",
+        "background": "hsl(147, 70%, 97%)",
+        "text": "hsl(147, 70%, 15%)",
+        "gradient": "linear-gradient(135deg, hsl(147, 70%, 52%) 0%, hsl(147, 70%, 42%) 100%)",
+        "cssClass": "emotion-trust"
+      },
+      "pages": [
+        "trust-page-1",
+        "trust-page-2"
+      ],
+      "metrics": {
+        "totalImpressions": 0,
+        "totalClicks": 0,
+        "averageCTR": 0,
+        "averageEngagement": 0,
+        "averageConversion": 0
+      },
+      "trend": "up"
+    },
+    {
+      "name": "excitement",
+      "theme": {
+        "name": "Excitement",
+        "primary": "hsl(43, 96%, 56%)",
+        "secondary": "hsl(43, 96%, 46%)",
+        "accent": "hsl(43, 96%, 36%)",
+        "background": "hsl(43, 96%, 97%)",
+        "text": "hsl(43, 96%, 15%)",
+        "gradient": "linear-gradient(135deg, hsl(43, 96%, 56%) 0%, hsl(43, 96%, 46%) 100%)",
+        "cssClass": "emotion-excitement"
+      },
+      "pages": [
+        "excitement-page-1",
+        "excitement-page-2"
+      ],
+      "metrics": {
+        "totalImpressions": 0,
+        "totalClicks": 0,
+        "averageCTR": 0,
+        "averageEngagement": 0,
+        "averageConversion": 0
+      },
+      "trend": "down"
+    },
+    {
+      "name": "relief",
+      "theme": {
+        "name": "Relief",
+        "primary": "hsl(262, 83%, 68%)",
+        "secondary": "hsl(262, 83%, 58%)",
+        "accent": "hsl(262, 83%, 48%)",
+        "background": "hsl(262, 83%, 97%)",
+        "text": "hsl(262, 83%, 15%)",
+        "gradient": "linear-gradient(135deg, hsl(262, 83%, 68%) 0%, hsl(262, 83%, 58%) 100%)",
+        "cssClass": "emotion-relief"
+      },
+      "pages": [
+        "relief-page-1",
+        "relief-page-2"
+      ],
+      "metrics": {
+        "totalImpressions": 0,
+        "totalClicks": 0,
+        "averageCTR": 0,
+        "averageEngagement": 0,
+        "averageConversion": 0
+      },
+      "trend": "up"
+    },
+    {
+      "name": "confidence",
+      "theme": {
+        "name": "Confidence",
+        "primary": "hsl(0, 84%, 60%)",
+        "secondary": "hsl(0, 84%, 50%)",
+        "accent": "hsl(0, 84%, 40%)",
+        "background": "hsl(0, 84%, 97%)",
+        "text": "hsl(0, 84%, 15%)",
+        "gradient": "linear-gradient(135deg, hsl(0, 84%, 60%) 0%, hsl(0, 84%, 50%) 100%)",
+        "cssClass": "emotion-confidence"
+      },
+      "pages": [
+        "confidence-page-1",
+        "confidence-page-2"
+      ],
+      "metrics": {
+        "totalImpressions": 0,
+        "totalClicks": 0,
+        "averageCTR": 0,
+        "averageEngagement": 0,
+        "averageConversion": 0
+      },
+      "trend": "down"
+    },
+    {
+      "name": "calm",
+      "theme": {
+        "name": "Calm",
+        "primary": "hsl(188, 94%, 43%)",
+        "secondary": "hsl(188, 94%, 33%)",
+        "accent": "hsl(188, 94%, 23%)",
+        "background": "hsl(188, 94%, 97%)",
+        "text": "hsl(188, 94%, 15%)",
+        "gradient": "linear-gradient(135deg, hsl(188, 94%, 43%) 0%, hsl(188, 94%, 33%) 100%)",
+        "cssClass": "emotion-calm"
+      },
+      "pages": [
+        "calm-page-1",
+        "calm-page-2"
+      ],
+      "metrics": {
+        "totalImpressions": 0,
+        "totalClicks": 0,
+        "averageCTR": 0,
+        "averageEngagement": 0,
+        "averageConversion": 0
+      },
+      "trend": "up"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Start Your Transformation",
+      "pages": [
+        "fitness-transformation-quiz"
+      ],
+      "config": {
+        "text": "Start Your Transformation",
+        "link": "/signup"
+      },
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "conversions": 0,
+        "conversionRate": 0
+      },
+      "trend": "up"
+    },
+    {
+      "text": "Get Started with Investing",
+      "pages": [
+        "investment-calculator"
+      ],
+      "config": {
+        "text": "Get Started with Investing",
+        "link": "/invest"
+      },
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "conversions": 0,
+        "conversionRate": 0
+      },
+      "trend": "down"
+    },
+    {
+      "text": "Access Relief Tools",
+      "pages": [
+        "anxiety-relief-toolkit"
+      ],
+      "config": {
+        "text": "Access Relief Tools",
+        "link": "/tools"
+      },
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "conversions": 0,
+        "conversionRate": 0
+      },
+      "trend": "stable"
+    },
+    {
+      "text": "Start Meditation Journey",
+      "pages": [
+        "meditation-timer"
+      ],
+      "config": {
+        "text": "Start Meditation Journey",
+        "link": "/meditate"
+      },
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "conversions": 0,
+        "conversionRate": 0
+      },
+      "trend": "up"
+    },
+    {
+      "text": "Transform Your Business",
+      "pages": [
+        "business-success-strategies"
+      ],
+      "config": {
+        "text": "Transform Your Business",
+        "link": "/business"
+      },
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "conversions": 0,
+        "conversionRate": 0
+      },
+      "trend": "down"
+    }
+  ],
+  "modules": [
+    {
+      "type": "quiz",
+      "pages": [],
+      "config": {},
+      "metrics": {
+        "impressions": 0,
+        "interactions": 0,
+        "completions": 0,
+        "interactionRate": 0,
+        "completionRate": 0
+      },
+      "trend": "down"
+    },
+    {
+      "type": "calculator",
+      "pages": [],
+      "config": {},
+      "metrics": {
+        "impressions": 0,
+        "interactions": 0,
+        "completions": 0,
+        "interactionRate": 0,
+        "completionRate": 0
+      },
+      "trend": "down"
+    },
+    {
+      "type": "comparison",
+      "pages": [],
+      "config": {},
+      "metrics": {
+        "impressions": 0,
+        "interactions": 0,
+        "completions": 0,
+        "interactionRate": 0,
+        "completionRate": 0
+      },
+      "trend": "up"
+    },
+    {
+      "type": "timer",
+      "pages": [],
+      "config": {},
+      "metrics": {
+        "impressions": 0,
+        "interactions": 0,
+        "completions": 0,
+        "interactionRate": 0,
+        "completionRate": 0
+      },
+      "trend": "up"
+    }
+  ],
+  "summary": {
+    "totalImpressions": 0,
+    "totalClicks": 0,
+    "averageCTR": 0,
+    "averageEngagement": 0,
+    "averageConversion": 0,
+    "topPerformingPage": "fitness-transformation-quiz",
+    "topPerformingOffer": "",
+    "topPerformingEmotion": "trust",
+    "dataQuality": 0
+  }
+}

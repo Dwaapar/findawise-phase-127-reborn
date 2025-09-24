@@ -1,0 +1,39 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="64" fill="url(#gradient)"/>
+  
+  <!-- Neural network nodes -->
+  <circle cx="128" cy="128" r="20" fill="white" opacity="0.9"/>
+  <circle cx="256" cy="128" r="20" fill="white" opacity="0.9"/>
+  <circle cx="384" cy="128" r="20" fill="white" opacity="0.9"/>
+  
+  <circle cx="128" cy="256" r="20" fill="white" opacity="0.9"/>
+  <circle cx="256" cy="256" r="32" fill="white"/>
+  <circle cx="384" cy="256" r="20" fill="white" opacity="0.9"/>
+  
+  <circle cx="128" cy="384" r="20" fill="white" opacity="0.9"/>
+  <circle cx="256" cy="384" r="20" fill="white" opacity="0.9"/>
+  <circle cx="384" cy="384" r="20" fill="white" opacity="0.9"/>
+  
+  <!-- Connections -->
+  <line x1="128" y1="128" x2="256" y2="256" stroke="white" stroke-width="3" opacity="0.6"/>
+  <line x1="256" y1="128" x2="256" y2="256" stroke="white" stroke-width="3" opacity="0.6"/>
+  <line x1="384" y1="128" x2="256" y2="256" stroke="white" stroke-width="3" opacity="0.6"/>
+  
+  <line x1="128" y1="256" x2="256" y2="256" stroke="white" stroke-width="3" opacity="0.6"/>
+  <line x1="384" y1="256" x2="256" y2="256" stroke="white" stroke-width="3" opacity="0.6"/>
+  
+  <line x1="256" y1="256" x2="128" y2="384" stroke="white" stroke-width="3" opacity="0.6"/>
+  <line x1="256" y1="256" x2="256" y2="384" stroke="white" stroke-width="3" opacity="0.6"/>
+  <line x1="256" y1="256" x2="384" y2="384" stroke="white" stroke-width="3" opacity="0.6"/>
+  
+  <!-- AI Symbol -->
+  <text x="256" y="280" text-anchor="middle" fill="#667eea" font-family="Arial, sans-serif" font-size="24" font-weight="bold">AI</text>
+</svg>

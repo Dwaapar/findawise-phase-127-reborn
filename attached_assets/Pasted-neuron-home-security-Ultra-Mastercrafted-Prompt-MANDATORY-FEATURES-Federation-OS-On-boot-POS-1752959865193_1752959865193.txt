@@ -1,0 +1,200 @@
+neuron-home-security — Ultra Mastercrafted Prompt
+MANDATORY FEATURES
+Federation OS
+
+On boot, POST to /api/neuron/register (Empire Core) with:
+
+name, url, type, supported features, project slug, and API token (from .env).
+
+Schedule status/heartbeat POST every 60s to /api/neuron/status (health, uptime, analytics).
+
+Pull live updates from /api/neuron/update-config:
+
+Config, experiments, feature flags, and orchestrator commands.
+
+POST analytics/events to /api/analytics/report:
+
+Pageviews, clicks, conversions, quiz forms, affiliate actions, session meta.
+
+Secure ALL endpoints using API key/token from .env.
+
+Plug-and-Play UI/UX
+Expose UI via:
+
+Webpack Module Federation (for React) or REST/gRPC (non-React).
+
+Responsive, mobile-first, ultra-fast SPA with:
+
+Home, Blog, Offers, Tools, CTA, Calculator, Comparison, Quizzes, Product Reviews, Article Pages.
+
+Dynamic emotion-based design (fear/safety/trust themes mapped to colors, wording, CTA tone).
+
+Full microinteraction logic:
+
+Hover effects, scroll animations, trust/urgency banners, smooth transitions.
+
+Niche Specialization: 🛡️ Home Security
+This neuron must crawl & reference:
+
+100+ top-performing security sites (Ring, SimpliSafe, Arlo, ADT, r/homesecurity, Consumer Reports, YouTube influencers).
+
+Use scraped references to:
+
+Ingest styles, CTA patterns, funnel structures, offer stacks, affiliate content formats, and product stacks.
+
+Must include:
+
+📦 Product stack:
+
+Smart locks, doorbells, cameras, sensors, bundles, monitoring services, mobile apps.
+
+📚 50+ articles:
+
+“Top 10 Home Security Mistakes,” “Best Camera Placement,” “Renters vs. Owners,” “DIY vs Professional Monitoring.”
+
+📊 Tools & Calculators:
+
+“Home Safety Score,” “Budget Estimator,” “Setup Quiz,” “Comparison Table,” “Local Crime Risk Checker.”
+
+🧠 Custom Quizzes:
+
+Personalized results based on home type, location, budget, intent.
+
+Output scores + security persona + product stack.
+
+📈 Lead Magnets:
+
+Security Checklist PDF, Free Monitoring Trial, Neighborhood Threat Maps.
+
+📩 Capture:
+
+Email forms, gated quizzes, exit popups, mobile retargeting flows.
+
+🌐 Localization:
+
+Language selector and geo-IP optimized offers.
+
+Feature Modules
+Enable:
+
+Quiz Builder + scoring, Product Ranking Carousel, Comparison Tables, Tool Pages.
+
+Funnel logic:
+
+Quiz → Result Page → Product Stack → Lead Capture → Offer → Email follow-up → Upsell.
+
+Add AI product advisors (LLM-based chat) if user is unsure.
+
+A/B/N Testing (via /api/experiments):
+
+Hero CTA copy, Quiz CTA, Offer Stack Positioning, Lead Magnet variant.
+
+Track:
+
+Form fills, scroll depth, interactions per module.
+
+Personalization + AI Orchestration
+Detect intent/archetype via quiz/session:
+
+“Anxious Renter,” “Busy Parent,” “Tech-Savvy Buyer,” “Elderly,” etc.
+
+Dynamically swap:
+
+Offers, visuals, color scheme, wording, funnel path based on segment.
+
+Pull personalized content blocks + experiments from core (via /api/neuron/update-config).
+
+Use AI (via Orchestrator or LLMs) to:
+
+Recommend content/offer blocks
+
+Reorder quiz logic
+
+Adjust CTA tones (urgent, helpful, calm)
+
+Flag weak content for review
+
+Auto-score every user session for conversion probability and engagement depth.
+
+Analytics & Compliance
+Track every interaction:
+
+Views, hovers, scrolls, quiz flows, affiliate outbound, form submit, CTA clicks.
+
+Log all to /logs.
+
+Backup/export:
+
+Config, logs, analytics, lead data, offers.
+
+GDPR/CCPA compliance:
+
+Consent popups, opt-out links, erase-me API.
+
+Affiliate Compliance:
+
+Cloaked URLs, disclaimers, link policies, geo-routing per network.
+
+README & Onboarding
+Auto-generate full README.md:
+
+Overview, APIs used, Federation setup, Analytics logic, Quiz flow, Tool logic, Error handling, Scaling.
+
+Include:
+
+How to clone/replicate this neuron.
+
+How to customize: offers, content, features, quiz, AI logic, themes.
+
+Self-Evolving Features (AI Driven)
+Enable auto-scraper:
+
+Pull new offers, content ideas, or security trends weekly.
+
+LLM content generation:
+
+Auto-write articles, CTA copy, and quiz questions (auto-proofed).
+
+AI Assistant:
+
+Add niche-specific security chatbot (product finder / threat analyzer).
+
+Revenue Tracker:
+
+Pull affiliate data via APIs and display earnings per offer.
+
+Self-Audit System:
+
+Cron job to detect outdated offers, weak content, underperforming CTA → flag or regenerate via AI.
+
+Mastercraft Compliance Rules:
+✅ No hardcoded data/URLs — everything must use config/env.
+
+✅ All offers/content/components must be modular + easily swappable.
+
+✅ Every analytics/event/report must reach the Empire Core.
+
+✅ Fully production-grade, scalable, clonable for other niches (neuron-smart-locks, neuron-diy-security, etc.).
+
+DO THIS NOW (AI Instructions):
+md
+Copy
+Edit
+💡 INSTRUCTIONS FOR THE Replit 
+
+- DO NOT summarize code to save tokens. Always output complete, robust, high-quality modules.
+
+- As you work, track and update progress in `README.md` and `replit.md`:
+   - What was added?
+   - What’s still missing?
+   - Where to connect Empire APIs?
+
+- Export all created code blocks cleanly. Everything must be:
+   - Modular
+   - Scalable
+   - Secure
+   - Synced to federation
+
+- This is a **handoff from one neuron repo to another** — continue existing logic, do NOT duplicate.
+
+- Execute like a senior engineer in a $1B company. This neuron will scale globally. No shortcuts.

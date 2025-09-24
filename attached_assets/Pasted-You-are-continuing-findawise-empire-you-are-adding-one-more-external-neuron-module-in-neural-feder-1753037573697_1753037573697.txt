@@ -1,0 +1,122 @@
+You are continuing findawise empire 
+you are adding one more external neuron module in neural federation bridge
+Project Name: neuron-ai-tools
+You are now building a mastercrafted, AI-powered, modular micro-app called neuron-ai-tools. This neuron is part of the Neuron Federation Bridge — a high-intelligence digital system within the Findawise Empire Brain, designed to scale across 1,000+ niches.
+
+Its purpose:
+
+To become the most trusted, dynamic, and intelligent AI tools directory and assistant — continuously evolving, crawling the web, optimizing UX, and helping users discover the best AI-powered solutions for any task, budget, or goal.
+
+⚙️ MANDATORY: Federation OS Protocols
+🔗 POST /api/neuron/register on boot (name, type, URL, supported features, token)
+
+📡 POST /api/neuron/status every 60 seconds (health, uptime, analytics)
+
+📥 Pull latest config/experiments via /api/neuron/update-config
+
+📊 Report all analytics/events to /api/analytics/report
+
+🔐 Secure all endpoints via API token from .env
+
+💎 Core Modules to Implement
+Module File	Purpose
+QuizEngine.tsx	Personalized quiz for AI tool discovery
+OfferManager.ts	Renders, rotates, and cloaks affiliate offers dynamically
+ConfigSync.ts	Handles pulling & applying orchestrator updates from core
+AnalyticsClient.ts	Tracks all user events, sends payloads to the Empire Core
+SelfEvolveAgent.ts	Runs AI experiments, performance audits, and auto-improvements
+ToolDirectory.tsx	Filters, ranks, and shows all AI tools dynamically
+LeadMagnetFlow.tsx	Collects emails with eBooks, templates, bonus tools
+ExportManager.ts	Exports config/content/analytics in .neuron.json format
+
+🔍 Niche Specialization: AI Tools
+This neuron is built for:
+
+Tool researchers, prompt engineers, creators, and entrepreneurs
+
+Users searching for AI tools by category, use-case, or budget
+
+Affiliate monetization through cloaked outbound links with click tracking
+
+Content Stack (autonomous + curated):
+✅ Auto-scraped and AI-curated tool database (title, pricing, use-case, platform, rating, pros/cons)
+
+✅ 50+ SEO-rich blog articles: comparisons, guides, trends, prompt libraries
+
+✅ Dynamic affiliate offer rendering: config-driven, performance-aware rotation
+
+✅ Comparison tables, carousels, category filters, emotion-based sorting (ease, power, speed, creativity)
+
+✅ Advanced filters (free/paid, lifetime deal, category, popularity, integrations)
+
+Personalization & AI Engine:
+Auto-detect user archetype: Explorer, Engineer, Growth Hacker, Creator, Researcher
+
+Quiz-based tool suggestion engine with memory of past choices
+
+AI-generated recommendations + tool rankings per user session
+
+Emotion-mapped tool layout and color scheme:
+
+Power Seeker → sharp UI, contrast-heavy
+
+Creator → colorful, inspiration-first
+
+Efficiency Lover → minimalist, snappy nav
+
+🧠 Self-Evolving Intelligence (MANDATORY)
+This neuron evolves autonomously by:
+
+🔄 A/B testing CTAs, hero headlines, layout orders, quiz logic, etc.
+
+🤖 Cron-triggered experiments (content performance, offer CTR, bounce rates)
+
+🔍 Auto-detect underperforming tools → rotate or remove
+
+🧠 Auto-generate new blog sections using OpenAI API (Orchestrator injected)
+
+🛠️ Dynamic offer injection via affiliate API integration (e.g., AppSumo, G2)
+
+Trigger self-healing fallback when:
+
+Analytics error rate > 5% over 60s
+
+Offer click-through < 0.5%
+
+Data sync failure over 2 retries
+
+📄 README + Federation Documentation
+Ensure updates are made to the main:
+
+README.md (project purpose, how to clone, customize, scale, integrate)
+
+replit.md (local setup, API endpoints, federation logic)
+
+Do NOT create new files. Append to existing documentation files.
+
+🧩 Federation Scaling Logic
+This neuron must be:
+
+🔁 Cloneable into neuron-prompts, neuron-ai-design, neuron-ai-coding, etc.
+
+🧱 Modular: all offers, layouts, tools, and content pulled from config/slots
+
+🛡️ Secure: all outbound URLs pass through cloaked redirect handlers
+
+✅ Summary of Key Must-Haves:
+100+ curated + AI-generated tools
+
+Fully interactive, emotion-mapped, modular UI
+
+Affiliate cloaking and tracking
+
+Personalization by user intent
+
+Auto-evolving through experiments and orchestrator control
+
+Full backup/export logic
+
+Strict Federation compliance: registration, heartbeat, status, analytics
+
+Prepares a plug-and-play knowledge base for the Empire
+

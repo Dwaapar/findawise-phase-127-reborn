@@ -1,0 +1,93 @@
+This is not a new build.
+The foundational Smart Funnel Generator module has already been implemented earlier with key components like quiz builder, offer stack generator, lead capture, and retarget logic.You must treat this prompt as a direct evolution of the previously built module — building on top of existing components, not replacing them.
+Focus on refactoring, upgrading, and layering intelligence and orchestration, while maintaining all previously functional components and integrations.
+This serves as a strategic upgrade to that existing system.
+It enhances the previous version by adding advanced, AI-native capabilities:
+
+
+
+Smart Funnel Generator — Automated, Multi-Step Conversion Engine (Self-Evolving, Intent-Aware, Personalization-Driven)
+
+🎯 Objective:
+Build a dynamic, data-driven funnel system that intelligently orchestrates every user’s path—from entry point to best offer, lead magnet, upsell, and post-conversion actions—adapting in real time based on user intent, persona, and analytics feedback.
+
+---
+
+⚡️ 1. Funnel Definition & Config
+- Define funnel templates as modular JSON (or DB-driven) configs:
+    - Entry triggers (quiz, blog, CTA click, search, ad, etc.)
+    - Step sequence (quiz → result → offer → lead magnet → upsell → cross-sell → referral)
+    - Branching logic: based on persona, intent, score, behavior, A/B test variant
+    - End conditions: conversion, bounce, opt-out, loop, nurture
+
+- Must support: multiple verticals, dynamic cloning, quick edits
+
+---
+
+🧠 2. Funnel Engine (Orchestration + Adaptation)
+- Detects entry context: traffic source, persona, device, session state
+- Auto-selects best funnel template & variant for the user
+- Real-time adaptation: moves user forward/back, skips steps, fast-tracks if user is high-intent
+- Funnels can re-enter at any point (no “dead ends”)
+
+- Supports both server-driven and client-driven orchestration for optimal UX and analytics
+
+---
+
+🎯 3. Dynamic Step Components
+- Each step (quiz, offer stack, lead form, upsell, thank you, referral) is a plug-and-play module:
+    - Quiz engine auto-syncs results and passes to offers
+    - Offer blocks adapt to quiz/persona/context
+    - Lead magnet forms with adaptive CTAs and anti-spam logic
+    - Upsell/cross-sell modules tied to conversion data
+    - Referral triggers (share, invite, reward, review)
+
+---
+
+📊 4. Funnel Analytics + AI Optimization
+- Logs every step, drop-off, conversion, step time, variant performance
+- Feeds data to AI/Orchestrator for auto-funnel improvement:
+    - Reorders steps for highest LTV
+    - Flags bottlenecks, poor-converting modules
+    - Auto-suggests new funnels based on market/analytics changes
+
+---
+
+🔄 5. User Memory & Funnel Resume
+- Each user/session stores funnel progress, intent score, journey map
+- On return (any device), resume funnel from last step
+- Remind/engage via notification/email if user drops out mid-funnel
+
+---
+
+🔗 6. Federation & Integration
+- Neurons/modules can trigger, join, or continue funnels
+- Supports API hooks: start/advance/resume funnel, log step, get suggestions, etc.
+
+---
+
+🧪 7. Simulation, QA & Testing Tools
+- Simulate user journeys, edge cases, multi-persona/variant flows
+- Auto-generate test cases for new funnels, steps, and integrations
+
+---
+
+🔒 8. Security, Privacy, Compliance
+- Full consent tracking, opt-out logic, GDPR/CCPA compliance
+- All funnel data securely logged and auditable
+
+---
+
+📘 9. README (MANDATORY)
+- Full docs: funnel config, orchestration logic, step/component design, analytics hooks, federation APIs, QA/sim tools
+- Setup guide: how to clone, edit, or launch new funnels; sample journeys
+
+---
+
+💥 Output Requirements:
+✅ Modular, adaptive funnel engine (JSON/DB config, orchestration)
+✅ Pluggable, dynamic step components
+✅ Real-time analytics, AI funnel optimization hooks
+✅ Resume, re-engage, and multi-device continuity
+✅ Federation, API, security/compliance
+✅ Full README, docs, sample configs, and tests

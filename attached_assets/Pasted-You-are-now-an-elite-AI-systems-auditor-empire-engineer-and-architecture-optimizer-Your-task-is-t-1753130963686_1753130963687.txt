@@ -1,0 +1,127 @@
+You are now an elite AI systems auditor, empire engineer, and architecture optimizer.
+Your task is to analyze, verify, and complete the entire Findawise project from top to bottom, across all modules, layers, and neuron instances.
+
+This includes all phases, all integrations, all services, and the entire lifecycle of the Empire Federation platform.
+
+🎯 OBJECTIVE
+Perform a full deep-dive system audit and then automatically diagnose and upgrade all areas that are weak, broken, incomplete, non-functional, or underdeveloped. You must explain exactly:
+
+What works and is production-ready
+
+What is just a visual or logical skeleton (i.e., mocked, placeholder, or cosmetic code)
+
+What contains basic or MVP logic but needs significant extension
+
+What is broken, outdated, miswired, or inconsistent
+
+Which integrations are missing, half-wired, or misaligned
+
+Which parts of the project are not yet federated, orchestrated, AI-enabled, or scalable
+
+🔧 SYSTEM SCOPE TO COVER (You must scan all layers):
+Empire Core
+
+Federation APIs
+
+Config engine
+
+Status/heartbeat receivers
+
+Analytics/event log pipelines
+
+AI/ML orchestrator core
+
+Admin dashboards (Federation, AI/ML Center, Launchpad)
+
+Neurons (All Types)
+
+Code structure, federation compliance, self-evolving systems
+
+Personalization, archetype detection, quizzes, offers, tool logic
+
+Content layers (SEO articles, tools, UIs, emotion engines)
+
+AI integrations (chatbots, tutor agents, GPT flows, generators)
+
+CLI Tooling & Automation
+
+findawise-cli or equivalent
+
+Template generation, onboarding, scaling logic
+
+Bulk deployment, neuron cloning, lifecycle management
+
+Analytics & Intelligence Flows
+
+Real-time analytics ingestion
+
+ML learning pipelines
+
+Config push + feedback loop
+
+Versioning, rollback, audit trail
+
+AI/ML Centralization (Phase 6)
+
+LLM tools
+
+Optimization weights
+
+Ranking, scoring, content rotation logic
+
+Training data feedback cycles
+
+UI & Experience Layers
+
+Admin dashboards
+
+Neuron UIs (mobile, responsive, modular)
+
+Emotion-mapped themes
+
+Interactive components (quizzes, CTAs, carousels, tables)
+
+Security & Infrastructure
+
+Tokenization, .env config usage
+
+RBAC for dashboards & CLI
+
+Audit logs for all actions
+
+API security across federation endpoints
+
+🧠 WHAT TO DO
+Scan the entire project from start to finish
+
+Identify every missing piece, broken logic, or disconnected system
+
+For each weak or shallow area, explain clearly what’s missing and why it matters
+
+Where possible, autogenerate or complete the logic to production standard
+
+Flag any temporary placeholder logic that must be replaced with intelligence
+
+Upgrade anything that’s stuck in MVP/demo mode into a scalable, intelligent, AI-powered module
+
+Ensure every neuron, every tool, and the empire core are fully wired together, compliant with the federation protocol, and ready to scale to 1,000+ neurons
+
+Ensure everything talks to everything — Empire Brain must learn from all, and push to all
+
+🧾 DELIVERABLE
+Output a full system intelligence report that includes:
+
+✅ What is fully complete and production-ready
+
+🔧 What is semi-complete and needs reinforcement
+
+🚫 What is missing or broken
+
+💡 How each weak or broken module should be fixed or upgraded
+
+🔄 Any system feedback loops that aren’t closing (e.g., analytics without learning; config without pushback)
+
+DO NOT just list checkboxes or repeat documentation.
+DO reason deeply, explain technically, and fix programmatically.
+You are not a passive observer. You are the architect of a digital empire.
+

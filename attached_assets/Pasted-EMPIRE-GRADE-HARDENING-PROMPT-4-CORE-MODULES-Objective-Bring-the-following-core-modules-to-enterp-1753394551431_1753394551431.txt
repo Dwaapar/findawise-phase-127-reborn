@@ -1,0 +1,117 @@
+EMPIRE-GRADE HARDENING PROMPT (4 CORE MODULES)
+Objective:
+Bring the following core modules to enterprise/empire-grade level:
+1. Dynamic Page Generator
+2. Emotion Mapping Engine
+3. Blog/Content Engine
+4. ContentPointer Logic
+
+Harden for scalability, security, modularity, AI-integration, and future feature expansion.
+
+MANDATORY HARDENING STEPS:
+
+1. Dynamic Page Generator
+
+Enforce strict, type-safe schemas for all page props (title, description, layout, emotion, offer stack, modules, meta, A/B/C test variant, region, etc.)
+
+Modular architecture: easy to add/remove modules per page (e.g., quizzes, lead magnets, tools, calculators, offer blocks)
+
+Plug-and-play rendering: auto-detects which modules are needed per page and lazy-loads as needed
+
+Handles localization, emotion themes, dynamic CTAs, and SEO fields
+
+Page generator must support full SSR and SSG (static/dynamic generation) for max SEO + scale
+
+API endpoints for: live preview, on-demand generation, export/import of pages, rollback
+
+Security: sanitize all dynamic content before render, access-controlled endpoints
+
+Logging: log each page generation event (when/who/what config), with rollback snapshot
+
+Test suite: generate every page type and check for errors, empty states, missing modules, broken links, etc.
+
+2. Emotion Mapping Engine
+
+Strict type map for every supported emotion (e.g. trust, fear, excitement, curiosity, safety, urgency, etc.)
+
+Each emotion has: color theme, tone/style, icon set, CTA logic, fallback if missing, custom animation/microinteraction hooks
+
+Easy to extend: add new emotions or change mapping via config, no code edits needed
+
+Supports A/B/C testing of emotion-driven design variants
+
+Logs all changes/overrides per emotion
+
+AI hooks: allows LLM to suggest/test emotion variants dynamically based on performance
+
+All mappings are modular, reusable across pages, and localizable (multilingual emotion logic)
+
+Full docs: mapping schema, how to extend, sample themes, how to connect to LLM/AI
+
+3. Blog/Content Engine
+
+Markdown/MDX + AI-generated content support (all major formats)
+
+Modular content blocks: images, CTAs, quizzes, tables, affiliate links, lead magnets, video embeds, code samples
+
+Content fetcher: dynamic load from /content, remote APIs, or external CMS if needed
+
+Versioning: every edit tracked, revert/change logs, rollback available
+
+Full-text search, category/tag filtering, smart pagination
+
+Security: sanitize all content, block XSS/unsafe embeds, validate frontmatter/fields
+
+AI hooks: allow auto-summarization, topic clustering, LLM-powered blog generation
+
+Export/import: bulk upload, migration support, API endpoints for content CRUD
+
+Test suite: render all blog types, stress-test with max length/complexity, validate all embeds/links
+
+Docs: usage, extension, AI-integration, migration/rollback, schema, versioning, API
+
+4. ContentPointer Logic
+
+Every page/module/CTA/offer can reference any external content via ContentPointer (slug, URL, ID, etc.)
+
+Supports all types: markdown, HTML, JSON, remote API, video, dynamic block, external tool, etc.
+
+Validation: ensure content pointer is live, unbroken, and not duplicated
+
+Caching: smart cache for external fetches, with TTL and cache-busting
+
+Logs every content fetch: source, time, hit/miss, fallback if error
+
+Admin UI: search all pointers, see broken/missing/duplicate pointers, fix/replace, audit history
+
+Security: whitelist/blacklist allowed pointer domains/types
+
+AI hooks: auto-update dead/broken pointers via LLM suggestion
+
+Fully federated: other modules/neuron apps can use content pointers via API
+
+Docs: pointer schema, usage patterns, error handling, extension guide
+
+GENERAL FOR ALL MODULES:
+
+All code must be modular, well-documented, and export-ready for federation
+
+Security: sanitize all inputs/outputs, role-based access where needed
+
+Logging: every major event (creation, update, error, rollback) with diff/rollback snapshots
+
+README.md:
+
+Module breakdown
+
+API schemas and usage
+
+Extension/upgrade guide
+
+Error handling, testing, migration
+
+How to connect to future AI modules
+
+Federation integration for future scaling
+
+Test suites for every function

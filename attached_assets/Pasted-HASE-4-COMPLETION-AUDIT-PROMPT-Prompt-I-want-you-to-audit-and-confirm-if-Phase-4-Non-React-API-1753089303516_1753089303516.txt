@@ -1,0 +1,75 @@
+HASE 4 COMPLETION AUDIT PROMPT
+Prompt:
+
+I want you to audit and confirm if Phase 4: Non-React/API-Only Neurons — Empire Federation is fully and correctly implemented.
+
+You MUST verify:
+
+✅ Federation Compliance
+ Every API-only neuron POSTs to /api/neuron/register with all required fields: name, type, API endpoints, config, health, and API key/token.
+
+ Neuron sends status/heartbeat every 60s to /api/neuron/status.
+
+ Neuron can receive and apply config/experiment/command via /api/neuron/update-config (REST or gRPC).
+
+ Neuron POSTs analytics/events to /api/analytics/report — even if it has no UI.
+
+✅ Admin Dashboard Integration
+ The /admin/neuron-federation dashboard lists API-only neurons with:
+
+ Name, vertical/type
+
+ Last heartbeat time
+
+ Health + Error status
+
+ Current config/version
+
+ Exposed API endpoints
+
+ Admin can:
+
+ Push config/commands to API-only neurons
+
+ Retire/reactivate API-only neurons
+
+ View logs and errors
+
+ See analytics summaries (calls, external API hits, error rates)
+
+✅ README + Onboarding Docs
+ There is a README_API_NEURON_[NICHE].md for each backend neuron that includes:
+
+ What the neuron does (scraper, data fetcher, ML model, etc.)
+
+ How it federates (register, heartbeat, config, analytics)
+
+ Sample code snippets (in Python, Go, Node, etc.)
+
+ Security/auth setup (API key or JWT)
+
+ Deployment + scaling instructions
+
+ Logs/troubleshooting info
+
+ The main README.md of the Empire repo has a new section:
+
+📘 “API-Only / Headless Neuron Federation”
+
+ Describes how API-only neurons work, how to onboard, monitor, and scale them
+
+ Lists security rules, heartbeat rules, audit trail expectations
+
+✅ Production Readiness
+ At least one working backend/API-only neuron is deployed (e.g., Python scraper, LLM assistant, or data microservice)
+
+ Neuron is modular, monitored, and sends real events + logs
+
+ System auto-retires the neuron on repeated failures or missing heartbeat
+
+ All federation APIs are protected by secure auth (API key or JWT)
+
+ Audit logs exist for all actions (config push, errors, commands, retries)
+
+⛔ If ANY of these are missing:
+complete it with full responsibility

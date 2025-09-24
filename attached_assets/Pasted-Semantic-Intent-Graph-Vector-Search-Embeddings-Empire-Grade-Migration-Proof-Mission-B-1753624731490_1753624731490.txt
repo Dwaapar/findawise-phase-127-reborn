@@ -1,0 +1,80 @@
+Semantic Intent Graph + Vector Search & Embeddings (Empire Grade, Migration-Proof)
+
+🎯 Mission:
+Build a semantic intelligence engine that deeply understands every page, quiz, offer, product, user, and journey across the empire — and evolves through user activity, content updates, and AI-driven mapping.  
+This system must work seamlessly through any DB migration, be modular, and be able to plug into any backend (Postgres, Supabase, Neo4j, ChromaDB, Pinecone, Qdrant, etc.).
+
+**1. Graph & Schema Setup**
+- Modular schema: 
+    - Nodes: page, quiz, offer, cta, user, blog, neuron, session, archetype
+    - Edges: related_to, solves, leads_to, matches_intent, triggered_by, journey_path
+- Each node/edge has: id, type, slug, meta, created, lastUpdated, embeddings, metrics (CTR, conversions, rank)
+- All schema/config lives in central config files or DB, never hardcoded.
+- *If DB not present*, auto-generate mock/data stubs, but build code to auto-adapt/upgrade if DB is later added or schema is changed.
+
+**2. Vector Embeddings Engine**
+- Integrate sentence-transformers (MiniLM, bge-small, all-MiniLM-L6-v2, etc.)
+- For each node, generate and store embedding vectors
+- Vector DB: ChromaDB, Supabase vector extension, Pinecone, Qdrant, or in-memory fallback (auto-adapt to available backend)
+- All embeddings auto-backup and can migrate/restore on DB migration
+
+**3. Intent Search & Recommendations**
+- `/api/semantic/search?q=`: returns most relevant pages, offers, CTAs, quizzes, products, etc. (vector similarity)
+- `/api/semantic/similar?slug=`: get semantically similar nodes
+- Always fetch config/schema from DB/config, never hardcoded, always auto-heal after DB migration
+
+**4. Real-Time Auto-Mapping Logic**
+- On new content/user action: auto-add node, auto-create intent edges, recalculate embeddings, sync to DB
+- On migration/restore: auto-rescan all nodes/edges, regenerate embeddings, remap intent clusters
+
+**5. Personalization & UX**
+- Track each user’s journey vector, match them to intent clusters, auto-personalize page/offers/content
+- All mappings/data are stored centrally and can sync/restore on DB migration
+
+**6. Admin UI:**
+- `/admin/semantic-graph`
+    - Graph visualizer (D3.js/Cytoscape.js)
+    - Node/edge explorer, embedding similarity view
+    - Migration/backup/restore tools
+    - Manual override for connections and embeddings
+
+**7. API & Security**
+- All endpoints secured via JWT/RBAC
+- Role-based admin for graph editing
+- All schema changes/versioning tracked and rollback-able (for migration recovery)
+
+**8. Docs & Output**
+- README_semantic.md with:
+    - Schema diagrams, migration notes, recovery best practices
+    - How system self-recovers after DB move/restore
+    - Full API examples, admin usage, scaling guides
+
+**9. Rules**
+- No hardcoded DB endpoints/config; all dynamic, pulled from env/config/DB.
+- All storage/adapters must auto-migrate and recover
+- If DB is missing, auto-stub/fallback; if added later, system migrates/imports old data
+- Every update/change logged
+- Do not duplicate logic, always upgrade/merge.
+- Output ALL code, docs, and admin changes.
+
+Make all database schemas robust, tables, and logic fully self-healing, migration-immune, and bootstrappable.
+If DB is missing, empty, or new: auto-create schema, indexes, constraints, default config.
+Pull all credentials (Supabase, etc.) only from .env — no hardcode ever.
+No direct SQL in UI — all logic flows through hardened service/API layer.
+Add init checks: validate schema health, retry on fail, show admin alerts if broken.
+System must behave as if nothing broke — even if DB was replaced 1 minute ago.
+Resilience must match billion-dollar SaaS. No placeholders. No assumptions.
+Ensure this module includes a fully provisioned, elite-grade, resilient database schema.
+All tables, indexes, constraints, relationships, and API endpoints must be:
+Migration-proof (works seamlessly across Replit accounts or environments)
+Supabase-compatible (or any Postgres DB)
+Auto-restoring (self-healing on project reboots or migrations)
+Exportable & Documented (with schema diagrams + queries)
+
+
+
+
+
+**DO THIS NOW.**  
+Make the Semantic Intent Graph the intelligent, migration-proof, central intelligence engine for the empire.
+

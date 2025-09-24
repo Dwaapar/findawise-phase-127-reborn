@@ -1,0 +1,163 @@
+SYSTEM PRIORITY: ⚠️ No Weakness Allowed
+MISSION: 🔧 Upgrade all existing modules and federation logic to full billion-dollar, production-grade quality — without removing any module or altering architecture.
+CORE RULE: ✅ Preserve every feature, module, neuron, and structure exactly as built — only upgrade, enhance, clean, and harden them.
+
+🧠 CONTEXT:
+This project is the Findawise Neural Empire, an AI-powered, config-driven, modular, and federated ecosystem with self-evolving logic.
+Modules 1–11 and Phases 1–7 of the Federation have already been implemented.
+Everything must now be hardened and optimized to enterprise-grade quality, including:
+
+UI modules (React/Next.js based)
+
+Backend modules (API-only neurons, microservices)
+
+Orchestrator + Analytics
+
+Affiliate, Blog, Leads, Experiments, Personalization, Federation
+
+Federation Core (central dashboard, neuron sync, config/control)
+
+ALL README.md and replit.md files
+
+🔍 AUDIT + UPGRADE OBJECTIVE:
+You must upgrade the ENTIRE system without removing any module, route, or file.
+
+🔁 KEEP ALL:
+
+Neurons
+
+Module folders
+
+Config schemas
+
+Dashboards
+
+Federation endpoints
+
+Custom logic from each phase
+
+🛠️ UPGRADE ALL:
+
+Weak or placeholder code
+
+Boilerplate UI or missing UI features
+
+Incomplete analytics/reporting
+
+Static or hardcoded elements
+
+Missing sync or feedback loops
+
+Placeholder README/replit files
+
+🛡️ HARDENING CHECKLIST
+✅ Upgrade All Logic
+
+ Replace any basic demo logic with production-grade systems
+
+ Refactor all duplicated code into reusable hooks/services/modules
+
+ Eliminate temporary files, logs, or stubs still in active paths
+
+✅ Enhance All Integrations
+
+ Blog ↔ Affiliate ↔ Lead Forms ↔ A/B ↔ Analytics ↔ Personalization ↔ Orchestrator ↔ Federation — all must be mutually connected
+
+ All config updates must reflect instantly across modules (via hot reload or API push)
+
+ Every module must send events to the central analytics pipeline
+
+ Every neuron must register, sync, and report to Federation Core
+
+✅ Harden Admin Dashboards
+
+ Federation dashboard must show every neuron with live status, config, logs
+
+ Experiment dashboard must show full variant analytics
+
+ Leads, Users, Affiliate, Orchestrator dashboards must be real-time, exportable, and filterable
+
+✅ AI/ML & Orchestration
+
+ Auto-rank all CTAs, offers, and content weekly
+
+ Auto-rewrite configs using safe changelog/rollback logic
+
+ Log and visualize orchestrator decisions, diffs, and undo state
+
+ Connect to LLM agent (OpenRouter, HuggingFace, or local) to auto-suggest new experiments
+
+✅ Backend Hardening
+
+ Ensure all API-only neurons send heartbeat, analytics, and accept config push
+
+ Ensure backend DB sync for leads, sessions, analytics
+
+ Ensure backend routes have auth, error handling, and logging
+
+✅ Security Protocol
+
+ All Federation and API endpoints secured via JWT/token
+
+ Dashboard access requires role-based auth
+
+ All cookies, sessions, and tracking must be GDPR-compliant
+
+ Lead forms and affiliate tracking must pass compliance tests
+
+✅ Docs & Export
+
+ All README.md files must be fully updated, clean, and non-boilerplate
+
+ All replit.md files must explain federation, config, logs, and expansion
+
+ Every module must support zip + plug-and-play export/import
+
+ Auto-generate changelogs per orchestrator run, config update, or new neuron addition
+
+✅ Real-Time Sync
+
+ All neurons must hot-reload config or experiment changes
+
+ Federation Core must show live heartbeat of all neurons
+
+ WebSocket/event-based sync preferred, REST fallback mandatory
+
+✅ Cross-Device & Personalization
+
+ Every user must have cross-device ID or fingerprint
+
+ Personalization logic must affect blogs, CTAs, offers, and variants
+
+ Session and user profile updates must sync backend + local cache
+
+📦 FINAL DELIVERABLES
+You must output or refactor:
+
+✅ Cleaned and upgraded full codebase — no broken modules or half-built dashboards
+
+✅ Fully working federation + UI dashboards with real analytics
+
+✅ ALL README.md and replit.md files — fully rewritten, no placeholder text
+
+✅ Logs and changelogs folders: /logs/, /config-history/, /orchestration/logs/
+
+✅ All federation and orchestrator APIs tested and working across 5+ real neurons
+
+✅ Working cross-device analytics, AI suggestions, config rewrites, and user behavior learning loop
+
+🧬 DO NOT:
+❌ Remove or replace any existing module
+❌ Delete any folder or neuron
+❌ Skip any integration or pretend it’s out of scope
+❌ Leave any dashboard half-done or with fake numbers
+❌ Use dummy code, mock-only logs, or placeholder functions
+
+🚀 FINAL NOTE TO THE SYSTEM
+This is not a blog project.
+This is the nervous system of an AI-driven, scalable neural empire.
+Every neuron must think, act, report, learn, and evolve.
+Every user must feel like they’re in a personalized world.
+Every line of code must be audit-grade, battle-tested, and extensible.
+You are not allowed to miss even a single weakness.
+Upgrade everything. Eliminate all weakness. Preserve all power.

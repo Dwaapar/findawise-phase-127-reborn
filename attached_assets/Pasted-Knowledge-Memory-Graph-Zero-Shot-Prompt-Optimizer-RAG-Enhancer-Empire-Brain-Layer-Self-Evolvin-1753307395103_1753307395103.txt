@@ -1,0 +1,151 @@
+Knowledge Memory Graph + Zero-Shot Prompt Optimizer + RAG Enhancer
+(Empire Brain Layer, Self-Evolving, AI-Ready, Federation-Synced)
+
+🎯 Objective
+Give the empire a living, ever-evolving memory system that stores, relates, and intelligently recalls every fact, article, insight, user journey, product, and experiment — and supercharges all AI responses via retrieval-augmented generation (RAG) and prompt optimization.
+
+🧬 1. Knowledge Memory Graph
+Hybrid vector + relational knowledge base:
+
+PostgreSQL + ChromaDB/Weaviate/FAISS + optional Neo4j
+
+Auto-adds nodes for:
+
+Blog posts, quizzes, products, offers, LLM summaries, feedback, reviews, test results, user journeys, SEO insights
+
+Each node includes:
+
+embedding, slug, type, metadata, timestamp, userArchetype, conversionData, linkedCTA
+
+Auto-connects with labeled edges:
+
+related_to, used_in, causes, contradicts, improves, leads_to, flagged_by, supersedes
+
+Versioned and diff-tracked (rollbacks, approval queue)
+
+✅ API:
+
+/api/memory/search?q=...
+
+/api/memory/add
+
+/api/memory/related?slug=...
+
+/api/memory/update
+
+/api/memory/logs?nodeId=...
+
+⚡ 2. Zero-Shot Prompt Optimizer + RAG Enhancer
+Auto-fetches top-K memory nodes relevant to current task/user
+
+Rewrites prompt with:
+
+Contextual facts
+
+Past decisions
+
+User behavior (journey stage, interest graph)
+
+Prompt injection logic:
+
+Biases toward recent, high-conversion, verified nodes
+
+Filters stale, low-impact, redundant nodes
+
+✅ Supports multimodal memory:
+
+Text, Markdown, tables, JSON, reviews, video/image descriptions, conversations
+
+✅ Fallback logic:
+
+If no matching node:
+→ call explorer agent to fetch from external web OR
+→ inject standard empire prompt template
+
+🔁 3. Federation + Real-Time Sync
+All neurons push/pull from the graph
+
+Event-driven sync:
+
+New offers, quizzes, blog edits, test results, user feedback
+
+Federation APIs:
+
+Register node type, event hook, permission scope
+
+Admin UI:
+
+Browse/edit/search graph
+
+Approve/reject/merge suggestions
+
+View what prompt fragments were injected where and why
+
+🔐 4. Security, Logging, Governance
+Each mutation logged with:
+
+Auth token, user/session, source type, confidence score
+
+Full versioning:
+
+Diff UI, rollback, timestamp
+
+RBAC:
+
+Which neurons/agents can write/modify specific node types
+
+📘 5. README (MANDATORY)
+Diagrams:
+
+Graph structure
+
+Prompt rewrite flow
+
+Injection points
+
+Setup guide:
+
+DB setup, vector index sync, federation API usage
+
+Sample:
+
+From new offer → user quiz → summary node → LLM prompt → page output
+
+🔥 Final Enhancements (Recommended for Trillion-Scale AI)
+🔥 5A. Prompt Graph Memory Compiler
+Build a graph of injected prompt fragments across sessions
+
+Trace impact of memory over time
+
+Replay chains to understand success/failure
+
+🔥 5B. Auto-Ranking & Aging of Memory
+Auto-score nodes based on:
+
+Usage, click-throughs, conversion, bounce, freshness
+
+Down-rank noisy, outdated, or low-impact facts
+
+🔥 5C. Memory-Marketplace Protocol
+Other empires (or your own neurons) can request memory nodes via marketplace API
+
+Includes opt-in public memory layers (for sharing knowledge across instances)
+
+🔥 5D. Agent Memory Feedback Loop
+LLM/agent sends back result of prompt → user behavior → updates graph confidence scores
+
+Builds a true feedback loop: "learning from reality"
+
+🔥 5E. Compression & Pruning Engine
+Periodically condense similar nodes
+
+Archive stale ones
+
+Merge redundant summaries automatically
+
+💥 Output Requirements
+✅ Modular knowledge memory graph (API + UI + embeddings + versioning)
+✅ Live RAG + prompt optimizer with injection logic
+✅ Real-time sync between neurons, federation ready
+✅ Logs, rollback, scoring, aging, export/import, admin control
+✅ Full README and sample use cases (content, SEO, user journeys, quizzes)

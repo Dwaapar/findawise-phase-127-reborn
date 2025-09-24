@@ -1,0 +1,104 @@
+Firebase Studio> Starting preview...
+Waiting for your web server to start serving
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts --port 9002 --host 0.0.0.0
+
+Error: /home/user/findawise-phase-70/server/db.ts:6
+  throw new Error(
+        ^
+
+
+Error: DATABASE_URL must be set. Did you forget to provision a database?
+    at <anonymous> (/home/user/findawise-phase-70/server/db.ts:6:9)
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:122:5)
+
+Node.js v20.18.1
+
+<Firebase Studio> ✘ Preview failed to start
+<Firebase Studio> Starting preview...
+Waiting for your web server to start serving
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts --port 9002 --host 0.0.0.0
+
+Error: /home/user/findawise-phase-70/server/db.ts:6
+  throw new Error(
+        ^
+
+
+Error: DATABASE_URL must be set. Did you forget to provision a database?
+    at <anonymous> (/home/user/findawise-phase-70/server/db.ts:6:9)
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:122:5)
+
+Node.js v20.18.1
+
+<Firebase Studio> ✘ Preview failed to start
+<Firebase Studio> Starting preview...
+Waiting for your web server to start serving
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts --port 9002 --host 0.0.0.0
+
+Error: /home/user/findawise-phase-70/server/db.ts:6
+  throw new Error(
+        ^
+
+
+Error: DATABASE_URL must be set. Did you forget to provision a database?
+    at <anonymous> (/home/user/findawise-phase-70/server/db.ts:6:9)
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:122:5)
+
+Node.js v20.18.1
+
+<Firebase Studio> ✘ Preview failed to start
+<Firebase Studio> Starting preview...
+Waiting for your web server to start serving
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts --port 9002 --host 0.0.0.0
+
+Error: /home/user/findawise-phase-70/server/db.ts:6
+  throw new Error(
+        ^
+
+
+Error: DATABASE_URL must be set. Did you forget to provision a database?
+    at <anonymous> (/home/user/findawise-phase-70/server/db.ts:6:9)
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:122:5)
+
+Node.js v20.18.1
+
+<Firebase Studio> ✘ Preview failed to start
+<Firebase Studio> Starting preview...
+Waiting for your web server to start serving
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts --port 9002 --host 0.0.0.0
+
+Error: /home/user/findawise-phase-70/server/db.ts:6
+  throw new Error(
+        ^
+
+
+Error: DATABASE_URL must be set. Did you forget to provision a database?
+    at <anonymous> (/home/user/findawise-phase-70/server/db.ts:6:9)
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:122:5)
+
+Node.js v20.18.1
+
+<Firebase Studio> ✘ Preview failed to start
+
+Try Again
+
+Show Complete Log

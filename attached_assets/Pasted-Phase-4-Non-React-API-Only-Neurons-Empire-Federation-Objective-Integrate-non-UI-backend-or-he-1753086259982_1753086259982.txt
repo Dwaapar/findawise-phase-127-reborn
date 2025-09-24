@@ -1,0 +1,82 @@
+Phase 4: Non-React/API-Only Neurons — Empire Federation
+
+Objective:
+Integrate non-UI, backend, or headless “neurons” into the Empire Federation.
+These may be pure Python/Go tools, AI agents, API-only services, or legacy apps.
+
+MANDATORY FEATURES:
+Federation API Compliance
+
+On boot, POST to /api/neuron/register in the core, providing:
+
+name, neuron-type, API endpoints, healthcheck, config/version, secret/API token.
+
+POST status/heartbeat every 60s to /api/neuron/status (health, errors, version).
+
+Support pull/push config/experiment/command via REST or gRPC (e.g. /api/neuron/update-config).
+
+POST all analytics/events to /api/analytics/report (even if no UI).
+
+Admin Dashboard Integration
+
+In the core dashboard (/admin/neuron-federation), display ALL API-only neurons with:
+
+Name, last heartbeat, health, error status, config/version, endpoints exposed.
+
+Controls for config/command push, retire/activate, view logs.
+
+Analytics summary (calls, errors, events, external API hits, etc).
+
+Docs, Onboarding, and Code
+
+For each API-only neuron, auto-generate a README_API_NEURON_[NICHE].md with:
+
+Overview: What does this backend neuron do (service, scraping, cron, AI agent, etc.)
+
+How it federates (step-by-step API flow)
+
+Sample code (Python/Go/Node) to register, heartbeat, push analytics, and receive config/commands
+
+API endpoints, config structure, security (token/jwt), error handling
+
+Testing and scaling: how to clone/deploy more backend neurons
+
+Monitoring/logs/troubleshooting
+
+Security & Reliability
+
+All endpoints require API key/token or JWT auth.
+
+Heartbeats monitored; auto-alert/auto-retire on repeated failures.
+
+Full audit/log trail (who did what, when, with diff, from where)
+
+Production-Ready
+
+No demo code—real, testable backend code for at least 1 Python (or Go/Node) neuron (e.g., scraper, data API, LLM bot, report generator)
+
+All code, configs, and docs modular, exportable, and ready for scaling
+
+README.md Update
+
+Add section to the main empire README on “API-only/Headless Neuron Federation”
+
+Document onboarding, security, troubleshooting, and scaling
+
+Rules:
+
+All federation logic and analytics/events must match UI neurons—API-only neurons are first-class citizens.
+
+Testing code/examples must run locally, deploy in containers, or as cron/batch jobs.
+
+Audit logs, error/timeout handling, and recovery required.
+
+DELIVERABLES:
+
+1+ production-grade API-only neuron (repo, code, README)
+
+Dashboard integration showing live status, logs, and analytics
+
+Updated empire README, onboarding, and troubleshooting docs
+
+Security review and test logs

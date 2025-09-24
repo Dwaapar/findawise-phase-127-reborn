@@ -1,0 +1,113 @@
+Notification + Email Lifecycle Engine (Genius-Ready, AI-Driven, Cross-Channel)
+
+🎯 Core Objective:
+Build a full-scale, cross-channel notification engine that powers intelligent engagement via email, push, SMS, WhatsApp, and in-app alerts — all dynamically triggered and personalized based on user behavior, semantic intent, and AI optimization.
+
+🔩 1. Multi-Channel Communication Layer
+Integrate natively with:
+
+Email: Resend, Sendgrid, SMTP fallback, Postmark (plug-and-play modules)
+
+Web Push: FCM, OneSignal, service workers
+
+SMS/WhatsApp: Twilio, Vonage, fallback logic (SMS if WhatsApp fails)
+
+In-App Notifications: Bell UI, PWA toast system, mobile-ready
+
+Future Expansion: Modular system for Discord, Telegram, Slack, or custom channels
+
+⚡️ 2. Behavior-Based Trigger Engine
+Support real-time, delayed, and drip campaigns triggered by:
+
+New user/signup/lead capture
+
+Quiz abandoned, product view abandoned, form dropout
+
+New blog/article, updated offer, best-deal detection
+
+Engagement milestone (nth visit, X mins on site, user LTV rise)
+
+AI-generated events (high bounce risk, price-watch alert)
+
+Manual admin events (from dashboard or external API)
+
+🔗 3. Personalization & AI Logic
+All notifications must:
+
+Use dynamic personalization variables: name, device, emotion, recent action, segment, LTV, intent vector
+
+Pull content from semantic graph, user profile, and AI-optimized content blocks
+
+Support:
+
+Subject line A/B testing
+
+Content variant rotation (per segment)
+
+Channel priority logic (AI picks: email → SMS → push, etc.)
+
+🗂 4. Template Management System
+Build /admin/notifications-dashboard:
+
+View/edit all templates (email, push, SMS, in-app)
+
+Markdown + variable support + real-user preview
+
+Enable/disable templates per segment/country/locale
+
+Logs: send history, errors, feedback loops
+
+📈 5. Analytics + Reporting
+Track full lifecycle:
+
+Sent → Delivered → Opened → Clicked → Conversion
+
+Heatmaps, time-to-open, dropoff points
+
+Per-user + aggregate analytics (funnel views)
+
+Alerts for low-performing messages or blacklisted keywords
+
+🛡 6. Compliance & Security
+Full GDPR/CCPA compliance (opt-out, “erase me”, legal copy)
+
+JWT + RBAC for all admin endpoints
+
+Rate limiting, failover logic (email → SMS if blocked), retry queue
+
+Admin change logs (audit trail for all trigger/template edits)
+
+🤖 7. ML + Auto-Optimizer Hooks (Future-Ready)
+Optional AI plugins to:
+
+Predict optimal send time per user/device
+
+Auto-select best channel (AI agent tests SMS vs push)
+
+Subject line & CTA experimentation (real-time learning)
+
+📘 8. README + Scaling Docs
+Setup guide: API keys, channel modules, test send, fallback logic
+
+Trigger definitions + examples
+
+Export/import template schema
+
+Cron examples, failover tests, compliance edge cases
+
+Scaling guide: how to handle 10M+ notifications/day
+
+💥 Output & Quality Rules:
+No placeholder logic.
+
+All code must be fully working, testable, and modularized.
+
+Admin panel required.
+
+Federation-ready APIs and AI slot integration required.
+
+Final export includes: backend, frontend, sample data, APIs, README.
+
+🧠 Empire Rule:
+This notification engine is not an add-on. It is the lifeblood of engagement and monetization. It must work globally, at scale, with AI-grade intelligence and full resilience.
+

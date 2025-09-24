@@ -1,0 +1,112 @@
+Export/Import Booster (Empire Grade, Migration-Proof, Modular, Audit-Ready)
+Objective:
+Build a universal, schema-aware Export/Import Engine that can snapshot, migrate, restore, and plug any module, database, config, or content block into any instance of the empire—zero data loss, zero corruption, even across DB upgrades or full-cloud migrations.
+
+1. Universal Data Exporter
+API Endpoints:
+
+/api/export — Export complete empire state (select modules, all DB tables, user configs, analytics, plugin data, schema)
+
+/api/export/module?name= — Export single module (with all nested configs, assets, DB entries, docs, logs)
+
+/api/export/snapshot — One-click full state snapshot (scheduled or on-demand)
+
+File Formats:
+
+Support JSON, YAML, CSV, SQL dump, tar.gz, custom empire-archive format
+
+Snapshots always include schema + data + version + timestamp + module registry
+
+Export Rules:
+
+Never export sensitive secrets/keys (use redaction, .env exclusion)
+
+Modular: export only what’s needed, not whole DB if not required
+
+Every export is versioned, hashed, signed, and logged (audit-ready)
+
+2. Ultra-Safe Importer & Migrator
+API Endpoints:
+
+/api/import — Accepts uploaded export file, preview before apply
+
+/api/import/validate — Check for schema, version, data integrity BEFORE writing
+
+/api/import/rollback — Instantly revert last import if issues detected
+
+Validation/Migration Logic:
+
+Compares incoming schema vs. current; runs safe auto-migrations or prompts admin for conflicts
+
+Supports partial imports (select modules, users, data, etc.)
+
+Logs all import attempts, results, warnings, errors
+
+Conflict Handling:
+
+On collision: prompts for merge/overwrite/skip
+
+Auto-backup existing data before any import
+
+Detailed diff logs: what was changed, merged, or skipped
+
+3. Federation & Module Sync
+Federation Hooks:
+
+Export/import entire federated setups (neurons, plugins, dashboards) with dependency graphs
+
+/api/federation/export, /api/federation/import for batch operations
+
+Handles module interlinking, plugin dependencies, config trees
+
+Cross-Cloud/Server Migration:
+
+Works across Replit, local, cloud, or VPS
+
+Includes scripts to automate move/restore for all storage engines
+
+4. Backup, Scheduling, Audit, & Admin UI
+Scheduled Backups:
+
+Cron or UI: set regular auto-snapshots (hourly, daily, before upgrades)
+
+Notifies admin of failures, keeps last N snapshots
+
+Admin UI:
+
+View/manage all exports/imports (date, size, modules, diff)
+
+One-click restore/rollback from any backup
+
+Download/upload/export to cloud drive, S3, GCS, etc.
+
+Audit Trail:
+
+Every export/import/rollback is logged with who/when/what/why
+
+All logs viewable in admin panel, downloadable for audit
+
+5. Docs, Tests, & Output Rules
+Auto-generate/maintain /docs/EXPORT_IMPORT_README.md
+
+Include: API usage, formats, merge/rollback logic, best practices for migration
+
+End-to-end tests: export, import, partial/whole, rollback, failover, cross-instance validation
+
+Never duplicate existing export/import logic. Upgrade/extend only if needed
+
+If any part is already empire-grade, leave as is; else, harden, upgrade, fill gaps
+
+System must be modular, clean, federation-ready, plug-and-play for any DB or cloud
+
+DO THIS NOW.
+
+Output all backend, UI, docs, and tests as above
+
+Log all changes, migration logic, audit trail in README
+
+Harden everything for billion-dollar, cross-cloud resilience
+
+If any partial export/import logic exists, upgrade to this empire grade
+
+This will give you ironclad control over every backup, migration, and modular plug-and-play in your empire.

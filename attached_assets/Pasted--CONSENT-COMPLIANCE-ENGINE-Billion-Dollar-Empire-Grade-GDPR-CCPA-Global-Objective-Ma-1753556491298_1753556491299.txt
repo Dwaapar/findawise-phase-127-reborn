@@ -1,0 +1,89 @@
+📜 CONSENT & COMPLIANCE ENGINE (Billion-Dollar Empire Grade, GDPR/CCPA/Global)
+
+🎯 Objective  
+Make the Findawise Empire 100% compliant with all modern privacy/consent requirements — GDPR, CCPA, CPRA, ePrivacy, LGPD, and affiliate network policies. Users, affiliates, and regulators must trust you and you must pass all audits.
+
+1️⃣ Consent Core
+
+- **Consent Banner (Smart, Modular):**
+  - Shows on first visit, geo-IP aware for required regions (EU/California/etc)
+  - Allows granular opt-in/out (tracking, analytics, marketing, affiliate links)
+  - Fully accessible, keyboard/tab friendly, and mobile-optimized
+  - Remembers user choice in local storage, cookie, or DB (sync cross-device)
+  - If rejected, disables all non-essential cookies/scripts
+
+- **Consent Management UI:**
+  - /privacy, /consent, or /settings page for users to review, change, or withdraw consent at any time
+  - Option to export, erase, or request all personal data ("Erase Me" API)
+  - Live log of consent history per user (who/when/what was toggled)
+
+2️⃣ Policy Engine
+
+- **Dynamic Privacy Policy & Terms:**
+  - Auto-updates for each country, language, and partner requirement
+  - Shows which services/APIs/cookies are used on each page
+  - Versioned and timestamped for audit trail
+  - Embedded affiliate disclosures and compliance copy for every offer/module
+
+3️⃣ Consent & Data APIs
+
+- `/api/consent/get` — fetches current consent state for user
+- `/api/consent/set` — updates consent, logs change with timestamp/device/user
+- `/api/consent/erase` — triggers full data erasure (user/account/analytics/cookie/profile)
+- `/api/consent/history` — admin/audit log per user and globally
+
+- **All APIs must be JWT/RBAC protected and fully logged.**
+
+4️⃣ Cookie & Script Management
+
+- **Script Loader:**  
+  - Loads scripts (analytics, ads, chatbots, affiliate, A/B, etc) *only if* user has opted in.
+  - No analytics/marketing loads before consent
+  - Tag all scripts with data-consent attributes for easy toggle/disable
+
+- **Affiliate Link Compliance:**  
+  - Each affiliate offer/block must clearly disclose affiliate status
+  - Option to disable all affiliate click tracking if user opts out
+  - All click-tracking must respect consent state (no shadow tracking)
+
+5️⃣ Geo-IP & Localization
+
+- Detects user’s country/region and applies correct consent flow (GDPR, CCPA, none, or other)
+- Auto-translates consent popups, privacy policies, and compliance banners
+- Admin panel to override, simulate, or force region for testing
+
+6️⃣ Admin/Legal Dashboard
+
+- Real-time logs of all consent and privacy events
+- Full list of “erase me” requests, pending/complete
+- Downloadable audit logs for legal reviews or network requests
+- Versioning of every policy change, consent banner, and script loader
+
+7️⃣ Hardened Security & Logging
+
+- All changes to consent status, policies, or scripts logged with user/admin ID, time, and IP
+- Tamper-proof logs, exportable for compliance
+- Periodic compliance self-audit (runs weekly, flags issues, sends alerts)
+
+8️⃣ README & Testing
+
+- Full documentation: GDPR/CCPA logic, API, UI, data flow, all endpoints
+- Test cases: every consent toggle, “erase me,” multi-region, script loader, policy version, API call, affiliate opt-out
+- Explain how to add new services/APIs for consent in the future
+
+9️⃣ No Duplication, Only Hardening/Extension
+
+- If consent logic exists, extend/harden — do NOT create duplicates
+- Upgrade any basic cookie/consent features to bulletproof enterprise grade
+- Never allow “consent” to degrade to a single hardcoded popup
+
+---
+
+**DO THIS NOW. Output full UI, API, DB logic, logging, docs, tests, and integration.**  
+*No shortcuts. No missing regions. No non-compliant affiliate/analytics/cookies. Full logs, full controls. If any feature is already present, upgrade/harden only — never duplicate. The system must be impossible for Google, Amazon, or any legal team to break.*
+
+---
+
+When you run this, your empire will be **compliance-immune** and ready for global affiliate, SaaS, and user trust at *billion-dollar* scale.
+
+**Ready for next, or want to go deeper into legal hardening or affiliate network policy specifics?**

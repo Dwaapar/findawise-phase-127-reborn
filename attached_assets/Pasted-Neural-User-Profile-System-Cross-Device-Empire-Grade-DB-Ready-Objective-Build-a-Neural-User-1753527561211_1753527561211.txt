@@ -1,0 +1,131 @@
+Neural User Profile System (Cross-Device, Empire Grade, DB-Ready)
+🎯 Objective
+Build a Neural User Profile Engine that seamlessly tracks, persists, and evolves every user’s journey, preferences, device history, and archetype — across all devices, browsers, and modules in the empire.
+
+1. Core System Architecture
+Hybrid Storage:
+
+Store core profile in local/sessionStorage for fast access.
+
+Sync/backup all profiles to a cloud database (Postgres/Supabase/your DB layer), supporting cross-device, multi-session login.
+
+Profile Schema (extendable):
+
+userId, email (if registered), anonId (device/user key),
+
+deviceList, lastSeen, sessionTokens,
+
+userArchetype (segment/quiz),
+
+recentActivity (pages, quizzes, offers, interactions),
+
+preferredLanguage, geoLocation,
+
+consentStatus, cookiePrefs,
+
+conversionHistory, favorites,
+
+profileMeta: custom fields for future features.
+
+2. Cross-Device/Session Sync Logic
+On New Device or Browser:
+
+Prompt user for optional sign-in or anonymous linking (via magic link, email, or one-time code).
+
+If no sign-in, generate a new anonId and sync on backend if possible.
+
+On Each Session:
+
+Merge activity and profile history (if same userId/email detected).
+
+Auto-sync profile updates to backend DB (use REST/API/Websocket).
+
+3. Analytics & Activity Tracking
+Track in Real-Time:
+
+Pageviews, scrolls, quiz answers, CTA/interactions, offer clicks, purchases, lead forms, etc.
+
+Persist activity snapshots into profile (for personalization, AI, rewards).
+
+Store deep engagement data (time on site, engagement flow, dropoff points).
+
+4. Archetype & Personalization
+Update and Store:
+
+Quiz outcomes, persona/fusion scores, session context, favorite topics/offers.
+
+Adapt profile with AI (Orchestrator) for dynamic content/offers.
+
+AI/ML Ready:
+
+Profile is ready for clustering, LLM-driven personalization, intent mapping, and more.
+
+5. Security & Compliance
+Data Security:
+
+JWT-auth for sensitive endpoints, hashed IDs in storage, all API access logged.
+
+Privacy Controls:
+
+User can view/export/delete full profile.
+
+Full GDPR/CCPA consent flows and compliance.
+
+“Erase Me” API endpoint (removes all data for a user across the empire).
+
+6. Federation/Empire Integration
+API/Interface:
+
+Expose /api/user/profile, /api/user/activity, /api/user/sync, /api/user/erase
+
+Any neuron/module can pull and update profile, always via RBAC/JWT auth.
+
+Central Dashboard:
+
+Admin UI for searching, viewing, and exporting user profiles, activity logs, and consent status.
+
+7. Docs, README & Test Coverage
+README.md must include:
+
+Schema definition
+
+How profiles sync across device/browser
+
+API usage (get, update, erase)
+
+Security, privacy, and export flows
+
+Example admin dashboard queries
+
+How to extend profile logic (custom fields, AI sync, consent extensions)
+
+Test Coverage:
+
+Add unit/integration tests for:
+
+Profile creation, sync, merge, erase
+
+API auth, RBAC
+
+Consent toggles/flows
+
+Activity tracking
+
+8. Final Rules
+Do not duplicate any existing code or profile logic.
+
+Upgrade existing profile, sync, and activity logic to this new schema.
+
+If local DB not yet provisioned, use API stubs, local mocks, or comments for DB sync logic.
+
+Prepare everything for “plug-and-play” upgrade once DB is ready.
+
+No shortcuts — make the system modular, exportable, and bulletproof.
+
+Log all changes and document everything in README.
+
+DO THIS NOW. Output the full code, all upgrades, all tests, and the README.
+If any existing functionality is already empire grade, only upgrade/extend.
+If anything is missing, add and integrate it fully.
+This system must be ready for final billion-dollar deployment.
+

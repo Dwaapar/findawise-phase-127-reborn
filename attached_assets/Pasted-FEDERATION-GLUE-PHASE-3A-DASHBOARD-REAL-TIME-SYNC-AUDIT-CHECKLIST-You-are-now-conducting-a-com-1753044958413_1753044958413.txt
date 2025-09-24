@@ -1,0 +1,112 @@
+FEDERATION GLUE PHASE 3A: DASHBOARD + REAL-TIME SYNC – AUDIT CHECKLIST
+You are now conducting a complete audit of Phase 3A in the findawise-core repo. This phase includes building the /admin/neuron-federation dashboard and implementing backend APIs, real-time sync, analytics ingestion, and config push architecture.
+
+Return  for completed,  for missing, for partially done or needs review. Include comments or issues for each section.
+
+DASHBOARD UI — /admin/neuron-federation
+ Dashboard page exists at /admin/neuron-federation
+
+ Fetches dynamic list of neurons from DB/API (no hardcoded list)
+
+ Displays neuron metadata: name, vertical, health, last seen, config version
+
+ Status indicators: online/offline (based on heartbeat timeout)
+
+ Live table auto-refreshes every 5 seconds
+
+ Summary stats displayed: neuron count, online/offline %, error rate, revenue (if present)
+
+ Column sorting, filtering, or search implemented
+
+PER-NEURON CONTROLS
+For each listed neuron:
+
+ “Push Config” button (manually push JSON config or upload file)
+
+ “Push Experiment” or orchestrator command
+
+ View real-time logs/errors inline
+
+ Deploy/Retire/Clone buttons (stub if not fully implemented yet)
+
+ Deployment state syncs with DB/API
+
+GLOBAL CONTROLS
+ Push config/experiment to ALL neurons
+
+ Visual confirmation of push result per neuron (success/error)
+
+ Logs each action in system audit/history log
+
+REAL-TIME SYNC / PUSH MECHANISM
+ Uses WebSocket (preferred) or REST fallback
+
+ Config/experiment push immediately updates target neuron
+
+ Neuron confirms success/failure
+
+ Neuron updates own status via /api/neuron/status on config change
+
+ANALYTICS + EVENT FEED
+ Analytics pulled from all neurons (or ingested via stream)
+
+ View charts: Visitors, CTR, Conversions, Revenue, Errors
+
+ Charts available per-neuron and empire-wide
+
+ Drill-down to neuron details
+
+ Export to CSV for all metrics
+
+ Error types + logs per neuron visualized
+
+AUDIT / HISTORY
+ Every config/experiment push is logged (timestamp, admin, diff view)
+
+ “Rollback” option available — restore last config for any neuron
+
+ At least 10 previous config states stored per neuron
+
+ Logs accessible in admin UI
+
+SECURITY
+ Role-based access control: admin, viewer, editor
+
+ Secured by JWT or session-based login
+
+ All actions logged in admin audit trail
+
+ Sensitive config redacted or permission-gated
+
+README.md + DOCUMENTATION
+ README.md includes:
+
+Setup instructions (local + prod)
+
+Architecture diagram
+
+Federation API usage
+
+Websocket vs. REST fallback logic
+
+How to deploy, scale, and secure the dashboard
+
+Admin roles + audit log usage
+
+Rollback and versioning logic
+
+ README.md is auto-generated or manually updated (not missing)
+
+ Separate section for Phase 3A: "Federation Glue Phase"
+
+RULES & PRODUCTION-GRADE CHECKS
+ All logic is modular and exportable for Phase 4+
+
+ No hardcoded neurons — 100% dynamic from DB/API
+
+ Stub exists for CLI/auto-provisioning (if not built yet)
+
+ All components tested (unit or integration)
+
+ Deployment ready for prod: no console.logs, temp code, or local-only settings
+

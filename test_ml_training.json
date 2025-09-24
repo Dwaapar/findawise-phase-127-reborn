@@ -1,0 +1,21 @@
+{
+  "training_data": [
+    {"pageAge": 30, "wordCount": 1500, "engagementScore": 75, "emotionIntensity": 0.8, "averageTimeOnPage": 120, "bounceRate": 0.35, "pageViews": 1000, "uniqueVisitors": 800, "ctaCount": 2, "offerCount": 3, "moduleCount": 1, "dayOfWeek": 2, "hourOfDay": 14, "monthOfYear": 7, "isWeekend": 0, "organicTrafficShare": 0.6, "mobileShare": 0.4, "scrollDepth": 0.75},
+    {"pageAge": 15, "wordCount": 2000, "engagementScore": 82, "emotionIntensity": 0.9, "averageTimeOnPage": 150, "bounceRate": 0.28, "pageViews": 1200, "uniqueVisitors": 950, "ctaCount": 3, "offerCount": 2, "moduleCount": 2, "dayOfWeek": 4, "hourOfDay": 10, "monthOfYear": 7, "isWeekend": 0, "organicTrafficShare": 0.7, "mobileShare": 0.45, "scrollDepth": 0.85},
+    {"pageAge": 45, "wordCount": 1200, "engagementScore": 68, "emotionIntensity": 0.6, "averageTimeOnPage": 90, "bounceRate": 0.42, "pageViews": 800, "uniqueVisitors": 650, "ctaCount": 1, "offerCount": 4, "moduleCount": 0, "dayOfWeek": 1, "hourOfDay": 16, "monthOfYear": 7, "isWeekend": 0, "organicTrafficShare": 0.5, "mobileShare": 0.35, "scrollDepth": 0.65},
+    {"pageAge": 60, "wordCount": 1800, "engagementScore": 91, "emotionIntensity": 0.95, "averageTimeOnPage": 180, "bounceRate": 0.22, "pageViews": 1500, "uniqueVisitors": 1200, "ctaCount": 4, "offerCount": 1, "moduleCount": 3, "dayOfWeek": 5, "hourOfDay": 11, "monthOfYear": 7, "isWeekend": 0, "organicTrafficShare": 0.8, "mobileShare": 0.5, "scrollDepth": 0.92},
+    {"pageAge": 25, "wordCount": 1600, "engagementScore": 77, "emotionIntensity": 0.7, "averageTimeOnPage": 130, "bounceRate": 0.31, "pageViews": 1100, "uniqueVisitors": 900, "ctaCount": 2, "offerCount": 3, "moduleCount": 1, "dayOfWeek": 3, "hourOfDay": 13, "monthOfYear": 7, "isWeekend": 0, "organicTrafficShare": 0.65, "mobileShare": 0.42, "scrollDepth": 0.78},
+    {"pageAge": 35, "wordCount": 1400, "engagementScore": 73, "emotionIntensity": 0.75, "averageTimeOnPage": 110, "bounceRate": 0.38, "pageViews": 950, "uniqueVisitors": 750, "ctaCount": 3, "offerCount": 2, "moduleCount": 2, "dayOfWeek": 6, "hourOfDay": 15, "monthOfYear": 7, "isWeekend": 1, "organicTrafficShare": 0.55, "mobileShare": 0.38, "scrollDepth": 0.72},
+    {"pageAge": 20, "wordCount": 2200, "engagementScore": 85, "emotionIntensity": 0.85, "averageTimeOnPage": 160, "bounceRate": 0.25, "pageViews": 1300, "uniqueVisitors": 1050, "ctaCount": 3, "offerCount": 2, "moduleCount": 2, "dayOfWeek": 2, "hourOfDay": 12, "monthOfYear": 7, "isWeekend": 0, "organicTrafficShare": 0.75, "mobileShare": 0.48, "scrollDepth": 0.88},
+    {"pageAge": 50, "wordCount": 1100, "engagementScore": 64, "emotionIntensity": 0.55, "averageTimeOnPage": 85, "bounceRate": 0.45, "pageViews": 700, "uniqueVisitors": 580, "ctaCount": 1, "offerCount": 5, "moduleCount": 0, "dayOfWeek": 7, "hourOfDay": 17, "monthOfYear": 7, "isWeekend": 1, "organicTrafficShare": 0.45, "mobileShare": 0.32, "scrollDepth": 0.58},
+    {"pageAge": 40, "wordCount": 1700, "engagementScore": 79, "emotionIntensity": 0.8, "averageTimeOnPage": 140, "bounceRate": 0.33, "pageViews": 1050, "uniqueVisitors": 850, "ctaCount": 2, "offerCount": 3, "moduleCount": 1, "dayOfWeek": 4, "hourOfDay": 9, "monthOfYear": 7, "isWeekend": 0, "organicTrafficShare": 0.68, "mobileShare": 0.44, "scrollDepth": 0.81},
+    {"pageAge": 10, "wordCount": 1900, "engagementScore": 88, "emotionIntensity": 0.9, "averageTimeOnPage": 170, "bounceRate": 0.24, "pageViews": 1400, "uniqueVisitors": 1150, "ctaCount": 4, "offerCount": 1, "moduleCount": 3, "dayOfWeek": 1, "hourOfDay": 11, "monthOfYear": 7, "isWeekend": 0, "organicTrafficShare": 0.78, "mobileShare": 0.52, "scrollDepth": 0.9}
+  ],
+  "model_config": {
+    "name": "content-optimizer-production",
+    "type": "content_optimizer",
+    "algorithm": "random_forest",
+    "testSplit": 0.2,
+    "validationSplit": 0.1
+  }
+}

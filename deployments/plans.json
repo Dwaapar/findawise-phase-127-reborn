@@ -1,0 +1,188 @@
+[
+  {
+    "name": "Empire Production Deployment",
+    "version": "1.0.0",
+    "targets": [
+      {
+        "name": "empire-production",
+        "environment": "production",
+        "endpoints": [
+          "http://localhost:5000"
+        ],
+        "healthChecks": [
+          "http://localhost:5000/api/health",
+          "http://localhost:5000/api/db-health"
+        ],
+        "rollbackStrategy": "immediate",
+        "maxDowntime": 30000
+      }
+    ],
+    "strategy": "blue-green",
+    "phases": [
+      {
+        "name": "pre-deployment",
+        "order": 1,
+        "parallel": false,
+        "timeout": 60000,
+        "steps": [
+          {
+            "name": "backup-database",
+            "type": "script",
+            "command": "npm run db:backup",
+            "timeout": 30000,
+            "retries": 1
+          },
+          {
+            "name": "validate-environment",
+            "type": "validation",
+            "validation": [
+              {
+                "type": "http",
+                "target": "http://localhost:5000/api/health",
+                "expected": 200,
+                "timeout": 10000
+              }
+            ],
+            "timeout": 15000,
+            "retries": 2
+          }
+        ],
+        "dependencies": [],
+        "rollbackOnFailure": true,
+        "healthChecks": []
+      },
+      {
+        "name": "deployment",
+        "order": 2,
+        "parallel": false,
+        "timeout": 300000,
+        "steps": [
+          {
+            "name": "build-application",
+            "type": "script",
+            "command": "npm run build",
+            "timeout": 120000,
+            "retries": 1
+          },
+          {
+            "name": "migrate-database",
+            "type": "database",
+            "command": "migrate",
+            "timeout": 60000,
+            "retries": 2
+          },
+          {
+            "name": "seed-neurons",
+            "type": "api",
+            "endpoint": "http://localhost:5000/api/deployment/seed-neurons",
+            "timeout": 30000,
+            "retries": 1
+          },
+          {
+            "name": "restart-services",
+            "type": "script",
+            "command": "npm run restart",
+            "timeout": 30000,
+            "retries": 2
+          }
+        ],
+        "dependencies": [
+          "pre-deployment"
+        ],
+        "rollbackOnFailure": true,
+        "healthChecks": [
+          "http://localhost:5000/api/health"
+        ]
+      },
+      {
+        "name": "post-deployment",
+        "order": 3,
+        "parallel": false,
+        "timeout": 120000,
+        "steps": [
+          {
+            "name": "validate-deployment",
+            "type": "validation",
+            "validation": [
+              {
+                "type": "http",
+                "target": "http://localhost:5000/api/health",
+                "expected": 200,
+                "timeout": 10000
+              },
+              {
+                "type": "http",
+                "target": "http://localhost:5000/api/db-health",
+                "expected": 200,
+                "timeout": 10000
+              }
+            ],
+            "timeout": 30000,
+            "retries": 3
+          },
+          {
+            "name": "warm-up-cache",
+            "type": "wait",
+            "command": "10000",
+            "timeout": 15000,
+            "retries": 1
+          }
+        ],
+        "dependencies": [
+          "deployment"
+        ],
+        "rollbackOnFailure": true,
+        "healthChecks": [
+          "http://localhost:5000/api/health",
+          "http://localhost:5000/api/db-health"
+        ]
+      }
+    ],
+    "rollbackPlan": {
+      "strategy": "previous-version",
+      "triggers": [
+        {
+          "type": "health-check",
+          "condition": "health-check-failed"
+        },
+        {
+          "type": "error-rate",
+          "threshold": 5,
+          "condition": "error-rate-exceeded"
+        }
+      ],
+      "steps": [
+        {
+          "name": "restore-database",
+          "type": "script",
+          "command": "npm run db:restore",
+          "timeout": 60000,
+          "retries": 1
+        },
+        {
+          "name": "restart-previous-version",
+          "type": "script",
+          "command": "npm run restart:previous",
+          "timeout": 30000,
+          "retries": 2
+        }
+      ],
+      "confirmationRequired": false
+    },
+    "notifications": [
+      {
+        "type": "webhook",
+        "target": "http://localhost:5000/api/notifications/deployment",
+        "events": [
+          "started",
+          "completed",
+          "failed",
+          "rolled-back"
+        ]
+      }
+    ],
+    "creator": "empire-cli",
+    "id": "1812951a8dab",
+    "created": "2025-07-27T22:10:16.052Z"
+  }
+]

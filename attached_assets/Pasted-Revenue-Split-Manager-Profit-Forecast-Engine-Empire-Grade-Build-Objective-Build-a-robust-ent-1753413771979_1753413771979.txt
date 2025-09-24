@@ -1,0 +1,93 @@
+Revenue Split Manager & Profit Forecast Engine (Empire-Grade Build)
+Objective:
+Build a robust, enterprise-class Revenue Split Manager and Profit Forecast Engine for the Findawise Empire. This module must support affiliate and product revenue splits, partner payouts, multi-level commissions, and forward-looking profit analytics—at scale.
+
+💰 Revenue Split Manager
+Features:
+
+Configurable Split Logic:
+
+Support multiple commission structures: flat, tiered, custom per partner, offer, or neuron.
+
+Easily assign percentages or rules to any affiliate/product revenue stream.
+
+Configurable via admin dashboard UI and config files.
+
+Automated Payouts & Logging:
+
+Track revenue per partner/affiliate.
+
+Auto-calculate monthly/weekly/daily payouts.
+
+Export payout reports (CSV, JSON, PDF).
+
+Support for payment provider integration (PayPal, Stripe, Wise, UPI—leave as stubs or add full integration if possible).
+
+Dashboard UI:
+
+/admin/revenue-split:
+
+View all splits, earnings, payouts, partner performance, upcoming splits.
+
+Graphs/charts: splits over time, partner share, payout status.
+
+Export reports and manual override controls.
+
+Federation/Neuron Sync:
+
+Each neuron/module can report its own revenue; manager aggregates for global and per-neuron splits.
+
+Live updates on dashboard when splits or rules change.
+
+Audit trail of all split config and payout history.
+
+Security & Compliance:
+
+Full role-based access (only admins can edit splits).
+
+Payout approvals/locking.
+
+Exportable audit logs for finance/legal review.
+
+📈 Profit Forecast Engine
+Features:
+
+Forecasting:
+
+Auto-project future profits based on historical data (last 30/90/180 days), split rules, growth rates, and seasonal adjustments.
+
+Visual charts of predicted revenue, splits, and net profits per partner/vertical.
+
+Export forecast reports.
+
+Use basic ML (e.g., linear regression, moving average, or plug to advanced ML if available).
+
+Risk/Scenario Analysis:
+
+“What if” tool: simulate different split rules, partner additions, and offer changes.
+
+Highlight best/worst-case scenarios for each partner and the empire.
+
+📘 README (MANDATORY)
+Must include:
+
+Overview of split manager and forecast logic.
+
+API usage for programmatic reporting and split changes.
+
+Example config files and sample payouts.
+
+Security, audit, and compliance practices.
+
+Step-by-step “How to add a new partner, set custom split, and export payouts.”
+
+🟢 Upgrade/No Duplication Rule
+❗️Do NOT duplicate any existing code, modules, or logic.
+
+Upgrade/extend any partial revenue split logic already present.
+
+Harden and finish all related modules in place.
+
+Output a summary of planned upgrades vs. current code before making changes.
+
+Build as a modular, production-grade system, ready to scale globally, and compatible with all existing Findawise empire logic.

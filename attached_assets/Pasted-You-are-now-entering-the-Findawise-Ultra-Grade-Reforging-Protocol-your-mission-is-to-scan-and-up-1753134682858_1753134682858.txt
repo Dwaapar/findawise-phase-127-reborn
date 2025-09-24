@@ -1,0 +1,79 @@
+You are now entering the "Findawise Ultra-Grade Reforging Protocol" — your mission is to scan and upgrade the entire AI-powered, modular, federated empire project called Findawise. 
+
+You MUST NOT skip or delete anything — but you MUST UPGRADE every module, config, and neuron to full production-quality logic.
+
+This project already has:
+- 11 Empire Modules (page generator, content engine, affiliate logic, personalization, leads, analytics, orchestrator, etc.)
+- Federation Bridge (core + 10+ UI and API-only neurons)
+- Admin Dashboards, Real-time Sync, Config-driven Architecture
+- Central Orchestrator, Multi-language, A/B testing, ML insights, and more
+
+YOUR GOAL IS TO:
+1. 🔍 **Scan every single module, config, and connection**
+2. 🛠️ **Identify and list every single weakness**, including:
+    - Placeholder logic
+    - Boilerplate code
+    - Skipped edge cases
+    - Hardcoded offers or themes
+    - Broken or missing integrations
+    - Missing security, JWT, auth, or GDPR safeguards
+    - Missing emotionMap or personalization coverage
+    - Missing federation handshake (heartbeat, config, analytics)
+    - Weak admin dashboards (fake data, no controls)
+3. 🚀 **For every weakness found, UPGRADE the actual logic**:
+    - Replace demo modules with real working logic
+    - Add production-grade database logic (Replit DB / PostgreSQL stubs)
+    - Add working admin control buttons, toggles, config changers
+    - Add working A/B logic that persists per session
+    - Add actual lead-saving, email capture, validation, and export systems
+    - Ensure all analytics events (clicks, impressions, scroll, session) flow to backend
+    - Ensure orchestrator actually updates config and stores versioned backups
+    - Make AI/ML orchestrator run with real training data from stored analytics
+    - Make LLM suggestion engine generate real markdown changelogs, config diffs, and push suggestions to dashboard
+
+4. 📜 **Output must include**:
+    - ✅ Full Audit Report of modules 1 to 11
+    - ✅ Full Audit Report of Federation Core and all neurons
+    - ✅ Per-module weakness detection + upgrade plan
+    - ✅ Updated code samples with **real logic** (not boilerplate)
+    - ✅ Upgraded README.md sections (clear setup, usage, security, extension)
+    - ✅ Security Review: API keys, federation tokens, user privacy, session integrity
+    - ✅ Admin Dashboard Upgrade Plan: real-time stats, control buttons, event logs
+    - ✅ Real config diff engine + rollback/undo logic
+    - ✅ Real backup, logging, and changelog systems
+    - ✅ Real session-based personalization per archetype/user behavior
+    - ✅ Working UI + API neurons showing live federation (register, heartbeat, analytics)
+
+5. 🔐 **Security Expectations**:
+    - No endpoint should be unprotected
+    - No data should flow without logging
+    - Federation keys or JWT should be enforced in all neuron ↔ core interactions
+
+6. 📈 **End Result Must Achieve**:
+    - 100/100 Production Readiness across ALL modules
+    - Zero placeholders, zero skipped integrations
+    - Real AI-driven, ML-supported, config-rewriting loop
+    - Clean file structure, zero dead code, zero unreferenced assets
+    - All federation working end-to-end across UI + API neurons
+    - Every module tested to real deployment logic, not just frontend simulation
+
+7. 💡 **Your Job**:
+    - Scan, audit, refactor, rewrite, replace, document
+    - NEVER delete a module
+    - ALWAYS upgrade to final working logic
+    - If anything is marked TODO or fake — build the real logic for it
+    - Every user, session, config, neuron, and analytic should connect as a full web of intelligence
+
+You are not auditing a blog or app — you are **reforging the brain and nervous system of a trillion-dollar AI-powered empire**.
+
+This project must:
+- Learn.
+- Optimize itself.
+- Understand every user.
+- Generate content dynamically.
+- Monetize based on behavior.
+- Scale across 100s of neurons.
+- Federate across stacks (React, Python, API).
+- Track, improve, and undo itself.
+
+Act accordingly. Output everything, fix everything. Leave no weakness alive.
